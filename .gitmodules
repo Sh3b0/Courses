@@ -1,0 +1,28 @@
+[submodule "Differential Equations"]
+	path = Differential Equations
+	url = http://github.com/sh3b0/DE-F20
+	branch = main
+[submodule "Programming Paradigms"]
+	path = Programming Paradigms
+	url = http://github.com/sh3b0/PP-F21
+	branch = main
+[submodule "System and Network Administration"]
+	path = System and Network Administration
+	url = http://github.com/sh3b0/SNA-F21
+	branch = main
+[submodule "Distributed and Network Programming"]
+	path = Distributed and Network Programming
+	url = http://github.com/sh3b0/DNP-F21
+	branch = main
+[submodule "Software Systems Analysis and Design"]
+	path = Software Systems Analysis and Design
+	url = http://github.com/sh3b0/SSAD-F21
+	branch = main
+[submodule "Machine Learning"]
+	path = Machine Learning
+	url = http://github.com/sh3b0/ML-F21
+	branch = main
+[submodule "Operating Systems"]
+	path = Operating Systems
+	url = http://github.com/sh3b0/OS-F20
+	branch = master
