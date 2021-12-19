@@ -24,5 +24,5 @@
 	branch = main
 [submodule "Operating Systems"]
 	path = Operating Systems
-	url = http://github.com/sh3b0/OS-F20
+	url = https://github.com/sh3b0/OS-F20
 	branch = master
