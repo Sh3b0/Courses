@@ -35,6 +35,9 @@ Collection of repositories I created or contributed to for university courses.
 - [sh3b0/SNA-F21](https://github.com/sh3b0/SNA-F21): practical labs on shell scripting, network and database administration, cron jobs, firewalls, nginx, ssh, ssl, and docker.
 - [desmigor/load_balancing_nginx](https://github.com/desmigor/load_balancing_nginx): using nginx as a reverse proxy for load balancing.
 
+#### Fundamentals of Information Security
+- [sh3b0/FIS-S22](https://github.com/Sh3B0/FIS-S22): labs on cryptography, steganography, DB/OS/Software/Network security, malware analysis, and digital forensics.
+
 #### Programming Paradigms
 
 - [sh3b0/PP-F21](https://github.com/Sh3B0/PP-F21): functional and logic programming tasks in Haskell, racket, and Prolog.
