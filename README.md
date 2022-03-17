@@ -57,7 +57,7 @@ Collection of repositories I created or contributed to for university courses.
 
 #### Operating Systems
 
-- [sh3b0/OS-F20](https://github.com/sh3b0/OS-F20) - solutions for C programming tasks on processes, system calls, memory management, file system, and I/O.
+- [sh3b0/OS-F20](https://github.com/sh3b0/OS-F20): solutions for C programming tasks on processes, system calls, memory management, file system, and I/O.
 
 #### Introduction to Programming
 
