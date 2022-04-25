@@ -4,7 +4,7 @@ This meta-repository contains:
 
 - Links to [projects](#Projects) I created or contributed to for university courses
 - [Coursework](#Coursework): tasks, deliverables and assignments.
-- [Notes](./[Notes]): PDF documents summarizing lectures or certain topics.
+- [Notes](./Notes): PDF documents summarizing lectures or certain topics.
 
 
 
