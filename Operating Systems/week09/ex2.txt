@@ -1,0 +1,7 @@
+To increase H/M (maximize hit count, minimize miss count),
+we can request the same page reference multiple consecutive times.
+Example (3 page frames): 1 1 1 1 1 1 -> 5 hits, 1 miss
+
+To decrease H/M (minimize hit count, maximize miss count)
+we can request many different references with small repetitions as possible.
+Example (3 page frames): 1 2 3 4 5 6 -> 0 hits, 6 misses

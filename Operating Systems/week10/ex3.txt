@@ -1,0 +1,3 @@
+-rw-rw-rw- 1 ahmed ahmed 0 Oct 21 01:30 _ex3.txt
+-rwxrw-rwx 1 ahmed ahmed 0 Oct 21 01:30 _ex3.txt
+-rwxrwxrwx 1 ahmed ahmed 0 Oct 21 01:30 _ex3.txt

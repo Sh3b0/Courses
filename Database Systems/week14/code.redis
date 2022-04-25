@@ -1,0 +1,27 @@
+MULTI
+HMSET customer:001 first_name Jane last_name Doe
+HMSET customer:002 first_name Johm last_name Doe
+HMSET customer:003 first_name Jane last_name Smith
+HMSET customer:004 first_name Jane last_name Jones
+HMSET customer:005 first_name John last_name Jones
+EXEC
+
+MULTI
+ZADD customer_list 001 customer:001
+ZADD customer_list 002 customer:002
+ZADD customer_list 003 customer:003
+ZADD customer_list 004 customer:004
+ZADD customer_list 005 customer:005
+EXEC
+
+MULTI
+HMSET order:1001 customer_numb 002 order_date 10/10/09 order_total 250.85
+HMSET order:1002 customer_numb 002 order_date 2/21/10 order_total 250.85
+HMSET order:1003 customer_numb 003 order_date 11/15/09 order_total 250.85
+HMSET order:1004 customer_numb 004 order_date 11/22/09 order_total 250.85
+HMSET order:1005 customer_numb 004 order_date 12/15/09 order_total 250.85
+HMSET order:1006 customer_numb 006 order_date 11/22/09 order_total 250.85
+HMSET order:1007 customer_numb 006 order_date 10/8/09 order_total 250.85
+HMSET order:1008 customer_numb 006 order_date 12/29/09 order_total 250.85
+
+EXEC
