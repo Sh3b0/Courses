@@ -32,33 +32,33 @@ This meta-repository contains:
 
 ## Coursework:
 
-- [Control Theory](./Control%20Theory): tasks on LTI systems simulation and stabilization.
+- [Control Theory](./Coursework/Control%20Theory): tasks on LTI systems simulation and stabilization.
 
-- [Data Structures and Algorithms](./Data%20Structures%20and%20Algorithms): assignments and implementations for popular algorithms and data structure.
+- [Data Structures and Algorithms](./Coursework/Data%20Structures%20and%20Algorithms): assignments and implementations for popular algorithms and data structure.
 
-- [Database Systems](./Database%20Systems): tasks on database queries, indexes, functions, views, triggers, and transactions.
+- [Database Systems](./Coursework/Database%20Systems): tasks on database queries, indexes, functions, views, triggers, and transactions.
 
-- [Differential Equations](./Differential%20Equations): GUI application for graphing numerical solutions to a differential equation.
+- [Differential Equations](./Coursework/Differential%20Equations): GUI application for graphing numerical solutions to a differential equation.
 
-- [Distributed Systems and Network Programming](./Distributed%20Systems%20and%20Network%20Programming): tasks on socket programming, RPC, distributed hash tables, and consensus algorithms.
+- [Distributed Systems and Network Programming](./Coursework/Distributed%20Systems%20and%20Network%20Programming): tasks on socket programming, RPC, distributed hash tables, and consensus algorithms.
 
-- [Information Retrieval](./Information%20Retrieval): assignments on web crawling, assessing IR system quality, geospatial index, nearest neighbors search, and query improvement.
+- [Information Retrieval](./Coursework/Information%20Retrieval): assignments on web crawling, assessing IR system quality, geospatial index, nearest neighbors search, and query improvement.
 
-- [Information Security](./Information%20Security): labs on cryptography, steganography, DB/OS/Software/Network security, malware analysis, and digital forensics.
+- [Information Security](./Coursework/Information%20Security): labs on cryptography, steganography, DB/OS/Software/Network security, malware analysis, and digital forensics.
 
-- [Introduction to Programming](./Introduction%20to%20Programming): C++ programming tasks on OOP, exceptions, templates and some linear algebra tasks.
+- [Introduction to Programming](./Coursework/Introduction%20to%20Programming): C++ programming tasks on OOP, exceptions, templates and some linear algebra tasks.
 
-- [Machine Learning](./Machine%20Learning): practical and theoretical tasks on regression, SVM, clustering, ensemble learning, and CNN.
+- [Machine Learning](./Coursework/Machine%20Learning): practical and theoretical tasks on regression, SVM, clustering, ensemble learning, and CNN.
 
-- [Operating Systems](./Operating%20Systems): C programming tasks on processes, system calls, memory management, file system, and I/O.
+- [Operating Systems](./Coursework/Operating%20Systems): C programming tasks on processes, system calls, memory management, file system, and I/O.
 
-- [Programming Paradigms](./Programming%20Paradigms): functional and logic programming tasks in Haskell, Racket, and Prolog.
+- [Programming Paradigms](./Coursework/Programming%20Paradigms): functional and logic programming tasks in Haskell, Racket, and Prolog.
 
-- [Software Systems Design](./Software%20Systems%20Design): assignments on design patterns.
+- [Software Systems Design](./Coursework/Software%20Systems%20Design): assignments on design patterns.
 
-- [System and Network Administration](./System%20and%20Network%20Administration): practical labs on shell scripting, network and database administration, cron jobs, firewalls, nginx, ssh, ssl, and docker.
+- [System and Network Administration](./Coursework/System%20and%20Network%20Administration): practical labs on shell scripting, network and database administration, cron jobs, firewalls, nginx, ssh, ssl, and docker.
 
-- [Theoretical Computer Science](./Theoretical%20Computer%20Science): finite state machine validator and converter to regex, lambda expression checker and reducer, and Turing machine simulator.
+- [Theoretical Computer Science](./Coursework/Theoretical%20Computer%20Science): finite state machine validator and converter to regex, lambda expression checker and reducer, and Turing machine simulator.
 
   
 
