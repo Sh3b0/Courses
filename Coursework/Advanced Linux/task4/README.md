@@ -24,7 +24,9 @@
 
   ![image-20220510201129008](../images/image-20220510201129008.png)
 
-- Plug in USB and check kernel logs: `sudo dmesg -w`![image-20220510201833437](../images/image-20220510201833437.png)
+- Plug in USB and check kernel logs: `sudo dmesg -w`
+
+  ![image-20220510201833437](../images/image-20220510201833437.png)
 
 - `mydev` is now available for usage.
 
