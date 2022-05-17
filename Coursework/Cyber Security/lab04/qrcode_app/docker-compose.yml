@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./app
+    volumes:
+      - ./app/db.sqlite:/app/db.sqlite
+      - ./app/static:/app/static
+  nginx:
+    build: ./nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app/db.sqlite:/app/db.sqlite
+      - ./app/static:/app/static
+    depends_on:
+      - app

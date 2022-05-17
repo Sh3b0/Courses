@@ -4,7 +4,7 @@ This meta-repository contains:
 
 - Links to [projects](#Projects) I created or contributed to for university courses
 - [Coursework](#Coursework): tasks, deliverables and assignments.
-- [Notes](./[Notes]): PDF documents summarizing lectures or certain topics.
+- [Notes](./Notes): PDF documents summarizing lectures or certain topics.
 
 
 
@@ -13,6 +13,8 @@ This meta-repository contains:
 - [sh3b0/cplus](https://github.com/Sh3B0/cplus): compiler for a toy imperative language.
 
 - [sh3b0/pft](https://github.com/Sh3B0/pft): web application for real-time file transfer using WebRTC.
+
+- [sh3b0/PongMe](https://github.com/sh3b0/PongMe): multiplayer pong game using socket.io
 
 - [sh3b0/PrologSearch](https://github.com/Sh3B0/PrologSearch): implementing backtracking search and A* in Prolog. 
 
@@ -24,15 +26,23 @@ This meta-repository contains:
 
 - [desmigor/load_balancing_nginx](https://github.com/desmigor/load_balancing_nginx): using nginx as a reverse proxy for load balancing.
 
+- [sh3b0/emka](https://github.com/sh3b0/emka): deploying a web application (Express + MongoDB) with Kubernetes on Azure.
+
+- [sh3b0/qrcode_app](https://github.com/sh3b0/qrcode_app): webapp (Flask + Gunicorn + SQLite) for generating QR code from raw text.
+
 - [sh3b0/LAL](./LAL): C++ library for matrix computations.
 
-- [sh3b0/automatic-timetable-creation](https://github/sh3b0/automatic-timetable-creation): generating Excel timetable for university schedule.
+- [sh3b0/automatic-timetable-creation](https://github.com/sh3b0/automatic-timetable-creation): generating Excel timetable for university schedule.
 
   
 
 ## Coursework:
 
+- [Advanced Linux](./Coursework/Advanced%20Linux): tasks on kernel booting, kernel module programming, multithreading, USB drivers and userspace processes.
+
 - [Control Theory](./Coursework/Control%20Theory): tasks on LTI systems simulation and stabilization.
+
+- [Cyber Security](./Coursework/Cyber%20Security): labs on security compliance, threat modeling, web and software security.
 
 - [Data Structures and Algorithms](./Coursework/Data%20Structures%20and%20Algorithms): assignments and implementations for popular algorithms and data structure.
 

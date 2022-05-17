@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>QR Code Generator</title>
+</head>
+
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"></svg>
+            <span class="fs-4">QR Code Generator</span>
+        </a>
+    </header>
+    <form action="{{ url_for('generate_qr') }}" method="post">
+        <div class="input-group mb-3 d-flex justify-content-center">
+            <label>
+                <input type="text" name="data" class="form-control" placeholder="Data">
+            </label>
+            <input type="submit" class="btn btn-primary">
+        </div>
+    </form>
+    <div class="d-flex justify-content-center" >
+        <img class="rounded float-start img-fluid" style="height: 200px; width: 200px;" src="{{ img_path }}" alt="placeholder">
+    </div>
+</div>
+
+</body>
+</html>
