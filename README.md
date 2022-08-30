@@ -12,6 +12,8 @@ This meta-repository contains:
 
 - [sh3b0/cplus](https://github.com/Sh3B0/cplus): compiler for a toy imperative language.
 
+- [sh3b0/DevOps](https://github.com/Sh3B0/DevOps): DevOps training repository
+
 - [sh3b0/pft](https://github.com/Sh3B0/pft): web application for real-time file transfer using WebRTC.
 
 - [sh3b0/PongMe](https://github.com/sh3b0/PongMe): multiplayer pong game using socket.io
