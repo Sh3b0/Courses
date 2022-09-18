@@ -62,6 +62,8 @@ This meta-repository contains:
 
 - [Machine Learning](./Coursework/Machine%20Learning): practical and theoretical tasks on regression, SVM, clustering, ensemble learning, and CNN.
 
+- [Mobile Development with Flutter](./Coursework/Mobile%20Development%20with%20Flutter): assignments on Flutter and Dart.
+
 - [Operating Systems](./Coursework/Operating%20Systems): C programming tasks on processes, system calls, memory management, file system, and I/O.
 
 - [Programming Paradigms](./Coursework/Programming%20Paradigms): functional and logic programming tasks in Haskell, Racket, and Prolog.
