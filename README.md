@@ -14,7 +14,7 @@ This meta-repository contains:
 
 - [sh3b0/DevOps](https://github.com/Sh3B0/DevOps): DevOps training repository
 
-- [sh3b0/pft](https://github.com/Sh3B0/pft): web application for real-time file transfer using WebRTC.
+- [sh3b0/realtime-web](https://github.com/Sh3B0/realtime-web): comparing WebSocket, WebRTC, and WebTransport under packet loss.
 
 - [sh3b0/PongMe](https://github.com/sh3b0/PongMe): multiplayer pong game using socket.io
 
@@ -25,6 +25,10 @@ This meta-repository contains:
 - [sh3b0/viRz](https://github.com/sh3b0/viRz): algorithm visualizer for DFS, BFS, Kruskal MST, Prim MST, and Convex hull.
 
 - [markovvn1/bof](https://gitlab.com/markovvn1-iu/f22-ccmdwf/bof): an android app for marking attendance using QR code.
+
+- [sh3b0/CGGD-F22](https://github.com/sh3b0/CGGD-F22): Computer Graphics in Game Development (CGGD) labs on rasterization, raytracing, and DirectX.
+
+- [sh3b0/pft](https://github.com/Sh3B0/pft): web application for real-time file transfer using WebRTC.
 
 - [sh3b0/FPGA-Snake](https://github.com/Sh3B0/FPGA-Snake): 7-segment snake using a microcontroller.
 
