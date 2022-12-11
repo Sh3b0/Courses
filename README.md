@@ -52,7 +52,7 @@ This meta-repository contains:
 
 - [Cyber Security](./Coursework/Cyber%20Security): labs on security compliance, threat modeling, web and software security.
 
-- [Data Structures and Algorithms](./Coursework/Data%20Structures%20and%20Algorithms): assignments and implementations for popular algorithms and data structure.
+- [Data Structures and Algorithms](./Coursework/Data%20Structures%20and%20Algorithms): assignments and implementations for popular algorithms and data structures.
 
 - [Database Systems](./Coursework/Database%20Systems): tasks on database queries, indexes, functions, views, triggers, and transactions.
 
