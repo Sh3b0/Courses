@@ -24,6 +24,8 @@ This meta-repository contains:
 
 - [sh3b0/viRz](https://github.com/sh3b0/viRz): algorithm visualizer for DFS, BFS, Kruskal MST, Prim MST, and Convex hull.
 
+- [markovvn1/bof](https://gitlab.com/markovvn1-iu/f22-ccmdwf/bof): an android app for marking attendance using QR code.
+
 - [sh3b0/FPGA-Snake](https://github.com/Sh3B0/FPGA-Snake): 7-segment snake using a microcontroller.
 
 - [desmigor/load_balancing_nginx](https://github.com/desmigor/load_balancing_nginx): using nginx as a reverse proxy for load balancing.
@@ -49,6 +51,8 @@ This meta-repository contains:
 - [Data Structures and Algorithms](./Coursework/Data%20Structures%20and%20Algorithms): assignments and implementations for popular algorithms and data structure.
 
 - [Database Systems](./Coursework/Database%20Systems): tasks on database queries, indexes, functions, views, triggers, and transactions.
+
+- [DevSecOps](./Coursework/DevSecOps): practical tasks on integrating security tools into CI pipelines.
 
 - [Differential Equations](./Coursework/Differential%20Equations): GUI application for graphing numerical solutions to a differential equation.
 

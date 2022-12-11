@@ -1,0 +1,45 @@
+version: '3.6'
+
+services:
+  gitlab:
+    image: 'gitlab/gitlab-ee:latest'
+    container_name: gitlab
+    restart: always
+    hostname: 'gitlab'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://gitlab'
+    ports:
+      - '80:80'
+      - '443:443'
+      - '22:22'
+    volumes:
+      - '/srv/gitlab/config:/etc/gitlab'
+      - '/srv/gitlab/logs:/var/log/gitlab'
+      - '/srv/gitlab/data:/var/opt/gitlab'
+    shm_size: '256m'
+
+  runner:
+    image: gitlab/gitlab-runner:latest
+    container_name: runner
+    restart: always
+    depends_on: [ "gitlab" ]
+    volumes:
+      - 'gitlab-runner-config:/etc/gitlab-runner'
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  sonarqube:
+    image: sonarqube:9.6.1-community
+    container_name: sonarqube
+    ports:
+      - '9000:9000'
+    volumes:
+      - "sonarqube_data:/opt/sonarqube/data"
+      - "sonarqube_extensions:/opt/sonarqube/extensions"
+      - "sonarqube_logs:/opt/sonarqube/logs"
+
+volumes:
+  gitlab-runner-config:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:

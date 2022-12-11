@@ -1,0 +1,42 @@
+stages:
+  - sonarqube_scan
+  - zap_scan
+  - faraday_upload
+
+sonarqube_scan:
+  stage: sonarqube_scan
+  variables:
+    PROJECT_KEY: milkshakers_project_AYTzrjUWS5tza9tlWPZs
+  script:
+    - |
+      docker run --network lab7_default --rm \
+      -e SONAR_HOST_URL="http://sonarqube:9000" \
+      -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=${PROJECT_KEY} -Dsonar.qualitygate.wait=true" \
+      -e SONAR_LOGIN=${SONAR_TOKEN} \
+      -v "$(pwd)/:/usr/src" sonarsource/sonar-scanner-cli
+    - |
+      curl -u "${SONAR_TOKEN}:" \
+      http://sonarqube:9000/api/issues/search?componentKeys=${PROJECT_KEY} \
+      > /tmp/sonar_report.json
+
+zap_scan:
+  stage: zap_scan
+  script:
+    - |
+      docker run --rm -t --network lab7_default -v /tmp:/zap/wrk \
+      owasp/zap2docker-weekly zap-baseline.py -t http://app:3000 \
+      -I -s -x /tmp/zap_report.xml
+
+faraday_upload:
+  stage: faraday_upload
+  needs:
+    - sonarqube_scan
+    - zap_scan
+  script:
+    - docker build faraday-uploader -t faraday-uploader
+    - |
+      docker run --rm --network lab7_default -v /tmp:/tmp \
+      -e HOST=http://$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' faraday):5985 \
+      -e USERNAME=faraday -e PASSWORD=faraday \
+      -e WORKSPACE=juice-shop-$CI_COMMIT_SHORT_SHA \
+      -e FILES="/tmp/zap_report.xml /tmp/sonar_report.json" faraday-uploader

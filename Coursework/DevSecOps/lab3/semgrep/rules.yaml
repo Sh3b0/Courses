@@ -1,0 +1,12 @@
+rules:
+  - id: cookie_secure_flag
+    pattern: $VAR.set_cookie(...,secure=False,...)
+    message: Use secure=True instead of secure=False
+    languages: [python]
+    severity: WARNING
+
+  - id: token_verify_flag
+    pattern: $VAR.decode(...,verify=False,...)
+    message: Use verify=True instead of verify=False
+    languages: [python]
+    severity: WARNING
