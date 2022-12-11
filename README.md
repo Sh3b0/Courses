@@ -26,7 +26,7 @@ This meta-repository contains:
 
 - [markovvn1/bof](https://gitlab.com/markovvn1-iu/f22-ccmdwf/bof): an android app for marking attendance using QR code.
 
-- [sh3b0/CGGD-F22](https://github.com/sh3b0/CGGD-F22): Computer Graphics in Game Development (CGGD) labs on rasterization, raytracing, and DirectX.
+- [sh3b0/CGGD-F22](https://github.com/sh3b0/CGGD-F22): tasks on rasterization, raytracing, and DirectX.
 
 - [sh3b0/pft](https://github.com/Sh3B0/pft): web application for real-time file transfer using WebRTC.
 
