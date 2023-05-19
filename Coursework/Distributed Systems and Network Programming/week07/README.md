@@ -1,1 +1,0 @@
-Improving the implementation of [Chord](https://en.wikipedia.org/wiki/Chord_(peer-to-peer)) protocol from week06

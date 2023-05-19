@@ -1,22 +1,24 @@
 # Courses
 
-This meta-repository contains:
+> For [Innopolis University](https://innopolis.university/) students, access more materials through the [invitation link](https://innopolis-my.sharepoint.com/:f:/g/personal/a_shaaban_innopolis_university/Er9LQEUqk8pLnpRQG3RI5aIBFMM_0hKOOll_XrOB615TNw?e=baqjQj).
+
+This repository contains:
 
 - Links to [projects](#Projects) I created or contributed to for university courses
-- [Coursework](#Coursework): tasks, deliverables and assignments.
-- [Notes](./Notes): PDF documents summarizing lectures or certain topics.
-
-
+- [Coursework](#Coursework): tasks, deliverables and assignments
+- [Notes](./Notes): PDF documents summarizing lectures or certain topics
 
 ## **Projects:**
 
-- [sh3b0/cplus](https://github.com/Sh3B0/cplus): compiler for a toy imperative language.
+- [sh3b0/cplus](https://github.com/Sh3B0/cplus): compiler for an imperative toy programming language.
 
-- [sh3b0/DevOps](https://github.com/Sh3B0/DevOps): DevOps training repository
+- [sh3b0/DevOps](https://github.com/Sh3B0/DevOps): DevOps training repository.
 
 - [sh3b0/realtime-web](https://github.com/Sh3B0/realtime-web): comparing WebSocket, WebRTC, and WebTransport under packet loss.
 
-- [sh3b0/PongMe](https://github.com/sh3b0/PongMe): multiplayer pong game using socket.io
+- [sh3b0/PongMe](https://github.com/sh3b0/PongMe): multiplayer pong game using socket.io.
+
+- [NearByrds/NearBirds](https://github.com/NearByrds/NearBirds): web application to discover birds in your region and listen to their chirping.
 
 - [sh3b0/PrologSearch](https://github.com/Sh3B0/PrologSearch): implementing backtracking search and A* in Prolog. 
 
@@ -38,11 +40,7 @@ This meta-repository contains:
 
 - [sh3b0/qrcode_app](https://github.com/sh3b0/qrcode_app): webapp (Flask + Gunicorn + SQLite) for generating QR code from raw text.
 
-- [sh3b0/LAL](./LAL): C++ library for matrix computations.
-
 - [sh3b0/automatic-timetable-creation](https://github.com/sh3b0/automatic-timetable-creation): generating Excel timetable for university schedule.
-
-  
 
 ## Coursework:
 
@@ -68,6 +66,8 @@ This meta-repository contains:
 
 - [Introduction to Programming](./Coursework/Introduction%20to%20Programming): C++ programming tasks on OOP, exceptions, templates and some linear algebra tasks.
 
+- [Linear Algebra](./Coursework/Linear%20Algebra): implementing some matrix computations in C++
+
 - [Machine Learning](./Coursework/Machine%20Learning): practical and theoretical tasks on regression, SVM, clustering, ensemble learning, and CNN.
 
 - [Mobile Development with Flutter](./Coursework/Mobile%20Development%20with%20Flutter): assignments on Flutter and Dart.
@@ -78,11 +78,11 @@ This meta-repository contains:
 
 - [Software Systems Design](./Coursework/Software%20Systems%20Design): assignments on design patterns.
 
+- [Software Quality and Reliability](./Coursework/Software%20Quality%20and%20Reliability): practical lab tasks on software testing and quality gates with GitLab CI.
+
 - [System and Network Administration](./Coursework/System%20and%20Network%20Administration): practical labs on shell scripting, network and database administration, cron jobs, firewalls, nginx, ssh, ssl, and docker.
 
 - [Theoretical Computer Science](./Coursework/Theoretical%20Computer%20Science): finite state machine validator and converter to regex, lambda expression checker and reducer, and Turing machine simulator.
-
-  
 
 ## License
 

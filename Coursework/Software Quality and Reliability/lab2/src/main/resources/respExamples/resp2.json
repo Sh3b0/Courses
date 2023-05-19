@@ -1,0 +1,2065 @@
+{
+  "website": "united",
+  "from": "LAX",
+  "to": "MIA",
+  "departDate": "06, Jul 2020",
+  "returnDate": "14, Jul 2020",
+  "flights": [
+    {
+      "departTime": "07/06/2020 00:27",
+      "arrivalTime": "07/06/2020 08:56",
+      "ticketNumber": "30",
+      "flightCode": "1668",
+      "plane": "Boeing 757-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 00:45",
+      "arrivalTime": "07/06/2020 06:53",
+      "ticketNumber": "30",
+      "flightCode": "1545",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 00:55",
+      "arrivalTime": "07/06/2020 06:12",
+      "ticketNumber": "30",
+      "flightCode": "1766",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 05:30",
+      "arrivalTime": "07/06/2020 10:57",
+      "ticketNumber": "30",
+      "flightCode": "619",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:15",
+      "arrivalTime": "07/06/2020 15:54",
+      "ticketNumber": "30",
+      "flightCode": "2352",
+      "plane": "Boeing 757-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 16:56",
+      "ticketNumber": "30",
+      "flightCode": "1584",
+      "plane": "Boeing 757-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 09:15",
+      "arrivalTime": "07/06/2020 17:45",
+      "ticketNumber": "35",
+      "flightCode": "2304",
+      "plane": "Boeing 787-10 Dreamliner",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 09:15",
+      "arrivalTime": "07/06/2020 17:45",
+      "ticketNumber": "35",
+      "flightCode": "2304",
+      "plane": "Boeing 787-10 Dreamliner",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 09:59",
+      "arrivalTime": "07/06/2020 15:26",
+      "ticketNumber": "30",
+      "flightCode": "504",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 10:15",
+      "arrivalTime": "07/06/2020 18:56",
+      "ticketNumber": "30",
+      "flightCode": "642",
+      "plane": "Boeing 757-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 12:02",
+      "arrivalTime": "07/06/2020 17:25",
+      "ticketNumber": "30",
+      "flightCode": "1535",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 12:02",
+      "arrivalTime": "07/06/2020 17:25",
+      "ticketNumber": "30",
+      "flightCode": "1535",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 12:08",
+      "arrivalTime": "07/06/2020 17:35",
+      "ticketNumber": "30",
+      "flightCode": "1693",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 12:08",
+      "arrivalTime": "07/06/2020 17:35",
+      "ticketNumber": "30",
+      "flightCode": "1693",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 13:33",
+      "arrivalTime": "07/06/2020 19:00",
+      "ticketNumber": "30",
+      "flightCode": "1520",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:15",
+      "arrivalTime": "07/07/2020 05:35",
+      "ticketNumber": "35",
+      "flightCode": "1882",
+      "plane": "Boeing 787-10 Dreamliner",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:00",
+      "arrivalTime": "07/07/2020 05:10",
+      "ticketNumber": "30",
+      "flightCode": "2291",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:12",
+      "arrivalTime": "07/07/2020 05:18",
+      "ticketNumber": "30",
+      "flightCode": "1724",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:59",
+      "arrivalTime": "07/07/2020 05:22",
+      "ticketNumber": "30",
+      "flightCode": "2181",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:15",
+      "arrivalTime": "07/07/2020 08:44",
+      "ticketNumber": "30",
+      "flightCode": "1668",
+      "plane": "Boeing 757-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:45",
+      "arrivalTime": "07/07/2020 06:53",
+      "ticketNumber": "30",
+      "flightCode": "1545",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:55",
+      "arrivalTime": "07/07/2020 06:12",
+      "ticketNumber": "30",
+      "flightCode": "1766",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 00:45",
+      "arrivalTime": "07/06/2020 06:53",
+      "ticketNumber": "30",
+      "flightCode": "1545",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 00:45",
+      "arrivalTime": "07/06/2020 06:53",
+      "ticketNumber": "30",
+      "flightCode": "1545",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 00:55",
+      "arrivalTime": "07/06/2020 06:12",
+      "ticketNumber": "30",
+      "flightCode": "1766",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 05:02",
+      "arrivalTime": "07/06/2020 08:31",
+      "ticketNumber": "30",
+      "flightCode": "371",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 06:30",
+      "arrivalTime": "07/06/2020 08:00",
+      "ticketNumber": "30",
+      "flightCode": "471",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 06:30",
+      "arrivalTime": "07/06/2020 08:00",
+      "ticketNumber": "30",
+      "flightCode": "471",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 06:30",
+      "arrivalTime": "07/06/2020 08:00",
+      "ticketNumber": "30",
+      "flightCode": "471",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 06:30",
+      "arrivalTime": "07/06/2020 08:00",
+      "ticketNumber": "30",
+      "flightCode": "471",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 06:30",
+      "arrivalTime": "07/06/2020 08:00",
+      "ticketNumber": "30",
+      "flightCode": "471",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:00",
+      "arrivalTime": "07/06/2020 13:12",
+      "ticketNumber": "30",
+      "flightCode": "2265",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:00",
+      "arrivalTime": "07/06/2020 13:12",
+      "ticketNumber": "30",
+      "flightCode": "2265",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:00",
+      "arrivalTime": "07/06/2020 13:12",
+      "ticketNumber": "30",
+      "flightCode": "2265",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:00",
+      "arrivalTime": "07/06/2020 13:12",
+      "ticketNumber": "30",
+      "flightCode": "2265",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:00",
+      "arrivalTime": "07/06/2020 13:12",
+      "ticketNumber": "30",
+      "flightCode": "2265",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:05",
+      "arrivalTime": "07/06/2020 10:34",
+      "ticketNumber": "30",
+      "flightCode": "1802",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:05",
+      "arrivalTime": "07/06/2020 10:34",
+      "ticketNumber": "30",
+      "flightCode": "1802",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:05",
+      "arrivalTime": "07/06/2020 10:34",
+      "ticketNumber": "30",
+      "flightCode": "1802",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:05",
+      "arrivalTime": "07/06/2020 10:34",
+      "ticketNumber": "30",
+      "flightCode": "1802",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:05",
+      "arrivalTime": "07/06/2020 10:34",
+      "ticketNumber": "30",
+      "flightCode": "1802",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 07:05",
+      "arrivalTime": "07/06/2020 10:34",
+      "ticketNumber": "30",
+      "flightCode": "1802",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:00",
+      "arrivalTime": "07/06/2020 09:42",
+      "ticketNumber": "30",
+      "flightCode": "1919",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:00",
+      "arrivalTime": "07/06/2020 09:42",
+      "ticketNumber": "30",
+      "flightCode": "1919",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:00",
+      "arrivalTime": "07/06/2020 09:42",
+      "ticketNumber": "30",
+      "flightCode": "1919",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:00",
+      "arrivalTime": "07/06/2020 09:42",
+      "ticketNumber": "30",
+      "flightCode": "1919",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:51",
+      "ticketNumber": "30",
+      "flightCode": "5411",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:17",
+      "ticketNumber": "19",
+      "flightCode": "5675",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:17",
+      "ticketNumber": "19",
+      "flightCode": "5675",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:36",
+      "ticketNumber": "30",
+      "flightCode": "5779",
+      "plane": "Canadair Regional Jet 700",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:51",
+      "ticketNumber": "30",
+      "flightCode": "5411",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:17",
+      "ticketNumber": "19",
+      "flightCode": "5675",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 14:35",
+      "ticketNumber": "30",
+      "flightCode": "2039",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:36",
+      "ticketNumber": "30",
+      "flightCode": "5779",
+      "plane": "Canadair Regional Jet 700",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 14:35",
+      "ticketNumber": "30",
+      "flightCode": "2039",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "1946",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:15",
+      "arrivalTime": "07/06/2020 09:51",
+      "ticketNumber": "30",
+      "flightCode": "5411",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:20",
+      "arrivalTime": "07/06/2020 11:59",
+      "ticketNumber": "30",
+      "flightCode": "667",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:22",
+      "arrivalTime": "07/06/2020 11:25",
+      "ticketNumber": "30",
+      "flightCode": "5546",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:25",
+      "arrivalTime": "07/06/2020 16:24",
+      "ticketNumber": "30",
+      "flightCode": "1521",
+      "plane": "Boeing 777-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:37",
+      "arrivalTime": "07/06/2020 12:05",
+      "ticketNumber": "30",
+      "flightCode": "2293",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:37",
+      "arrivalTime": "07/06/2020 12:05",
+      "ticketNumber": "30",
+      "flightCode": "2293",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:37",
+      "arrivalTime": "07/06/2020 12:05",
+      "ticketNumber": "30",
+      "flightCode": "2293",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:37",
+      "arrivalTime": "07/06/2020 12:05",
+      "ticketNumber": "30",
+      "flightCode": "2293",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 08:44",
+      "arrivalTime": "07/06/2020 17:28",
+      "ticketNumber": "30",
+      "flightCode": "1161",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 09:06",
+      "arrivalTime": "07/06/2020 12:23",
+      "ticketNumber": "19",
+      "flightCode": "5851",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 09:30",
+      "arrivalTime": "07/06/2020 11:12",
+      "ticketNumber": "30",
+      "flightCode": "242",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 09:44",
+      "arrivalTime": "07/06/2020 12:48",
+      "ticketNumber": "30",
+      "flightCode": "5634",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 10:00",
+      "arrivalTime": "07/06/2020 15:12",
+      "ticketNumber": "30",
+      "flightCode": "5894",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 10:00",
+      "arrivalTime": "07/06/2020 15:12",
+      "ticketNumber": "30",
+      "flightCode": "5894",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 10:00",
+      "arrivalTime": "07/06/2020 15:12",
+      "ticketNumber": "30",
+      "flightCode": "5894",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 10:20",
+      "arrivalTime": "07/06/2020 11:57",
+      "ticketNumber": "19",
+      "flightCode": "5649",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 11:00",
+      "arrivalTime": "07/06/2020 16:12",
+      "ticketNumber": "30",
+      "flightCode": "5553",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 15:35",
+      "arrivalTime": "07/06/2020 18:26",
+      "ticketNumber": "30",
+      "flightCode": "5475",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 16:27",
+      "arrivalTime": "07/06/2020 17:25",
+      "ticketNumber": "19",
+      "flightCode": "5944",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:05",
+      "arrivalTime": "07/06/2020 21:35",
+      "ticketNumber": "30",
+      "flightCode": "1771",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:20",
+      "arrivalTime": "07/06/2020 19:52",
+      "ticketNumber": "30",
+      "flightCode": "5512",
+      "plane": "Canadair Regional Jet 700",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:30",
+      "arrivalTime": "07/06/2020 20:00",
+      "ticketNumber": "30",
+      "flightCode": "481",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:30",
+      "arrivalTime": "07/06/2020 20:00",
+      "ticketNumber": "30",
+      "flightCode": "481",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:30",
+      "arrivalTime": "07/06/2020 20:00",
+      "ticketNumber": "30",
+      "flightCode": "481",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:30",
+      "arrivalTime": "07/06/2020 20:00",
+      "ticketNumber": "30",
+      "flightCode": "481",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:36",
+      "arrivalTime": "07/06/2020 19:44",
+      "ticketNumber": "19",
+      "flightCode": "5591",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 18:52",
+      "arrivalTime": "07/06/2020 21:58",
+      "ticketNumber": "30",
+      "flightCode": "5267",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:30",
+      "arrivalTime": "07/06/2020 21:00",
+      "ticketNumber": "30",
+      "flightCode": "1666",
+      "plane": "Airbus A319",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:50",
+      "arrivalTime": "07/06/2020 21:07",
+      "ticketNumber": "30",
+      "flightCode": "2048",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:50",
+      "arrivalTime": "07/06/2020 21:07",
+      "ticketNumber": "30",
+      "flightCode": "2048",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:50",
+      "arrivalTime": "07/06/2020 22:09",
+      "ticketNumber": "19",
+      "flightCode": "5770",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:50",
+      "arrivalTime": "07/06/2020 22:08",
+      "ticketNumber": "30",
+      "flightCode": "5614",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:52",
+      "arrivalTime": "07/06/2020 21:25",
+      "ticketNumber": "19",
+      "flightCode": "5786",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 19:52",
+      "arrivalTime": "07/06/2020 21:25",
+      "ticketNumber": "19",
+      "flightCode": "5786",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 20:48",
+      "arrivalTime": "07/06/2020 22:01",
+      "ticketNumber": "19",
+      "flightCode": "5419",
+      "plane": "Canadair Regional Jet",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:15",
+      "arrivalTime": "07/06/2020 22:45",
+      "ticketNumber": "30",
+      "flightCode": "2201",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:15",
+      "arrivalTime": "07/06/2020 22:45",
+      "ticketNumber": "30",
+      "flightCode": "2201",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:15",
+      "arrivalTime": "07/06/2020 22:45",
+      "ticketNumber": "30",
+      "flightCode": "2201",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:15",
+      "arrivalTime": "07/06/2020 22:45",
+      "ticketNumber": "30",
+      "flightCode": "2201",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:23",
+      "arrivalTime": "07/06/2020 22:55",
+      "ticketNumber": "30",
+      "flightCode": "5656",
+      "plane": "Embraer 175",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:25",
+      "arrivalTime": "07/06/2020 22:42",
+      "ticketNumber": "30",
+      "flightCode": "2087",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:25",
+      "arrivalTime": "07/06/2020 22:42",
+      "ticketNumber": "30",
+      "flightCode": "2087",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 21:40",
+      "arrivalTime": "07/07/2020 05:42",
+      "ticketNumber": "30",
+      "flightCode": "1221",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:35",
+      "arrivalTime": "07/06/2020 23:55",
+      "ticketNumber": "30",
+      "flightCode": "5229",
+      "plane": "Canadair Regional Jet 700",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:40",
+      "arrivalTime": "07/07/2020 06:09",
+      "ticketNumber": "30",
+      "flightCode": "1786",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:40",
+      "arrivalTime": "07/07/2020 06:09",
+      "ticketNumber": "30",
+      "flightCode": "1786",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:40",
+      "arrivalTime": "07/07/2020 06:09",
+      "ticketNumber": "30",
+      "flightCode": "1786",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },mm
+    {
+      "departTime": "07/06/2020 22:40",
+      "arrivalTime": "07/07/2020 06:09",
+      "ticketNumber": "30",
+      "flightCode": "1786",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:40",
+      "arrivalTime": "07/07/2020 06:09",
+      "ticketNumber": "30",
+      "flightCode": "1786",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:45",
+      "arrivalTime": "07/07/2020 06:51",
+      "ticketNumber": "30",
+      "flightCode": "1701",
+      "plane": "Airbus A320",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:50",
+      "arrivalTime": "07/07/2020 06:48",
+      "ticketNumber": "30",
+      "flightCode": "584",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:50",
+      "arrivalTime": "07/07/2020 00:24",
+      "ticketNumber": "30",
+      "flightCode": "2381",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:50",
+      "arrivalTime": "07/07/2020 06:51",
+      "ticketNumber": "30",
+      "flightCode": "499",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:50",
+      "arrivalTime": "07/07/2020 06:48",
+      "ticketNumber": "30",
+      "flightCode": "584",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 22:55",
+      "arrivalTime": "07/07/2020 07:33",
+      "ticketNumber": "30",
+      "flightCode": "2402",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:00",
+      "arrivalTime": "07/07/2020 05:10",
+      "ticketNumber": "30",
+      "flightCode": "2291",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:00",
+      "arrivalTime": "07/07/2020 05:10",
+      "ticketNumber": "30",
+      "flightCode": "2291",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:00",
+      "arrivalTime": "07/07/2020 05:10",
+      "ticketNumber": "30",
+      "flightCode": "2291",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:11",
+      "arrivalTime": "07/07/2020 07:12",
+      "ticketNumber": "30",
+      "flightCode": "411",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:11",
+      "arrivalTime": "07/07/2020 07:12",
+      "ticketNumber": "30",
+      "flightCode": "411",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:12",
+      "arrivalTime": "07/07/2020 05:18",
+      "ticketNumber": "30",
+      "flightCode": "1724",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:12",
+      "arrivalTime": "07/07/2020 05:18",
+      "ticketNumber": "30",
+      "flightCode": "1724",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:12",
+      "arrivalTime": "07/07/2020 05:18",
+      "ticketNumber": "30",
+      "flightCode": "1724",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:12",
+      "arrivalTime": "07/07/2020 05:18",
+      "ticketNumber": "30",
+      "flightCode": "1724",
+      "plane": "Boeing 757-300",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:59",
+      "arrivalTime": "07/07/2020 05:22",
+      "ticketNumber": "30",
+      "flightCode": "2181",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/06/2020 23:59",
+      "arrivalTime": "07/07/2020 05:22",
+      "ticketNumber": "30",
+      "flightCode": "2181",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:15",
+      "arrivalTime": "07/07/2020 08:44",
+      "ticketNumber": "30",
+      "flightCode": "1668",
+      "plane": "Boeing 757-200",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:45",
+      "arrivalTime": "07/07/2020 06:53",
+      "ticketNumber": "30",
+      "flightCode": "1545",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:45",
+      "arrivalTime": "07/07/2020 06:53",
+      "ticketNumber": "30",
+      "flightCode": "1545",
+      "plane": "Boeing 737-900",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/07/2020 00:55",
+      "arrivalTime": "07/07/2020 06:12",
+      "ticketNumber": "30",
+      "flightCode": "1766",
+      "plane": "Boeing 737-800",
+      "origin": "LAX"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 15:56",
+      "arrivalTime": "07/14/2020 18:45",
+      "ticketNumber": "30",
+      "flightCode": "1843",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 15:56",
+      "arrivalTime": "07/14/2020 18:45",
+      "ticketNumber": "30",
+      "flightCode": "1843",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 16:53",
+      "arrivalTime": "07/14/2020 19:00",
+      "ticketNumber": "30",
+      "flightCode": "6354",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 16:53",
+      "arrivalTime": "07/14/2020 19:00",
+      "ticketNumber": "30",
+      "flightCode": "6354",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 16:53",
+      "arrivalTime": "07/14/2020 19:00",
+      "ticketNumber": "30",
+      "flightCode": "6354",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 06:00",
+      "arrivalTime": "07/14/2020 08:59",
+      "ticketNumber": "30",
+      "flightCode": "1745",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:01",
+      "arrivalTime": "07/14/2020 10:00",
+      "ticketNumber": "30",
+      "flightCode": "1663",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 07:04",
+      "arrivalTime": "07/14/2020 08:54",
+      "ticketNumber": "30",
+      "flightCode": "2109",
+      "plane": "Airbus A320",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 09:05",
+      "arrivalTime": "07/14/2020 10:55",
+      "ticketNumber": "30",
+      "flightCode": "2344",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 10:38",
+      "arrivalTime": "07/14/2020 13:06",
+      "ticketNumber": "30",
+      "flightCode": "2102",
+      "plane": "Boeing 737-800",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 11:53",
+      "arrivalTime": "07/14/2020 13:40",
+      "ticketNumber": "30",
+      "flightCode": "2147",
+      "plane": "Airbus A319",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 12:58",
+      "arrivalTime": "07/14/2020 16:00",
+      "ticketNumber": "30",
+      "flightCode": "1961",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 14:52",
+      "arrivalTime": "07/14/2020 16:55",
+      "ticketNumber": "30",
+      "flightCode": "6351",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 15:56",
+      "arrivalTime": "07/14/2020 18:45",
+      "ticketNumber": "30",
+      "flightCode": "1843",
+      "plane": "Boeing 737-900",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 16:53",
+      "arrivalTime": "07/14/2020 19:00",
+      "ticketNumber": "30",
+      "flightCode": "6354",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    },
+    {
+      "departTime": "07/14/2020 16:53",
+      "arrivalTime": "07/14/2020 19:00",
+      "ticketNumber": "30",
+      "flightCode": "6354",
+      "plane": "Embraer 175",
+      "origin": "MIA"
+    }
+  ]
+}

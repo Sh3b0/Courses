@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  client:
+    build: .
+    image: raft
+    container_name: client
+    depends_on: [ node_1, node_2, node_3 ]
+    command: python3 client.py
+
+  node_1:
+    build: .
+    image: raft
+    container_name: node_1
+    command: sh -c 'python3 node*.py 1'
+
+  node_2:
+    build: .
+    image: raft
+    container_name: node_2
+    command: sh -c 'python3 node*.py 2'
+
+  node_3:
+    build: .
+    image: raft
+    container_name: node_3
+    command: sh -c 'python3 node*.py 3'

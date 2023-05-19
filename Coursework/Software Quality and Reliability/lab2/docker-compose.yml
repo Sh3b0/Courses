@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  data_validator:
+    build: ./
+
+    ports:
+      - "8080:8080"
