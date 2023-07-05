@@ -1,6 +1,6 @@
 # Courses
 
-> For [Innopolis University](https://innopolis.university/) students, access more materials through the [invitation link](https://innopolis-my.sharepoint.com/:f:/g/personal/a_shaaban_innopolis_university/Er9LQEUqk8pLnpRQG3RI5aIBFMM_0hKOOll_XrOB615TNw?e=baqjQj).
+> For [Innopolis University](https://innopolis.university/) students, access more materials through the [invitation link](https://innopolis-my.sharepoint.com/:f:/g/personal/a_shaaban_innopolis_university/Er9LQEUqk8pLnpRQG3RI5aIBZOTiWUUShZSqhDXJtQktyw?e=0aqsqz).
 
 This repository contains:
 
