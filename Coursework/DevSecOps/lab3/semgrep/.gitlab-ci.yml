@@ -1,6 +1,0 @@
-semgrep:
-  image: returntocorp/semgrep
-  script:
-    - semgrep --config rules.yaml .
-  only:
-    - main

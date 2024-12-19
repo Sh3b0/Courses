@@ -1,0 +1,108 @@
+{
+  "scan": {
+    "analyzer": {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "url": "https://gitlab.com/gitlab-org/security-products/analyzers/semgrep",
+      "vendor": {
+        "name": "GitLab"
+      },
+      "version": "5.19.0"
+    },
+    "end_time": "2024-11-10T00:10:12",
+    "scanner": {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "url": "https://github.com/returntocorp/semgrep",
+      "vendor": {
+        "name": "GitLab"
+      },
+      "version": "1.74.0"
+    },
+    "start_time": "2024-11-10T00:09:59",
+    "status": "success",
+    "type": "sast"
+  },
+  "version": "15.1.4",
+  "vulnerabilities": [
+    {
+      "category": "sast",
+      "cve": "semgrep_id:java_inject_rule-SqlInjection:48:48",
+      "description": "SQL Injection is a critical vulnerability that can lead to data or system compromise. By\ndynamically generating SQL query strings, user input may be able to influence the logic of\nthe SQL statement. This could lead to an adversary accessing information they should\nnot have access to, or in some circumstances, being able to execute OS functionality or code.\n\nReplace all dynamically generated SQL queries with parameterized queries. In situations where\ndynamic queries must be created, never use direct user input, but instead use a map or\ndictionary of valid values and resolve them using a user-supplied key.\n\nFor example, some database drivers do not allow parameterized queries for `>` or `<` comparison\noperators. In these cases, do not use a user supplied `>` or `<` value, but rather have the\nuser\nsupply a `gt` or `lt` value. The alphabetical values are then used to look up the `>` and `<`\nvalues to be used in the construction of the dynamic query. The same goes for other queries\nwhere\ncolumn or table names are required but cannot be parameterized.\n\nExample using `PreparedStatement` queries:\n```\n// Some userInput\nString userInput = \"someUserInput\";\n// Your connection string\nString url = \"...\";\n// Get a connection from the DB via the DriverManager\nConnection conn = DriverManager.getConnection(url);\n// Create a prepared statement\nPreparedStatement st = conn.prepareStatement(\"SELECT name FROM table where name=?\");\n// Set each parameters value by the index (starting from 1)\nst.setString(1, userInput);\n// Execute query and get the result set\nResultSet rs = st.executeQuery();\n// Iterate over results\nwhile (rs.next()) {\n    // Get result for this row at the provided column number (starting from 1)\n    String result = rs.getString(1);\n    // ...\n}\n// Close the ResultSet\nrs.close();\n// Close the PreparedStatement\nst.close();\n```\n\nExample on using CriteriaBuilder to build queries\n```\npublic List<YourEntity> findBySomeCriteria(EntityManager entityManager, String criteriaValue) {\n    CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();\n    CriteriaQuery<YourEntity> query = criteriaBuilder.createQuery(YourEntity.class);\n    Root<YourEntity> root = query.from(YourEntity.class);\n\n    query.select(root).where(criteriaBuilder.equal(root.get(\"someProperty\"), criteriaValue));\n\n    return entityManager.createQuery(query).getResultList();\n}\n```\n\nFor more information on SQL Injection see OWASP:\nhttps://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html\n",
+      "id": "2ea6f79de0f755474324e78a14b3148e638bfd18317b01bdfa98e5d7887feb13",
+      "identifiers": [
+        {
+          "name": "java_inject_rule-SqlInjection",
+          "type": "semgrep_id",
+          "value": "java_inject_rule-SqlInjection"
+        },
+        {
+          "name": "CWE-89",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/89.html",
+          "value": "89"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        }
+      ],
+      "location": {
+        "file": "src/main/java/com/appsecco/dvja/services/ProductService.java",
+        "start_line": 48
+      },
+      "name": "Improper neutralization of special elements used in an SQL command ('SQL Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "High"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:java_inject_rule-SqlInjection:75:75",
+      "description": "SQL Injection is a critical vulnerability that can lead to data or system compromise. By\ndynamically generating SQL query strings, user input may be able to influence the logic of\nthe SQL statement. This could lead to an adversary accessing information they should\nnot have access to, or in some circumstances, being able to execute OS functionality or code.\n\nReplace all dynamically generated SQL queries with parameterized queries. In situations where\ndynamic queries must be created, never use direct user input, but instead use a map or\ndictionary of valid values and resolve them using a user-supplied key.\n\nFor example, some database drivers do not allow parameterized queries for `>` or `<` comparison\noperators. In these cases, do not use a user supplied `>` or `<` value, but rather have the\nuser\nsupply a `gt` or `lt` value. The alphabetical values are then used to look up the `>` and `<`\nvalues to be used in the construction of the dynamic query. The same goes for other queries\nwhere\ncolumn or table names are required but cannot be parameterized.\n\nExample using `PreparedStatement` queries:\n```\n// Some userInput\nString userInput = \"someUserInput\";\n// Your connection string\nString url = \"...\";\n// Get a connection from the DB via the DriverManager\nConnection conn = DriverManager.getConnection(url);\n// Create a prepared statement\nPreparedStatement st = conn.prepareStatement(\"SELECT name FROM table where name=?\");\n// Set each parameters value by the index (starting from 1)\nst.setString(1, userInput);\n// Execute query and get the result set\nResultSet rs = st.executeQuery();\n// Iterate over results\nwhile (rs.next()) {\n    // Get result for this row at the provided column number (starting from 1)\n    String result = rs.getString(1);\n    // ...\n}\n// Close the ResultSet\nrs.close();\n// Close the PreparedStatement\nst.close();\n```\n\nExample on using CriteriaBuilder to build queries\n```\npublic List<YourEntity> findBySomeCriteria(EntityManager entityManager, String criteriaValue) {\n    CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();\n    CriteriaQuery<YourEntity> query = criteriaBuilder.createQuery(YourEntity.class);\n    Root<YourEntity> root = query.from(YourEntity.class);\n\n    query.select(root).where(criteriaBuilder.equal(root.get(\"someProperty\"), criteriaValue));\n\n    return entityManager.createQuery(query).getResultList();\n}\n```\n\nFor more information on SQL Injection see OWASP:\nhttps://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html\n",
+      "id": "a089ce0b3c012bd30509690d9054fd7b6c48b7b2f1ee1c28b92c1af31d6a5116",
+      "identifiers": [
+        {
+          "name": "java_inject_rule-SqlInjection",
+          "type": "semgrep_id",
+          "value": "java_inject_rule-SqlInjection"
+        },
+        {
+          "name": "CWE-89",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/89.html",
+          "value": "89"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        }
+      ],
+      "location": {
+        "file": "src/main/java/com/appsecco/dvja/services/UserService.java",
+        "start_line": 75
+      },
+      "name": "Improper neutralization of special elements used in an SQL command ('SQL Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "High"
+    }
+  ]
+}
+

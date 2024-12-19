@@ -1,0 +1,58 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            ca:40:26:f0:0f:dc:28:ca
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = TW, ST = Taipei, L = Taipei, O = Linpus, OU = Linpus, CN = linpus.com, emailAddress = helpdesk@linpus.com
+        Validity
+            Not Before: Apr 19 07:54:42 2018 GMT
+            Not After : Apr 11 07:54:42 2048 GMT
+        Subject: C = TW, ST = Taipei, L = Taipei, O = Linpus, OU = Linpus, CN = linpus.com, emailAddress = helpdesk@linpus.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:db:00:64:c4:01:35:a9:0b:15:04:6c:c3:71:f5:
+                    15:b9:47:fc:67:0b:1b:23:64:70:84:bf:d5:c0:2d:
+                    1e:b1:fe:27:8e:36:1d:12:5a:93:48:0e:0e:83:ee:
+                    f5:3f:63:e8:64:e0:a9:b9:36:de:b5:40:42:9a:a6:
+                    57:64:00:fe:05:7a:03:29:63:50:bf:4e:7c:37:6f:
+                    33:4f:de:bd:54:0a:c9:cb:5d:63:ad:0c:6c:19:81:
+                    39:0b:b7:01:bf:ea:dd:c2:a6:e0:dd:69:0f:bf:d0:
+                    fd:35:19:c5:dc:f7:57:11:bc:02:51:3a:d6:f2:4d:
+                    e1:51:5c:6e:87:ec:28:10:27:8b:34:4c:81:c7:e0:
+                    3a:9b:2a:ac:be:cc:90:56:42:02:d8:63:75:28:76:
+                    f6:09:3c:8b:5b:3d:20:0e:ae:8c:a0:a6:e9:9d:53:
+                    f1:8c:93:7c:90:9b:96:ff:4c:ef:81:d8:07:bb:59:
+                    b2:8c:9b:06:54:30:d4:db:4a:e0:23:ea:14:6a:84:
+                    36:8a:73:59:d5:5d:da:7f:49:9b:d1:03:cb:1c:eb:
+                    df:af:6f:27:11:96:22:62:ea:49:ca:7a:5c:dc:aa:
+                    46:e2:61:71:4a:29:1b:ce:fe:98:e0:8f:6d:fe:e5:
+                    0b:87:db:48:42:66:f9:27:d4:76:8f:d6:d2:7f:12:
+                    6c:61
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                2E:09:2C:AB:5E:97:A8:9F:94:A6:E2:72:EC:72:67:C2:67:CF:44:83
+            X509v3 Authority Key Identifier: 
+                2E:09:2C:AB:5E:97:A8:9F:94:A6:E2:72:EC:72:67:C2:67:CF:44:83
+            X509v3 Basic Constraints: 
+                CA:TRUE
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        c4:41:0e:b8:bd:80:5b:54:c9:76:6d:92:5d:66:aa:e4:29:4f:
+        26:49:f8:2e:bb:8e:af:1a:05:71:8b:43:13:af:e2:c5:f0:ee:
+        55:6f:f9:38:c2:c8:c9:ba:77:e8:53:5b:78:7a:6e:7c:8a:35:
+        3d:8f:06:6f:9a:1f:e9:8c:24:8b:b3:db:85:2c:cd:4d:d9:14:
+        22:cd:09:52:6b:8d:04:54:78:a4:92:98:4d:59:86:a9:d0:dd:
+        1f:15:96:dd:e2:bb:ba:54:42:39:eb:f8:3c:9d:9e:bc:5d:ec:
+        72:a9:0e:bc:28:18:48:30:71:7b:95:3d:ec:6a:0d:00:48:f5:
+        94:01:7c:d6:d2:0a:85:d4:a8:aa:06:74:3d:60:7f:21:75:30:
+        e1:99:6e:0f:98:2d:46:eb:3d:da:35:b7:c8:6a:d1:9e:0b:5b:
+        af:cf:7b:36:5e:27:7e:25:fd:69:3c:f2:60:f4:22:10:a8:8d:
+        56:64:18:2c:6a:90:44:54:44:70:3e:c8:fd:58:4d:b4:9c:ed:
+        cc:ae:a2:52:a1:2f:07:36:09:70:95:53:63:42:99:15:da:6e:
+        1a:28:6d:08:55:6b:1c:da:70:e3:05:1e:c2:44:8c:dd:9a:7f:
+        e2:a9:c8:0e:27:c3:50:5e:b6:eb:60:f3:3b:84:dd:dd:0e:7a:
+        55:eb:d3:24

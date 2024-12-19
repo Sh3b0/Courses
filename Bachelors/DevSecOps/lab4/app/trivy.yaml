@@ -1,0 +1,10 @@
+db:
+  no-progress: true
+
+scan:
+  security-checks:
+    - vuln
+
+format: template
+
+template: "@/usr/local/share/trivy/templates/html.tpl"

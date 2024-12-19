@@ -1,2 +1,0 @@
-   text	   data	    bss	    dec	    hex	filename
-   1565	    600	      8	   2173	    87d	a.out

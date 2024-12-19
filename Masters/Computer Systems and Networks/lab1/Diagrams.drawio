@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Page-1" id="GvNLSjV0Csmb6KuZUYd7">
+    <mxGraphModel dx="1356" dy="1142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="650" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KVSnf9l8OR1aco6kW9Ye-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1065" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="110" width="250" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-2" value="Client (Frontend)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-3" value="Web Dashboard (React)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="182.5" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="350" width="260" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-6" value="Node.js Server (Backend)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="363" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-7" value="API Calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="288" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="972.5" y="410" width="195" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-9" value="- User Authentication (OAuth2)&lt;br&gt;&lt;div&gt;- Device Data Processor&lt;br&gt;- Customer Management Service&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="985" y="421.25" width="180" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-11" value="Load/Store" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="430" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="350" width="260" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-13" value="Database Layer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1422.5" y="363" width="107.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1368.75" y="405" width="222.5" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-14" value="- Relational Database (PostgreSQL)&lt;br&gt;- Time-Series Database (InfluxDB)&lt;div&gt;- Cache Layer (Redis)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1377.5" y="444" width="205" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-25" value="Mobile Application (Flutter)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="182.5" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KVSnf9l8OR1aco6kW9Ye-26" target="KVSnf9l8OR1aco6kW9Ye-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-26" value="Device Query Processor&lt;br&gt;(Custom modules for processing data from different vendors)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="491" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-28" value="IOT&lt;br&gt;Vendor #1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="670" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-29" value="IOT&lt;br&gt;Vendor #2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="670" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-30" value="......" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="700" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-31" value="IOT&lt;br&gt;Vendor #N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="670" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KVSnf9l8OR1aco6kW9Ye-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-41" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.002;entryY=0.552;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KVSnf9l8OR1aco6kW9Ye-5" target="KVSnf9l8OR1aco6kW9Ye-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="460" as="sourcePoint" />
+            <mxPoint x="1180" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVSnf9l8OR1aco6kW9Ye-42" value="Data querying / scraping" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="605" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

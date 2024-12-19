@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycloak Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class='container'>
+        <header class='d-flex justify-content-between py-1 mb-4 border-bottom'>
+            <div class='p-2'>
+                <a href='/' class='text-dark text-decoration-none'>
+                    <span class='fs-3'>Keycloak SSO Demo</span>
+                </a>
+            </div>
+    
+            <div class='p-2'>
+                <button id="button" type="button" class="btn btn-outline-dark">{{ button_text }}</button>
+            </div>
+        </header>
+    
+    </div>
+
+    <div class="container text-center mt-5">
+        <div id="auth-indicators" class="mt-4">
+            <div class="alert alert-secondary" role="alert">{{ body_text }}</div>
+        </div>
+    </div>
+
+
+    <script>
+        button = document.getElementById('button')
+        button.addEventListener('click', function () {
+            if(button.textContent == "Log In") window.location.href = '/login';
+            else window.location.href = '/logout';
+        });
+    </script>
+</body>
+</html>

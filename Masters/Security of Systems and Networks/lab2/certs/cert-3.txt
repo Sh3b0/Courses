@@ -1,0 +1,55 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            43:06:d6:5b:60:55:8c:88:44:df:d7:a5:8f:ea:ff:50
+        Signature Algorithm: sha1WithRSA
+        Issuer: CN = ABO
+        Validity
+            Not Before: Dec 31 16:00:00 2010 GMT
+            Not After : Dec 31 16:00:00 2039 GMT
+        Subject: CN = ABO
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:e2:e8:55:c1:be:51:9e:54:40:df:a9:1f:50:14:
+                    34:65:72:2e:06:71:96:b0:45:48:84:11:a5:3b:22:
+                    17:25:2b:b3:5e:3d:71:3a:f2:1b:80:10:08:b7:ea:
+                    1d:2e:6c:e6:e7:d1:1d:5d:cf:40:37:8b:52:9a:09:
+                    b6:d2:af:f3:81:be:76:62:d7:c8:3e:a1:7b:f2:82:
+                    61:0d:b7:85:65:94:19:d3:b4:6c:16:fc:47:a3:ec:
+                    43:e5:46:7c:83:bf:58:1f:f0:f8:d2:f4:cd:78:11:
+                    8a:ad:dc:1b:d4:eb:4e:38:f2:53:3e:5d:f2:d7:33:
+                    0a:30:e3:01:79:7b:39:6c:52:3b:25:d4:33:d8:37:
+                    2b:43:0e:aa:fb:c1:eb:04:10:0d:66:90:6e:5f:68:
+                    d5:c4:e5:13:3c:c1:a2:b3:0d:fd:36:f0:39:a3:0c:
+                    d3:6d:fa:6a:77:0d:39:6b:b8:cb:c8:e2:ff:25:46:
+                    14:54:72:53:ef:06:ce:cd:0b:ea:54:70:66:87:56:
+                    c3:ab:17:8b:7e:b1:fa:1f:09:df:df:9e:54:e3:33:
+                    d3:bd:92:9f:67:fd:b7:6e:5e:18:68:00:3a:55:bb:
+                    af:03:f2:6e:46:6c:ef:11:e7:24:cd:c5:f0:03:be:
+                    0d:a3:96:7f:05:a3:3e:93:be:8e:cf:ac:78:6f:9b:
+                    44:73
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            2.5.29.1: 
+                06.....%xE....,.?.....0.1.0
+..U....ABO..C..[`U..D......P
+    Signature Algorithm: sha1WithRSA
+    Signature Value:
+        25:ed:e7:a0:80:b2:89:a6:e1:14:ba:86:e7:4c:42:7e:d5:52:
+        ac:8e:ce:a2:c1:cb:ec:d7:82:23:34:59:7d:70:76:15:76:26:
+        1c:41:39:bd:94:97:74:18:fc:56:a1:c8:cc:3d:8b:96:ef:54:
+        56:f4:51:94:5a:af:bf:ca:e3:b3:6b:ca:58:df:74:4a:59:65:
+        b5:7e:66:f8:2c:15:a6:d3:ff:71:a1:df:43:cc:e0:3f:1e:a2:
+        3c:5f:dc:20:38:2b:53:d9:b2:1d:ab:d7:67:22:c3:0d:2f:41:
+        b1:12:a8:35:3e:35:2e:eb:ee:35:2b:6e:7b:72:0b:14:5e:db:
+        3e:3b:46:25:be:19:ac:b3:d5:92:71:d5:68:2e:0f:60:f8:d4:
+        cd:80:1d:59:b8:66:77:6e:2f:a0:8d:66:bb:6b:87:60:84:a3:
+        f0:e6:76:c0:6d:77:22:36:3a:6e:60:56:82:08:f0:5a:6c:cb:
+        39:a8:fe:ed:3e:33:6c:8d:2c:bf:8f:04:ba:3d:22:a2:95:29:
+        43:84:b0:42:63:49:ce:97:65:06:4f:a4:d1:34:22:ad:92:99:
+        46:95:0e:7a:f4:43:2f:b0:7d:13:64:5d:83:59:44:a0:79:62:
+        8d:8f:79:f6:52:be:b7:dc:65:66:0a:6f:e5:7b:72:47:fb:1e:
+        a2:f0:09:73

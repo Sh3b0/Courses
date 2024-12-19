@@ -1,0 +1,1572 @@
+{
+  "scan": {
+    "analyzer": {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "url": "https://gitlab.com/gitlab-org/security-products/analyzers/semgrep",
+      "vendor": {
+        "name": "GitLab"
+      },
+      "version": "5.19.0"
+    },
+    "end_time": "2024-11-10T00:32:48",
+    "scanner": {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "url": "https://github.com/returntocorp/semgrep",
+      "vendor": {
+        "name": "GitLab"
+      },
+      "version": "1.74.0"
+    },
+    "start_time": "2024-11-10T00:32:34",
+    "status": "success",
+    "type": "sast"
+  },
+  "version": "15.1.4",
+  "vulnerabilities": [
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals:20:20",
+      "description": "Evaluating non-constant commands. This can lead to command injection.",
+      "id": "cb48a8b8a2cb5b69cd0d689afe08f2447178862c1e0c88793fcae77f8748b507",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals"
+        },
+        {
+          "name": "CWE-78",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/78.html",
+          "value": "78"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/view_help.php",
+        "start_line": 20
+      },
+      "name": "Improper neutralization of special elements used in an OS command ('OS Command Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals:22:22",
+      "description": "Evaluating non-constant commands. This can lead to command injection.",
+      "id": "bc5196dd6926bda11c424a5211d8ea07c4eff2cc74e2404b14af4cfad9d61980",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals"
+        },
+        {
+          "name": "CWE-78",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/78.html",
+          "value": "78"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.NoEvals.NoEvals"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/view_help.php",
+        "start_line": 22
+      },
+      "name": "Improper neutralization of special elements used in an OS command ('OS Command Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:10:10",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "ca3bde4afa66fe32c34402ed6c4037c075c1a4d447d00724bd56a76be76f33ba",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/low.php",
+        "start_line": 10
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:14:14",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "966bfbb7a6caedb8655c0cc8731c24cd26b56ac3edfa0078345ba6dea6b90cec",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/low.php",
+        "start_line": 14
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:19:19",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "f838fedb847b617ef2769417aae119bada547acc18fd770675f191dd2fdeaf35",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/medium.php",
+        "start_line": 19
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:22:22",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "05bff37f11b787d35128ed02a16c7db2af71f73318c29583c58ec758b7bc33da",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/impossible.php",
+        "start_line": 22
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:23:23",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "ecd1b3c38b0e1fb2f3f1969007edb81274dad8f4737e7b38918001b82ca41aef",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/medium.php",
+        "start_line": 23
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:26:26",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "c3c0378e9318a24d6dbad25c9954a36bc41ed60e29f53c1cafc97886125ee551",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/high.php",
+        "start_line": 26
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:26:26",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "f3aa38ab5f398bcb0803813dfbd37c5654f5a9b342853b9feef38c97333119b6",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/impossible.php",
+        "start_line": 26
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec:30:30",
+      "description": "Executing non-constant commands. This can lead to command injection.",
+      "id": "00e88895866945b5568e6a2853d1702a21f056a8a95dec78afd87734978d17f7",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        },
+        {
+          "name": "CWE-94",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "value": "94"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.SystemExecFunctions.WarnSystemExec"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/exec/source/high.php",
+        "start_line": 30
+      },
+      "name": "Improper control of generation of code ('Code Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Critical"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:eslint.detect-eval-with-expression:1:1",
+      "description": "The application was found calling the `eval` function OR Function()\n  constructor OR setTimeout() OR setInterval() methods. If the\n\n  variables or strings or functions passed to these methods contains user-supplied input, an adversary could attempt to execute arbitrary\n\n  JavaScript\n\n  code. This could lead to a full system compromise in Node applications or Cross-site Scripting\n\n  (XSS) in web applications.\n\n\n  To remediate this issue, remove all calls to above methods and consider alternative methods for\n\n  executing\n\n  the necessary business logic. There is almost no safe method of calling `eval` or other above stated sinks with\n\n  user-supplied input.\n\n  Instead, consider alternative methods such as using property accessors to dynamically access\n\n  values.\n\n\n  Example using property accessors to dynamically access an object's property:\n\n  ```\n\n  // Define an object\n\n  const obj = {key1: 'value1', key2: 'value2'};\n\n  // Get key dynamically from user input\n\n  const key = getUserInput();\n\n  // Check if the key exists in our object and return it, or a default empty string\n\n  const value = (obj.hasOwnProperty(key)) ? obj[key] : '';\n\n  // Work with the value\n\n  ```\n\n\n  For more information on why not to use `eval`, and alternatives see:\n\n  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#never_use_eval!\n\n  Other References:\n\n  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function\n\n  - https://developer.mozilla.org/en-US/docs/Web/API/setTimeout\n\n  - https://developer.mozilla.org/en-US/docs/Web/API/setInterval\n",
+      "id": "93bc68acd5ce5b5cc55456edf64db1c5a240f569c7e28bcd175dc8f68389d388",
+      "identifiers": [
+        {
+          "name": "eslint.detect-eval-with-expression",
+          "type": "semgrep_id",
+          "url": "https://semgrep.dev/r/gitlab.eslint.detect-eval-with-expression",
+          "value": "eslint.detect-eval-with-expression"
+        },
+        {
+          "name": "CWE-95",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/95.html",
+          "value": "95"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "ESLint rule ID/detect-eval-with-expression",
+          "type": "eslint_rule_id",
+          "value": "detect-eval-with-expression"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/javascript/source/high.js",
+        "start_line": 1
+      },
+      "name": "Improper neutralization of directives in dynamically evaluated code ('Eval Injection')",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "High"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:10:10",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "59c82ceb95ef0f9e281de5339f6644de43d7afc5da42e747cbea028a28a0821b",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/weak_id/source/high.php",
+        "start_line": 10
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:11:11",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "7bcc4eff03747451914bbed65ce771507527cf937efcc5d31e1b17e02e183939",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/brute/source/medium.php",
+        "start_line": 11
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:12:12",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "09bcf8f7884a14c11acf046a941cfd801f2ff7bc9d568805927f47e903b02dae",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/csrf/source/low.php",
+        "start_line": 12
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:14:14",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "99983ed8bcd755ceb7df71c5d59d109b8d928cf50e215a04a4dda7d4d7237789",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/captcha/source/impossible.php",
+        "start_line": 14
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:14:14",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "971ee271b96d16010d29eed48ff59e60160eac06901fbfbc84567e263abbe0b8",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/csrf/source/medium.php",
+        "start_line": 14
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:15:15",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "7132b11a5ce6a008711219b9c0d17fb3a590ef9c44d5c56b8ad7a279a2bfc2b9",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/csrf/source/impossible.php",
+        "start_line": 15
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:16:16",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "3a59c36b05a0ad362c181cc1e6d7dbbaa899e4c49feda49ac82146e0460503e4",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/brute/source/high.php",
+        "start_line": 16
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:16:16",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "06f286b6b6d8675020b203d539c16eab729f00d9497144b9af803bcca1adf849",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/brute/source/impossible.php",
+        "start_line": 16
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:18:18",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "adf91f5cfc95ed38d39d84b80163a6bcfa0b91fadb327b378cbed107a02706a7",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/upload/source/impossible.php",
+        "start_line": 18
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:19:19",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "e239186c708e0027a1ff0884710e633f9b2f320f048822ac859c4610dd3ebf83",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/captcha/source/impossible.php",
+        "start_line": 19
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:19:19",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "fb2dfa0fc56b9d1ba99d2d4ecad4ddddf644f8100f069f847a2fee7718d4d246",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/csrf/test_credentials.php",
+        "start_line": 19
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:20:20",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "305c76d0904e024902e3350e3cc92bd98947333607a713357fe981c4c50d78cc",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/upload/source/impossible.php",
+        "start_line": 20
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:24:24",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "f3dfbf5bc3e3744dd3a25bd4b757606de66aaf62b418150a1da8a500e90dcfa3",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/captcha/source/impossible.php",
+        "start_line": 24
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:27:27",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "8f70ba395f0a687a925c7ef01f88e3274e7605d975226a543231aac5ca7aede3",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/captcha/source/high.php",
+        "start_line": 27
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:27:27",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "dd8165173e31e135fdc312aa1a401172ba777cbea0231ba081dc49bf3c21e95f",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "login.php",
+        "start_line": 27
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:29:29",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "63fc2f56676c013c595a866f2c23195676ee5acb88313ec61781fd9156b55498",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/csrf/source/impossible.php",
+        "start_line": 29
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:39:39",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "0ca4e9f7edeccb2d0d9f6a4b8e86be018540a57d2ef1afa76117e665b973918f",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/csrf/source/high.php",
+        "start_line": 39
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:57:57",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "b202e17a77c6210f8be75d3ffeda5330ff27619b92cf0de75bcb761dfb218ef0",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/captcha/source/low.php",
+        "start_line": 57
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:639:639",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "11ec112ce4104b87af62e3f76b6ad217c6cb39196be8267afdcb17882018e5a6",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "dvwa/includes/dvwaPage.inc.php",
+        "start_line": 639
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:65:65",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "9288c6ca386f18b69382ad1219b1fbc9ce00d823ff1c5b06687c8ef34d66dcc2",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/captcha/source/medium.php",
+        "start_line": 65
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:6:6",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "ee4770e810ef53458f747983fa04c7ae8d9e471a301699f6485d69577f76e2cd",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/weak_id/source/impossible.php",
+        "start_line": 6
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc:9:9",
+      "description": "Detected usage of weak crypto function. Consider using stronger alternatives.",
+      "id": "95849e39d214be4a821208d2ecbac5eef1613e6a799f18514217aae5368533fc",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        },
+        {
+          "name": "CWE-328",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/328.html",
+          "value": "328"
+        },
+        {
+          "name": "A02:2021 - Cryptographic Failures",
+          "type": "owasp",
+          "value": "A02:2021"
+        },
+        {
+          "name": "A3:2017 - Sensitive Data Exposure",
+          "type": "owasp",
+          "value": "A3:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.CryptoFunctions.WarnCryptoFunc"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/brute/source/low.php",
+        "start_line": 9
+      },
+      "name": "Use of weak hash",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo:8:8",
+      "description": "The 'phpinfo' function may reveal sensitive information about your environment.",
+      "id": "f7b7d0828f226f0fbd8cc6a77a212a7918316c95cd9eb507bf5f324f3a783c27",
+      "identifiers": [
+        {
+          "name": "PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo",
+          "type": "semgrep_id",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo"
+        },
+        {
+          "name": "CWE-497",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/497.html",
+          "value": "497"
+        },
+        {
+          "name": "A01:2021 - Broken Access Control",
+          "type": "owasp",
+          "value": "A01:2021"
+        },
+        {
+          "name": "A5:2017 - Broken Access Control",
+          "type": "owasp",
+          "value": "A5:2017"
+        },
+        {
+          "name": "PHPCS Security Audit Test ID PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo",
+          "type": "phpcs_security_audit_source",
+          "value": "PHPCS_SecurityAudit.BadFunctions.Phpinfos.WarnPhpinfo"
+        }
+      ],
+      "location": {
+        "file": "phpinfo.php",
+        "start_line": 8
+      },
+      "name": "Exposure of sensitive system information to an unauthorized control sphere",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    },
+    {
+      "category": "sast",
+      "cve": "semgrep_id:eslint.detect-non-literal-regexp:1:1",
+      "description": "The `RegExp` constructor was called with a non-literal value. If an adversary were able to\nsupply a malicious regex, they could cause a Regular Expression Denial of Service (ReDoS)\nagainst the application. In Node applications, this could cause the entire application to no\nlonger be responsive to other users' requests.\n\nTo remediate this issue, never allow user-supplied regular expressions. Instead, the regular \nexpression should be  hardcoded. If this is not possible, consider using an alternative regular\nexpression engine such as [node-re2](https://www.npmjs.com/package/re2). RE2 is a safe alternative \nthat does not support backtracking, which is what leads to ReDoS.\n\nExample using re2 which does not support backtracking (Note: it is still recommended to\nnever use user-supplied input):\n```\n// Import the re2 module\nconst RE2 = require('re2');\n\nfunction match(userSuppliedRegex, userInput) {\n    // Create a RE2 object with the user supplied regex, this is relatively safe\n    // due to RE2 not supporting backtracking which can be abused to cause long running\n    // queries\n    var re = new RE2(userSuppliedRegex);\n    // Execute the regular expression against some userInput\n    var result = re.exec(userInput);\n    // Work with the result\n}\n```\n\nFor more information on Regular Expression DoS see:\n- https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS\n",
+      "id": "91a9f1ecc635c8b72893550a06105d350941b1208c8dc6b23112ed42333d0cb2",
+      "identifiers": [
+        {
+          "name": "eslint.detect-non-literal-regexp",
+          "type": "semgrep_id",
+          "url": "https://semgrep.dev/r/gitlab.eslint.detect-non-literal-regexp",
+          "value": "eslint.detect-non-literal-regexp"
+        },
+        {
+          "name": "CWE-185",
+          "type": "cwe",
+          "url": "https://cwe.mitre.org/data/definitions/185.html",
+          "value": "185"
+        },
+        {
+          "name": "A03:2021 - Injection",
+          "type": "owasp",
+          "value": "A03:2021"
+        },
+        {
+          "name": "A1:2017 - Injection",
+          "type": "owasp",
+          "value": "A1:2017"
+        },
+        {
+          "name": "ESLint rule ID/detect-non-literal-regexp",
+          "type": "eslint_rule_id",
+          "value": "detect-non-literal-regexp"
+        }
+      ],
+      "location": {
+        "file": "vulnerabilities/javascript/source/high.js",
+        "start_line": 1
+      },
+      "name": "Regular expression with non-literal value",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "severity": "Medium"
+    }
+  ]
+}
+

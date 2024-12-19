@@ -1,0 +1,84 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            61:07:76:56:00:00:00:00:00:08
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Washington, L = Redmond, O = Microsoft Corporation, CN = Microsoft Root Certificate Authority 2010
+        Validity
+            Not Before: Oct 19 18:41:42 2011 GMT
+            Not After : Oct 19 18:51:42 2026 GMT
+        Subject: C = US, ST = Washington, L = Redmond, O = Microsoft Corporation, CN = Microsoft Windows Production PCA 2011
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:dd:0c:bb:a2:e4:2e:09:e3:e7:c5:f7:96:69:bc:
+                    00:21:bd:69:33:33:ef:ad:04:cb:54:80:ee:06:83:
+                    bb:c5:20:84:d9:f7:d2:8b:f3:38:b0:ab:a4:ad:2d:
+                    7c:62:79:05:ff:e3:4a:3f:04:35:20:70:e3:c4:e7:
+                    6b:e0:9c:c0:36:75:e9:8a:31:dd:8d:70:e5:dc:37:
+                    b5:74:46:96:28:5b:87:60:23:2c:bf:dc:47:a5:67:
+                    f7:51:27:9e:72:eb:07:a6:c9:b9:1e:3b:53:35:7c:
+                    e5:d3:ec:27:b9:87:1c:fe:b9:c9:23:09:6f:a8:46:
+                    91:c1:6e:96:3c:41:d3:cb:a3:3f:5d:02:6a:4d:ec:
+                    69:1f:25:28:5c:36:ff:fd:43:15:0a:94:e0:19:b4:
+                    cf:df:c2:12:e2:c2:5b:27:ee:27:78:30:8b:5b:2a:
+                    09:6b:22:89:53:60:16:2c:c0:68:1d:53:ba:ec:49:
+                    f3:9d:61:8c:85:68:09:73:44:5d:7d:a2:54:2b:dd:
+                    79:f7:15:cf:35:5d:6c:1c:2b:5c:ce:bc:9c:23:8b:
+                    6f:6e:b5:26:d9:36:13:c3:4f:d6:27:ae:b9:32:3b:
+                    41:92:2c:e1:c7:cd:77:e8:aa:54:4e:f7:5c:0b:04:
+                    87:65:b4:43:18:a8:b2:e0:6d:19:77:ec:5a:24:fa:
+                    48:03
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            1.3.6.1.4.1.311.21.1: 
+                ...
+            X509v3 Subject Key Identifier: 
+                A9:29:02:39:8E:16:C4:97:78:CD:90:F9:9E:4F:9A:E1:7C:55:AF:53
+            1.3.6.1.4.1.311.20.2: 
+                .
+.S.u.b.C.A
+            X509v3 Key Usage: 
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Authority Key Identifier: 
+                D5:F6:56:CB:8F:E8:A2:5C:62:68:D1:3D:94:90:5B:D7:CE:9A:18:C4
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl
+            Authority Information Access: 
+                CA Issuers - URI:http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        14:fc:7c:71:51:a5:79:c2:6e:b2:ef:39:3e:bc:3c:52:0f:6e:
+        2b:3f:10:13:73:fe:a8:68:d0:48:a6:34:4d:8a:96:05:26:ee:
+        31:46:90:61:79:d6:ff:38:2e:45:6b:f4:c0:e5:28:b8:da:1d:
+        8f:8a:db:09:d7:1a:c7:4c:0a:36:66:6a:8c:ec:1b:d7:04:90:
+        a8:18:17:a4:9b:b9:e2:40:32:36:76:c4:c1:5a:c6:bf:e4:04:
+        c0:ea:16:d3:ac:c3:68:ef:62:ac:dd:54:6c:50:30:58:a6:eb:
+        7c:fe:94:a7:4e:8e:f4:ec:7c:86:73:57:c2:52:21:73:34:5a:
+        f3:a3:8a:56:c8:04:da:07:09:ed:f8:8b:e3:ce:f4:7e:8e:ae:
+        f0:f6:0b:8a:08:fb:3f:c9:1d:72:7f:53:b8:eb:be:63:e0:e3:
+        3d:31:65:b0:81:e5:f2:ac:cd:16:a4:9f:3d:a8:b1:9b:c2:42:
+        d0:90:84:5f:54:1d:ff:89:ea:ba:1d:47:90:6f:b0:73:4e:41:
+        9f:40:9f:5f:e5:a1:2a:b2:11:91:73:8a:21:28:f0:ce:de:73:
+        39:5f:3e:ab:5c:60:ec:df:03:10:a8:d3:09:e9:f4:f6:96:85:
+        b6:7f:51:88:66:47:19:8d:a2:b0:12:3d:81:2a:68:05:77:bb:
+        91:4c:62:7b:b6:c1:07:c7:ba:7a:87:34:03:0e:4b:62:7a:99:
+        e9:ca:fc:ce:4a:37:c9:2d:a4:57:7c:1c:fe:3d:dc:b8:0f:5a:
+        fa:d6:c4:b3:02:85:02:3a:ea:b3:d9:6e:e4:69:21:37:de:81:
+        d1:f6:75:19:05:67:d3:93:57:5e:29:1b:39:c8:ee:2d:e1:cd:
+        e4:45:73:5b:d0:d2:ce:7a:ab:16:19:82:46:58:d0:5e:9d:81:
+        b3:67:af:6c:35:f2:bc:e5:3f:24:e2:35:a2:0a:75:06:f6:18:
+        56:99:d4:78:2c:d1:05:1b:eb:d0:88:01:9d:aa:10:f1:05:df:
+        ba:7e:2c:63:b7:06:9b:23:21:c4:f9:78:6c:e2:58:17:06:36:
+        2b:91:12:03:cc:a4:d9:f2:2d:ba:f9:94:9d:40:ed:18:45:f1:
+        ce:8a:5c:6b:3e:ab:03:d3:70:18:2a:0a:6a:e0:5f:47:d1:d5:
+        63:0a:32:f2:af:d7:36:1f:2a:70:5a:e5:42:59:08:71:4b:57:
+        ba:7e:83:81:f0:21:3c:f4:1c:c1:c5:b9:90:93:0e:88:45:93:
+        86:e9:b1:20:99:be:98:cb:c5:95:a4:5d:62:d6:a0:63:08:20:
+        bd:75:10:77:7d:3d:f3:45:b9:9f:97:9f:cb:57:80:6f:33:a9:
+        04:cf:77:a4:62:1c:59:7e

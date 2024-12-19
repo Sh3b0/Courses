@@ -1,0 +1,736 @@
+NAME                      INSTALLED                           FIXED-IN     TYPE  VULNERABILITY     SEVERITY   
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2008-0456     Negligible  
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2003-1581     Negligible  
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-28614    Medium      
+apache2                   2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2019-17567    Medium      
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2001-1534     Negligible  
+apache2                   2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2021-33193    High        
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-29404    High        
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2003-1580     Negligible  
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2007-0086     Negligible  
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2007-3303     Negligible  
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2003-1307     Negligible  
+apache2                   2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-9490     High        
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-28615    Critical    
+apache2                   2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-11993    High        
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-30522    High        
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-30556    High        
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-31813    Critical    
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2007-1743     Negligible  
+apache2                   2.4.25-3+deb9u13                                 deb   CVE-2022-26377    High        
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-30522    High        
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2003-1581     Negligible  
+apache2-bin               2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-11993    High        
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2008-0456     Negligible  
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2003-1580     Negligible  
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2001-1534     Negligible  
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-28614    Medium      
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2007-1743     Negligible  
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-30556    High        
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-31813    Critical    
+apache2-bin               2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2019-17567    Medium      
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-26377    High        
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2007-3303     Negligible  
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2007-0086     Negligible  
+apache2-bin               2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2021-33193    High        
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-28615    Critical    
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2003-1307     Negligible  
+apache2-bin               2.4.25-3+deb9u13                                 deb   CVE-2022-29404    High        
+apache2-bin               2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-9490     High        
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2007-0086     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2008-0456     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-28615    Critical    
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2003-1307     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-28614    Medium      
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-31813    Critical    
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-29404    High        
+apache2-data              2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2021-33193    High        
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2007-1743     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2007-3303     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-30556    High        
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2003-1581     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-30522    High        
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2001-1534     Negligible  
+apache2-data              2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-9490     High        
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2003-1580     Negligible  
+apache2-data              2.4.25-3+deb9u13                                 deb   CVE-2022-26377    High        
+apache2-data              2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2019-17567    Medium      
+apache2-data              2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-11993    High        
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-30522    High        
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2003-1307     Negligible  
+apache2-utils             2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-9490     High        
+apache2-utils             2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2021-33193    High        
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-28614    Medium      
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-28615    Critical    
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2008-0456     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2007-0086     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-31813    Critical    
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2001-1534     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2007-1743     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-30556    High        
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2007-3303     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2003-1580     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-29404    High        
+apache2-utils             2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2020-11993    High        
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2003-1581     Negligible  
+apache2-utils             2.4.25-3+deb9u13                                 deb   CVE-2022-26377    High        
+apache2-utils             2.4.25-3+deb9u13                    (won't fix)  deb   CVE-2019-17567    Medium      
+apt                       1.4.11                                           deb   CVE-2011-3374     Negligible  
+bash                      4.4-5                                            deb   CVE-2019-18276    Negligible  
+bsdutils                  1:2.29.2-1+deb9u1                   (won't fix)  deb   CVE-2016-2779     High        
+bsdutils                  1:2.29.2-1+deb9u1                                deb   CVE-2022-0563     Negligible  
+bsdutils                  1:2.29.2-1+deb9u1                   (won't fix)  deb   CVE-2021-37600    Low         
+bzip2                     1.0.6-8.1                           (won't fix)  deb   CVE-2019-12900    Critical    
+coreutils                 8.26-3                                           deb   CVE-2017-18018    Negligible  
+coreutils                 8.26-3                              (won't fix)  deb   CVE-2016-2781     Low         
+e2fslibs                  1.43.4-2+deb9u2                     (won't fix)  deb   CVE-2022-1304     High        
+e2fsprogs                 1.43.4-2+deb9u2                     (won't fix)  deb   CVE-2022-1304     High        
+file                      1:5.30-1+deb9u3                     (won't fix)  deb   CVE-2019-8905     Medium      
+file                      1:5.30-1+deb9u3                     (won't fix)  deb   CVE-2019-8907     High        
+gcc-6-base                6.3.0-18+deb9u1                     (won't fix)  deb   CVE-2018-12886    High        
+gpgv                      2.1.18-8~deb9u4                     (won't fix)  deb   CVE-2018-1000858  High        
+gpgv                      2.1.18-8~deb9u4                     (won't fix)  deb   CVE-2018-9234     Low         
+gpgv                      2.1.18-8~deb9u4                     (won't fix)  deb   CVE-2019-14855    Low         
+gpgv                      2.1.18-8~deb9u4                                  deb   CVE-2022-34903    Unknown     
+inetutils-ping            2:1.9.4-2+deb9u1                    (won't fix)  deb   CVE-2021-40491    Medium      
+inetutils-ping            2:1.9.4-2+deb9u1                    (won't fix)  deb   CVE-2019-0053     Low         
+krb5-locales              1.15-1+deb9u3                       (won't fix)  deb   CVE-2017-11462    Low         
+krb5-locales              1.15-1+deb9u3                       (won't fix)  deb   CVE-2018-5710     Medium      
+krb5-locales              1.15-1+deb9u3                                    deb   CVE-2017-15088    Negligible  
+krb5-locales              1.15-1+deb9u3                                    deb   CVE-2004-0971     Negligible  
+krb5-locales              1.15-1+deb9u3                                    deb   CVE-2018-5709     Negligible  
+libapache2-mod-php7.0     7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+libapache2-mod-php7.0     7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+libapache2-mod-php7.0     7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+libapache2-mod-php7.0     7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+libapache2-mod-php7.0     7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+libapache2-mod-php7.0     7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+libapache2-mod-php7.0     7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+libapache2-mod-php7.0     7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+libapache2-mod-php7.0     7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+libapache2-mod-php7.0     7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+libapache2-mod-php7.0     7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+libaprutil1               1.5.4-3                             (won't fix)  deb   CVE-2017-12618    Low         
+libaprutil1-dbd-sqlite3   1.5.4-3                             (won't fix)  deb   CVE-2017-12618    Low         
+libaprutil1-ldap          1.5.4-3                             (won't fix)  deb   CVE-2017-12618    Low         
+libapt-pkg5.0             1.4.11                                           deb   CVE-2011-3374     Negligible  
+libblkid1                 2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        
+libblkid1                 2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+libblkid1                 2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+libbz2-1.0                1.0.6-8.1                           (won't fix)  deb   CVE-2019-12900    Critical    
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2015-8985     Negligible  
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-1010022  Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2022-23218    Critical    
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-19126    Low         
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2009-5155     High        
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-1010023  Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-6485     Critical    
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-3326     High        
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-9169     Critical    
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2016-10739    Medium      
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-35942    Critical    
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-1010025  Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2017-12132    Medium      
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2018-20796    Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-27645    Low         
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-9192     Negligible  
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-7309     Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-27618    Medium      
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-25013    Medium      
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-1000001  High        
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-6096     Low         
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-1752     High        
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2022-23219    Critical    
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-1010024  Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-1751     High        
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2019-6488     Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-10029    Medium      
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-3999     Unknown     
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-33574    Critical    
+libc-bin                  2.24-11+deb9u4                                   deb   CVE-2010-4756     Negligible  
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2016-10228    Low         
+libc-bin                  2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-6551     Critical    
+libc6                     2.24-11+deb9u4                                   deb   CVE-2010-4756     Negligible  
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-6488     Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-1751     High        
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-7309     Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-25013    Medium      
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2016-10739    Medium      
+libc6                     2.24-11+deb9u4                                   deb   CVE-2018-20796    Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-27618    Medium      
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-1010024  Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-6485     Critical    
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-3326     High        
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-6551     Critical    
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2016-10228    Low         
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-1752     High        
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-6096     Low         
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-33574    Critical    
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-1010025  Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-9169     Critical    
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-1010022  Negligible  
+libc6                     2.24-11+deb9u4                                   deb   CVE-2015-8985     Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-10029    Medium      
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-27645    Low         
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2009-5155     High        
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-1000001  High        
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-1010023  Negligible  
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-3999     Unknown     
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2022-23218    Critical    
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-19126    Low         
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-35942    Critical    
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2022-23219    Critical    
+libc6                     2.24-11+deb9u4                      (won't fix)  deb   CVE-2017-12132    Medium      
+libc6                     2.24-11+deb9u4                                   deb   CVE-2019-9192     Negligible  
+libcomerr2                1.43.4-2+deb9u2                     (won't fix)  deb   CVE-2022-1304     High        
+libdb5.3                  5.3.28-12+deb9u1                    (won't fix)  deb   CVE-2019-8457     Critical    
+libdbd-mysql-perl         4.041-2                             (won't fix)  deb   CVE-2017-10789    Medium      
+libdbd-mysql-perl         4.041-2                             (won't fix)  deb   CVE-2017-10788    Critical    
+libelf1                   0.168-1+deb9u1                      (won't fix)  deb   CVE-2019-7149     Low         
+libelf1                   0.168-1+deb9u1                                   deb   CVE-2019-7148     Negligible  
+libelf1                   0.168-1+deb9u1                      (won't fix)  deb   CVE-2018-16403    Low         
+libexpat1                 2.2.0-2+deb9u5                                   deb   CVE-2013-0340     Negligible  
+libfdisk1                 2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        
+libfdisk1                 2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+libfdisk1                 2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+libfreetype6              2.6.3-3.2+deb9u2                    (won't fix)  deb   CVE-2022-27405    High        
+libfreetype6              2.6.3-3.2+deb9u2                    (won't fix)  deb   CVE-2022-27406    High        
+libfreetype6              2.6.3-3.2+deb9u2                    (won't fix)  deb   CVE-2022-27404    Critical    
+libfreetype6              2.6.3-3.2+deb9u2                                 deb   CVE-2022-31782    Negligible  
+libgcc1                   1:6.3.0-18+deb9u1                   (won't fix)  deb   CVE-2018-12886    High        
+libgcrypt20               1.7.6-2+deb9u4                                   deb   CVE-2018-6829     Negligible  
+libgcrypt20               1.7.6-2+deb9u4                      (won't fix)  deb   CVE-2019-13627    Medium      
+libgcrypt20               1.7.6-2+deb9u4                      (won't fix)  deb   CVE-2021-33560    High        
+libgd3                    2.2.4-2+deb9u5                      (won't fix)  deb   CVE-2017-6363     High        
+libgd3                    2.2.4-2+deb9u5                      (won't fix)  deb   CVE-2018-14553    Low         
+libgd3                    2.2.4-2+deb9u5                      (won't fix)  deb   CVE-2021-40812    Medium      
+libgd3                    2.2.4-2+deb9u5                      (won't fix)  deb   CVE-2021-38115    Medium      
+libgd3                    2.2.4-2+deb9u5                      (won't fix)  deb   CVE-2021-40145    High        
+libgnutls30               3.5.8-5+deb9u6                                   deb   CVE-2011-3389     Medium      
+libgnutls30               3.5.8-5+deb9u6                      (won't fix)  deb   CVE-2021-4209     Unknown     
+libgnutls30               3.5.8-5+deb9u6                      (won't fix)  deb   CVE-2018-16868    Medium      
+libgssapi-krb5-2          1.15-1+deb9u3                                    deb   CVE-2004-0971     Negligible  
+libgssapi-krb5-2          1.15-1+deb9u3                                    deb   CVE-2018-5709     Negligible  
+libgssapi-krb5-2          1.15-1+deb9u3                       (won't fix)  deb   CVE-2018-5710     Medium      
+libgssapi-krb5-2          1.15-1+deb9u3                       (won't fix)  deb   CVE-2017-11462    Low         
+libgssapi-krb5-2          1.15-1+deb9u3                                    deb   CVE-2017-15088    Negligible  
+libhogweed4               3.3-1+deb9u1                        (won't fix)  deb   CVE-2018-16869    Medium      
+libjbig0                  2.1-3.1+b2                                       deb   CVE-2017-9937     Negligible  
+libjpeg62-turbo           1:1.5.1-2+deb9u2                                 deb   CVE-2018-11813    Negligible  
+libjpeg62-turbo           1:1.5.1-2+deb9u2                                 deb   CVE-2020-17541    Negligible  
+libjpeg62-turbo           1:1.5.1-2+deb9u2                                 deb   CVE-2021-46822    Medium      
+libjpeg62-turbo           1:1.5.1-2+deb9u2                                 deb   CVE-2017-15232    Negligible  
+libk5crypto3              1.15-1+deb9u3                                    deb   CVE-2018-5709     Negligible  
+libk5crypto3              1.15-1+deb9u3                       (won't fix)  deb   CVE-2018-5710     Medium      
+libk5crypto3              1.15-1+deb9u3                                    deb   CVE-2004-0971     Negligible  
+libk5crypto3              1.15-1+deb9u3                       (won't fix)  deb   CVE-2017-11462    Low         
+libk5crypto3              1.15-1+deb9u3                                    deb   CVE-2017-15088    Negligible  
+libkrb5-3                 1.15-1+deb9u3                       (won't fix)  deb   CVE-2017-11462    Low         
+libkrb5-3                 1.15-1+deb9u3                                    deb   CVE-2017-15088    Negligible  
+libkrb5-3                 1.15-1+deb9u3                                    deb   CVE-2004-0971     Negligible  
+libkrb5-3                 1.15-1+deb9u3                                    deb   CVE-2018-5709     Negligible  
+libkrb5-3                 1.15-1+deb9u3                       (won't fix)  deb   CVE-2018-5710     Medium      
+libkrb5support0           1.15-1+deb9u3                       (won't fix)  deb   CVE-2017-11462    Low         
+libkrb5support0           1.15-1+deb9u3                                    deb   CVE-2004-0971     Negligible  
+libkrb5support0           1.15-1+deb9u3                       (won't fix)  deb   CVE-2018-5710     Medium      
+libkrb5support0           1.15-1+deb9u3                                    deb   CVE-2017-15088    Negligible  
+libkrb5support0           1.15-1+deb9u3                                    deb   CVE-2018-5709     Negligible  
+libldap-2.4-2             2.4.44+dfsg-5+deb9u9                             deb   CVE-2015-3276     Negligible  
+libldap-2.4-2             2.4.44+dfsg-5+deb9u9                             deb   CVE-2017-17740    Negligible  
+libldap-2.4-2             2.4.44+dfsg-5+deb9u9                             deb   CVE-2020-15719    Negligible  
+libldap-2.4-2             2.4.44+dfsg-5+deb9u9                             deb   CVE-2017-14159    Negligible  
+libldap-common            2.4.44+dfsg-5+deb9u9                             deb   CVE-2015-3276     Negligible  
+libldap-common            2.4.44+dfsg-5+deb9u9                             deb   CVE-2020-15719    Negligible  
+libldap-common            2.4.44+dfsg-5+deb9u9                             deb   CVE-2017-17740    Negligible  
+libldap-common            2.4.44+dfsg-5+deb9u9                             deb   CVE-2017-14159    Negligible  
+liblua5.2-0               5.2.4-1.1+b2                        (won't fix)  deb   CVE-2021-43519    Medium      
+liblz4-1                  0.0~r131-2+deb9u1                   (won't fix)  deb   CVE-2019-17543    Low         
+libmagic-mgc              1:5.30-1+deb9u3                     (won't fix)  deb   CVE-2019-8907     High        
+libmagic-mgc              1:5.30-1+deb9u3                     (won't fix)  deb   CVE-2019-8905     Medium      
+libmagic1                 1:5.30-1+deb9u3                     (won't fix)  deb   CVE-2019-8907     High        
+libmagic1                 1:5.30-1+deb9u3                     (won't fix)  deb   CVE-2019-8905     Medium      
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+libmariadbclient18        10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+libmount1                 2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        
+libmount1                 2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+libmount1                 2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+libncurses5               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17595    Low         
+libncurses5               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17594    Low         
+libncurses5               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2018-19211    Low         
+libncurses5               6.0+20161126-1+deb9u2                            deb   CVE-2021-39537    Negligible  
+libncurses5               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2022-29458    High        
+libncursesw5              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17595    Low         
+libncursesw5              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17594    Low         
+libncursesw5              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2022-29458    High        
+libncursesw5              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2018-19211    Low         
+libncursesw5              6.0+20161126-1+deb9u2                            deb   CVE-2021-39537    Negligible  
+libnettle6                3.3-1+deb9u1                        (won't fix)  deb   CVE-2018-16869    Medium      
+libpcre3                  2:8.39-3                                         deb   CVE-2019-20838    Negligible  
+libpcre3                  2:8.39-3                                         deb   CVE-2017-7245     Negligible  
+libpcre3                  2:8.39-3                            (won't fix)  deb   CVE-2020-14155    Medium      
+libpcre3                  2:8.39-3                                         deb   CVE-2017-16231    Negligible  
+libpcre3                  2:8.39-3                                         deb   CVE-2017-7246     Negligible  
+libpcre3                  2:8.39-3                                         deb   CVE-2017-11164    Negligible  
+libperl5.24               5.24.1-3+deb9u7                                  deb   CVE-2011-4116     Negligible  
+libperl5.24               5.24.1-3+deb9u7                     (won't fix)  deb   CVE-2020-16156    High        
+libpng16-16               1.6.28-1+deb9u1                                  deb   CVE-2019-6129     Negligible  
+libpng16-16               1.6.28-1+deb9u1                                  deb   CVE-2018-14550    Negligible  
+libpng16-16               1.6.28-1+deb9u1                     (won't fix)  deb   CVE-2017-12652    Critical    
+libpng16-16               1.6.28-1+deb9u1                                  deb   CVE-2021-4214     Negligible  
+libpng16-16               1.6.28-1+deb9u1                                  deb   CVE-2018-14048    Negligible  
+libpq5                    9.6.24-0+deb9u1                                  deb   CVE-2022-1552     Unknown     
+libpq5                    9.6.24-0+deb9u1                                  deb   CVE-2019-9193     Negligible  
+libsepol1                 2.6-2                               (won't fix)  deb   CVE-2021-36085    Low         
+libsepol1                 2.6-2                               (won't fix)  deb   CVE-2021-36087    Low         
+libsepol1                 2.6-2                               (won't fix)  deb   CVE-2021-36084    Low         
+libsepol1                 2.6-2                               (won't fix)  deb   CVE-2021-36086    Low         
+libsmartcols1             2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+libsmartcols1             2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        
+libsmartcols1             2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+libsqlite3-0              3.16.2-5+deb9u3                     (won't fix)  deb   CVE-2019-8457     Critical    
+libsqlite3-0              3.16.2-5+deb9u3                                  deb   CVE-2020-11656    Negligible  
+libsqlite3-0              3.16.2-5+deb9u3                                  deb   CVE-2017-13685    Negligible  
+libsqlite3-0              3.16.2-5+deb9u3                     (won't fix)  deb   CVE-2021-45346    Medium      
+libss2                    1.43.4-2+deb9u2                     (won't fix)  deb   CVE-2022-1304     High        
+libssl1.0.2               1.0.2u-1~deb9u7                     (won't fix)  deb   CVE-2021-3601     Unknown     
+libssl1.1                 1.1.0l-1~deb9u6                                  deb   CVE-2022-2274     Unknown     
+libssl1.1                 1.1.0l-1~deb9u6                                  deb   CVE-2007-6755     Negligible  
+libssl1.1                 1.1.0l-1~deb9u6                                  deb   CVE-2022-2068     Critical    
+libssl1.1                 1.1.0l-1~deb9u6                     (won't fix)  deb   CVE-2021-4160     Medium      
+libssl1.1                 1.1.0l-1~deb9u6                                  deb   CVE-2010-0928     Negligible  
+libstdc++6                6.3.0-18+deb9u1                     (won't fix)  deb   CVE-2018-12886    High        
+libsystemd0               232-25+deb9u14                      (won't fix)  deb   CVE-2018-6954     Low         
+libsystemd0               232-25+deb9u14                                   deb   CVE-2017-1000082  Negligible  
+libsystemd0               232-25+deb9u14                      (won't fix)  deb   CVE-2018-16888    Low         
+libsystemd0               232-25+deb9u14                                   deb   CVE-2013-4392     Negligible  
+libsystemd0               232-25+deb9u14                      (won't fix)  deb   CVE-2021-3997     Unknown     
+libsystemd0               232-25+deb9u14                      (won't fix)  deb   CVE-2019-3844     High        
+libsystemd0               232-25+deb9u14                                   deb   CVE-2020-13529    Negligible  
+libsystemd0               232-25+deb9u14                                   deb   CVE-2017-18078    Negligible  
+libsystemd0               232-25+deb9u14                      (won't fix)  deb   CVE-2019-3843     High        
+libsystemd0               232-25+deb9u14                                   deb   CVE-2020-13776    Negligible  
+libsystemd0               232-25+deb9u14                                   deb   CVE-2019-20386    Negligible  
+libtasn1-6                4.10-1.1+deb9u1                                  deb   CVE-2018-1000654  Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-2058     Unknown     
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2017-17973    Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2017-5563     Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-2056     Unknown     
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-0865     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-0924     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-1056     Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2017-16232    Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2020-35521    Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-0891     High        
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2018-18661    Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-0909     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-0908     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-2057     Unknown     
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-1623     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-1622     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-1210     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-1355     Unknown     
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2017-9117     Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2014-8130     Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-1354     Unknown     
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2018-10126    Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2019-6128     Negligible  
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2022-0907     Medium      
+libtiff5                  4.0.8-2+deb9u8                                   deb   CVE-2020-35522    Negligible  
+libtinfo5                 6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17594    Low         
+libtinfo5                 6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17595    Low         
+libtinfo5                 6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2018-19211    Low         
+libtinfo5                 6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2022-29458    High        
+libtinfo5                 6.0+20161126-1+deb9u2                            deb   CVE-2021-39537    Negligible  
+libudev1                  232-25+deb9u14                      (won't fix)  deb   CVE-2018-6954     Low         
+libudev1                  232-25+deb9u14                                   deb   CVE-2017-1000082  Negligible  
+libudev1                  232-25+deb9u14                      (won't fix)  deb   CVE-2018-16888    Low         
+libudev1                  232-25+deb9u14                                   deb   CVE-2020-13776    Negligible  
+libudev1                  232-25+deb9u14                      (won't fix)  deb   CVE-2019-3843     High        
+libudev1                  232-25+deb9u14                                   deb   CVE-2017-18078    Negligible  
+libudev1                  232-25+deb9u14                                   deb   CVE-2013-4392     Negligible  
+libudev1                  232-25+deb9u14                                   deb   CVE-2020-13529    Negligible  
+libudev1                  232-25+deb9u14                                   deb   CVE-2019-20386    Negligible  
+libudev1                  232-25+deb9u14                      (won't fix)  deb   CVE-2021-3997     Unknown     
+libudev1                  232-25+deb9u14                      (won't fix)  deb   CVE-2019-3844     High        
+libuuid1                  2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+libuuid1                  2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+libuuid1                  2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        
+libwebp6                  0.5.2-1+deb9u1                                   deb   CVE-2016-9085     Negligible  
+libwebp6                  0.5.2-1+deb9u1                      (won't fix)  deb   CVE-2020-36332    High        
+libxslt1.1                1.1.29-2.1+deb9u2                                deb   CVE-2015-9019     Negligible  
+login                     1:4.4-4.1+deb9u1                                 deb   CVE-2019-19882    Negligible  
+login                     1:4.4-4.1+deb9u1                                 deb   CVE-2007-5686     Negligible  
+login                     1:4.4-4.1+deb9u1                    (won't fix)  deb   CVE-2018-7169     Low         
+login                     1:4.4-4.1+deb9u1                                 deb   CVE-2013-4235     Negligible  
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+mariadb-client-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+mariadb-client-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+mariadb-common            10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+mariadb-server            10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+mariadb-server-10.1       10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27445    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27451    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27387    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27449    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27386    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27456    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27379    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31623    Medium      
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27457    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27376    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27385    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27458    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31621    Medium      
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31624    Medium      
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27384    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27446    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27452    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27447    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27377    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27382    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27448    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27455    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27380    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27383    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27444    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27378    High        
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-31622    Medium      
+mariadb-server-core-10.1  10.1.48-0+deb9u2                                 deb   CVE-2022-27381    High        
+mount                     2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+mount                     2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+mount                     2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-6096     Low         
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-1000001  High        
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-1751     High        
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-7309     Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-27645    Low         
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-3999     Unknown     
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-6488     Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-33574    Critical    
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2010-4756     Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2022-23218    Critical    
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2022-23219    Critical    
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-10029    Medium      
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2018-20796    Negligible  
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-9192     Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2009-5155     High        
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-3326     High        
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-1752     High        
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-9169     Critical    
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-25013    Medium      
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-1010024  Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2016-10739    Medium      
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2017-12132    Medium      
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2016-10228    Low         
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-1010025  Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-6551     Critical    
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2018-6485     Critical    
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2021-35942    Critical    
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-1010023  Negligible  
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2019-19126    Low         
+multiarch-support         2.24-11+deb9u4                      (won't fix)  deb   CVE-2020-27618    Medium      
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2019-1010022  Negligible  
+multiarch-support         2.24-11+deb9u4                                   deb   CVE-2015-8985     Negligible  
+ncurses-base              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17595    Low         
+ncurses-base              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2018-19211    Low         
+ncurses-base              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17594    Low         
+ncurses-base              6.0+20161126-1+deb9u2                            deb   CVE-2021-39537    Negligible  
+ncurses-base              6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2022-29458    High        
+ncurses-bin               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2018-19211    Low         
+ncurses-bin               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2022-29458    High        
+ncurses-bin               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17595    Low         
+ncurses-bin               6.0+20161126-1+deb9u2                            deb   CVE-2021-39537    Negligible  
+ncurses-bin               6.0+20161126-1+deb9u2               (won't fix)  deb   CVE-2019-17594    Low         
+openssl                   1.1.0l-1~deb9u6                     (won't fix)  deb   CVE-2021-4160     Medium      
+openssl                   1.1.0l-1~deb9u6                                  deb   CVE-2007-6755     Negligible  
+openssl                   1.1.0l-1~deb9u6                                  deb   CVE-2022-2274     Unknown     
+openssl                   1.1.0l-1~deb9u6                                  deb   CVE-2022-2068     Critical    
+openssl                   1.1.0l-1~deb9u6                                  deb   CVE-2010-0928     Negligible  
+passwd                    1:4.4-4.1+deb9u1                                 deb   CVE-2013-4235     Negligible  
+passwd                    1:4.4-4.1+deb9u1                    (won't fix)  deb   CVE-2018-7169     Low         
+passwd                    1:4.4-4.1+deb9u1                                 deb   CVE-2019-19882    Negligible  
+passwd                    1:4.4-4.1+deb9u1                                 deb   CVE-2007-5686     Negligible  
+perl                      5.24.1-3+deb9u7                                  deb   CVE-2011-4116     Negligible  
+perl                      5.24.1-3+deb9u7                     (won't fix)  deb   CVE-2020-16156    High        
+perl-base                 5.24.1-3+deb9u7                     (won't fix)  deb   CVE-2020-16156    High        
+perl-base                 5.24.1-3+deb9u7                                  deb   CVE-2011-4116     Negligible  
+perl-modules-5.24         5.24.1-3+deb9u7                                  deb   CVE-2011-4116     Negligible  
+perl-modules-5.24         5.24.1-3+deb9u7                     (won't fix)  deb   CVE-2020-16156    High        
+php-pear                  1:1.10.1+submodules+notgz-9+deb9u3               deb   CVE-2017-5630     Negligible  
+php-pear                  1:1.10.1+submodules+notgz-9+deb9u3  (won't fix)  deb   CVE-2021-32610    High        
+php7.0                    7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0                    7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0                    7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0                    7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0                    7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0                    7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0                    7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0                    7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0                    7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0                    7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0                    7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-cli                7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-cli                7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-cli                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-cli                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-cli                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-cli                7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-cli                7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-cli                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-cli                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-cli                7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-cli                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-common             7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-common             7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-common             7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-common             7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-common             7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-common             7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-common             7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-common             7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-common             7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-common             7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-common             7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-gd                 7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-gd                 7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-gd                 7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-gd                 7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-gd                 7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-gd                 7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-gd                 7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-gd                 7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-gd                 7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-gd                 7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-gd                 7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-json               7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-json               7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-json               7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-json               7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-json               7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-json               7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-json               7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-json               7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-json               7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-json               7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-json               7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-mysql              7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-mysql              7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-mysql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-mysql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-mysql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-mysql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-mysql              7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-mysql              7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-mysql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-mysql              7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-mysql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-opcache            7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-opcache            7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-opcache            7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-opcache            7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-opcache            7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-opcache            7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-opcache            7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-opcache            7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-opcache            7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-opcache            7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-opcache            7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-pgsql              7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-pgsql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-pgsql              7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-pgsql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-pgsql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-pgsql              7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-pgsql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-pgsql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-pgsql              7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-pgsql              7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-pgsql              7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-readline           7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+php7.0-readline           7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-readline           7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-readline           7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-readline           7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-readline           7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-readline           7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-readline           7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-readline           7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-readline           7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-readline           7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-xml                7.0.33-0+deb9u12                                 deb   CVE-2017-9118     Negligible  
+php7.0-xml                7.0.33-0+deb9u12                                 deb   CVE-2017-9119     Negligible  
+php7.0-xml                7.0.33-0+deb9u12                                 deb   CVE-2019-6977     High        
+php7.0-xml                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7272     High        
+php7.0-xml                7.0.33-0+deb9u12                                 deb   CVE-2017-9120     Negligible  
+php7.0-xml                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-8923     Critical    
+php7.0-xml                7.0.33-0+deb9u12                                 deb   CVE-2015-9253     Negligible  
+php7.0-xml                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2021-21707    Medium      
+php7.0-xml                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31626    High        
+php7.0-xml                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2017-7189     High        
+php7.0-xml                7.0.33-0+deb9u12                    (won't fix)  deb   CVE-2022-31625    Critical    
+tar                       1.29b-1.1+deb9u1                                 deb   CVE-2005-2541     Negligible  
+tar                       1.29b-1.1+deb9u1                                 deb   CVE-2021-20193    Negligible  
+tar                       1.29b-1.1+deb9u1                                 deb   CVE-2019-9923     Negligible  
+util-linux                2.29.2-1+deb9u1                                  deb   CVE-2022-0563     Negligible  
+util-linux                2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2021-37600    Low         
+util-linux                2.29.2-1+deb9u1                     (won't fix)  deb   CVE-2016-2779     High        

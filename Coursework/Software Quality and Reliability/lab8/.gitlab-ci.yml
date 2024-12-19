@@ -1,9 +1,0 @@
-stages:
-  - test
-
-tests:
-  stage: test
-  image: mcr.microsoft.com/playwright
-  script:
-    - npm ci
-    - npm test

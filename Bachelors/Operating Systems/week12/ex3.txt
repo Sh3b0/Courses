@@ -1,0 +1,12 @@
+Without O_SYNC:
+real    0m0.153s
+user    0m0.031s
+sys     0m0.109s
+
+With O_SYNC:
+real    0m0.132s
+user    0m0.047s
+sys     0m0.078s
+
+Transfer is faster with bigger buffer sizes
+Transfer is slightly slower with O_SYNC than without it

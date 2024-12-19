@@ -1,0 +1,12 @@
+[Unit]
+Description=Write text to a file
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/ahmed/script.sh
+WorkingDirectory=/home/ahmed
+User=ahmed
+
+[Install]
+WantedBy=default.target
+

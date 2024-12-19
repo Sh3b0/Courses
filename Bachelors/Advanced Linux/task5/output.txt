@@ -1,0 +1,151 @@
+x86 binaries
+===================
+librt.so.1 ( 2 exes )
+	<= ./elf-Linux-lib-x86.so
+	<= ./elf-solaris-x86-ls
+
+libdl.so.2 ( 2 exes )
+	<= ./elf-Linux-x86-bash
+	<= ./elf-Linux-lib-x86.so
+
+libc.so.6 ( 2 exes )
+	<= ./elf-Linux-x86-bash
+	<= ./elf-Linux-lib-x86.so
+
+libz.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libXrender.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libXext.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libX11.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libsec.so.1 ( 1 exes )
+	<= ./elf-solaris-x86-ls
+
+libpthread.so.0 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libpng15.so.15 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libpixman-1.so.0 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libncurses.so.5 ( 1 exes )
+	<= ./elf-Linux-x86-bash
+
+libm.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libGL.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libfreetype.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libfontconfig.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libEGL.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x86.so
+
+libc.so.1 ( 1 exes )
+	<= ./elf-solaris-x86-ls
+
+x86-64 binaries
+===================
+libdl.so.2 ( 2 exes )
+	<= ./elf-Linux-x64-bash
+	<= ./elf-Linux-lib-x64.so
+
+libc.so.6 ( 2 exes )
+	<= ./elf-Linux-x64-bash
+	<= ./elf-Linux-lib-x64.so
+
+libz.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libXrender.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libXext.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libxcb.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libxcb-shm.so.0 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libxcb-render.so.0 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libX11.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+librt.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libpthread.so.0 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libpng16.so.16 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libpixman-1.so.0 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libncurses.so.5 ( 1 exes )
+	<= ./elf-Linux-x64-bash
+
+libm.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libGL.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libfreetype.so.6 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libfontconfig.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libEGL.so.1 ( 1 exes )
+	<= ./elf-Linux-lib-x64.so
+
+libc.so.7 ( 1 exes )
+	<= ./e f
+
+aarch64 binaries
+===================
+libtinfo.so.5 ( 1 exes )
+	<= ./elf-Linux-ARM64-bash
+
+libdl.so.2 ( 1 exes )
+	<= ./elf-Linux-ARM64-bash
+
+libc.so.6 ( 1 exes )
+	<= ./elf-Linux-ARM64-bash
+
+arm binaries
+===================
+libgcc_s.so.1 ( 1 exes )
+	<= ./elf-Linux-ARMv7-ls
+
+libc.so.6 ( 1 exes )
+	<= ./elf-Linux-ARMv7-ls
+
+libcap.so.2 ( 1 exes )
+	<= ./elf-Linux-ARMv7-ls
+
+libacl.so.1 ( 1 exes )
+	<= ./elf-Linux-ARMv7-ls
+
+ld-linux-armhf.so.3 ( 1 exes )
+	<= ./elf-Linux-ARMv7-ls
+

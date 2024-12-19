@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: maven
+  script:
+    - chmod +x mvnw
+    - ./mvnw package
+  artifacts:
+    paths:
+      - target/main-0.0.1-SNAPSHOT.jar

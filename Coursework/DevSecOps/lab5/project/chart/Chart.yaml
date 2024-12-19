@@ -1,7 +1,0 @@
-apiVersion: v2
-name: juice-shop
-description: A Helm chart to deploy juice-shop
-
-type: application
-version: 1.0.0
-appVersion: 1.0.0

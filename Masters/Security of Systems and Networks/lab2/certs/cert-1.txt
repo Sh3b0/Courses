@@ -1,0 +1,58 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            1e:16:be:4f:3d:d6:c1:8a:47:01:1c:ff:a1:07:0c:cf
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = Taiwan, ST = TW, L = Taipei, O = Acer, CN = Acer Root CA
+        Validity
+            Not Before: Jul 10 03:35:15 2013 GMT
+            Not After : Jul 10 03:45:15 2033 GMT
+        Subject: C = Taiwan, ST = TW, L = Taipei, O = Acer, CN = Acer Database
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a0:c1:35:9d:39:ba:87:2b:c0:15:ed:aa:b5:45:
+                    a6:b8:51:cc:6f:37:17:b3:c0:af:25:26:96:0b:e0:
+                    69:8e:9b:b7:0e:af:ff:a6:a6:22:23:b3:98:d4:85:
+                    d3:1e:2c:e5:b3:ed:8e:00:6c:89:df:65:c0:26:44:
+                    9a:04:7e:7d:8e:9b:db:b4:77:16:ad:42:96:1e:e0:
+                    99:c0:9d:46:cc:37:43:17:9b:ac:ec:16:b6:3d:89:
+                    35:c8:df:8f:cd:f2:47:a0:fb:54:ec:78:32:e2:d7:
+                    c2:e5:82:b9:8d:1a:5e:12:11:13:2d:11:0f:32:d4:
+                    da:1a:e2:ed:2f:33:17:9d:2e:c8:f0:0f:56:f0:12:
+                    24:11:65:10:de:d9:52:c8:1b:db:cf:f1:87:9e:d2:
+                    f6:f7:1b:b6:c8:89:f3:bf:6a:01:c0:5f:e2:a1:12:
+                    fa:e6:50:88:c8:1b:e6:d7:03:45:1d:5d:0b:2f:b1:
+                    2e:3b:7d:9a:ea:c0:2f:34:f0:6d:5b:12:e4:ab:c1:
+                    02:6d:53:0a:a6:ac:c2:f0:41:42:f8:07:9b:fb:f3:
+                    76:a2:71:32:fb:ad:96:1e:ec:e7:54:2d:35:67:d7:
+                    40:de:c3:d4:9c:44:fe:b8:8e:28:07:93:1a:a5:ae:
+                    a7:bc:55:76:de:fa:41:1d:89:25:71:66:96:6c:24:
+                    2a:7d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment
+            X509v3 Authority Key Identifier: 
+                15:73:D0:91:98:D7:D0:59:C2:0C:E6:02:DC:F7:A0:1F:75:70:38:88
+            X509v3 Subject Key Identifier: 
+                84:F0:0F:58:41:57:1A:BD:2C:C1:1A:8C:26:D5:C9:C8:D2:B6:B0:B5
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        0f:31:f2:1b:89:45:c9:57:5c:34:a1:7b:ce:9b:9d:5c:ef:58:
+        aa:f7:20:4c:ab:fc:85:f0:82:74:eb:26:20:0e:d7:b5:77:0a:
+        8f:71:65:f9:d1:0b:95:24:8e:4a:23:16:53:d4:b9:f9:c3:e1:
+        22:36:a1:eb:63:1b:72:15:f4:87:a6:59:cd:81:48:43:e3:4e:
+        37:d6:d8:0c:59:ba:21:fa:8d:5d:c1:44:e8:67:ab:f1:b1:84:
+        c5:34:ee:9c:5a:e7:64:55:d9:97:6b:93:10:4c:60:a6:b9:51:
+        03:db:0f:68:f7:98:95:fb:6c:f4:37:8d:68:ba:4b:b7:b4:ef:
+        c5:8c:36:4a:8d:80:12:25:e5:df:d9:67:ff:03:50:5d:7c:e5:
+        c1:d9:96:c8:c0:a0:f3:75:06:62:42:36:54:4c:17:01:47:c4:
+        b4:1a:09:bc:ec:7b:ad:bb:b4:32:84:7e:eb:d5:0f:0c:97:40:
+        d8:6a:dc:6a:2e:a7:2c:2d:a6:c2:e3:dd:ea:0f:c5:e9:93:b3:
+        dc:95:f0:68:2c:ad:ed:95:9c:ef:0d:0b:53:62:5a:b9:23:d8:
+        b1:2c:2b:5a:51:e2:3c:6d:43:6f:03:24:76:5d:33:c2:d2:ad:
+        f5:08:b2:93:3b:46:68:ad:2e:43:56:2d:85:f8:88:c4:5c:db:
+        34:f8:e1:38

@@ -1,0 +1,31 @@
+stages:
+  - build
+  - linter
+  - test
+
+build:
+  stage: build
+  image: maven
+  script:
+    - chmod +x mvnw
+    - ./mvnw package
+  artifacts:
+    paths:
+      - target/db-0.0.1-SNAPSHOT.jar
+
+linter:
+  stage: linter
+  image: maven
+  script:
+    - chmod +x mvnw
+    - ./mvnw spotbugs:spotbugs
+  artifacts:
+    paths:
+      - target/db-0.0.1-SNAPSHOT.jar
+
+test:
+  stage: test
+  image: maven
+  script:
+    - chmod +x mvnw
+    - ./mvnw test
