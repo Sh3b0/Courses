@@ -6,13 +6,13 @@ This [monorepo](https://en.wikipedia.org/wiki/Monorepo) contains:
 
 - **Coursework:** course deliverables including lab tasks, reports, mini-projects, and presentations.
 - **Projects:** links to course projects I created or contributed to.
-- [**Notes**](./Notes): PDF documents summarizing lectures or certain topics.
+- **Notes**: PDF documents summarizing lectures or certain topics.
 
 ## Masters Coursework
 
 > Currently pursuing Masters in Security and Network Engineering
 
-- [Networks Engineering](./Masters/Networks%20Engineering): practical network configuration tasks in GNS3 with virtual MikroTiK and Cisco equipment. Topics include IP, STP, VLAN, LACP, OSPF, QoS, MPLS.
+- [Networks Engineering](./Masters/Networks%20Engineering): practical network configuration tasks in GNS3 with virtual MikroTiK and Cisco equipment. Topics include IP, STP, VLAN, LACP, OSPF, QoS, and MPLS.
 - [Unix-Based Internet Applications](./Masters/Unix-Based%20Internet%20Applications): installing and configuring tools for network boot (dnsmasq), name server (BIND), mail agent (Exim), and web server (Nginx).
 - [Security of Systems and Networks](./Masters/Security%20of%20Systems%20and%20Networks): labs on classical cryptography, UEFI secure boot, OpenSSL, and OpenVPN.
 - [Computer Systems and Networks](./Masters/Computer%20Systems%20and%20Networks): labs on system architecture, IPC, network reconnaissance, systemd/crontab, and SAST tools.
@@ -75,30 +75,30 @@ This [monorepo](https://en.wikipedia.org/wiki/Monorepo) contains:
 
 ## Notes
 
-> Notes folder contains summary documents I write while studying lecture slides or certain topics of interest.
+Notes folder contains summary documents I write while studying lecture slides or certain topics of interest.
 
-- Computer Architecture
-- Computer Networks
-- Control Theory
-- Cybersecurity
-- Database Systems
-- Data Structures and Algorithms
-- Differential Equations
-- Distributed Systems and Network Programming
-- Electrical Engineering
-- Information Retrieval
-- Information Security
-- Introduction to Programming
-- Linear Algebra
-- Machine Learning
-- Mathematical Analysis
-- Mechanics
-- Operating Systems
-- Probability and Statistics
-- Security of Systems and Networks
-- Software Engineering
-- System and Network Administration
-- Theoretical Computer Science
+- [Computer Architecture](./Notes/Computer%20Architecture.pdf)
+- [Computer Networks](./Notes/Computer%20Networks)
+- [Control Theory](./Notes/Control%20Theory.pdf)
+- [Cybersecurity](./Notes/Cyber%20Security.pdf)
+- [Database Systems](./Notes/Database%20Systems.pdf)
+- [Data Structures and Algorithms](./Notes/Data%20Structures%20and%20Algorithms)
+- [Differential Equations](./Notes/Differential%20Equations.pdf)
+- [Distributed Systems and Network Programming](./Notes/Distributed%20Systems%20and%20Network Programming.pdf)
+- [Electrical Engineering](./Notes/Electrical%20Engineering.pdf)
+- [Information Retrieval](./Notes/Information%20Retrieval.pdf)
+- [Information Security](./Notes/Information%20Security.pdf)
+- [Introduction to Programming](./Notes/Introduction%20to%20Programming.pdf)
+- [Linear Algebra](./Notes/Linear%20Algebra)
+- [Machine Learning](./Notes/Machine%20Learning.pdf)
+- [Mathematical Analysis](./Notes/Mathematical%20Analysis)
+- [Mechanics](./Notes/Mechanics.pdf)
+- [Operating Systems](./Notes/Operating%20Systems.pdf)
+- [Probability and Statistics](./Notes/Probability%20and%20Statistics)
+- [Security of Systems and Networks](./Notes/Security%20of%20Systems%20and%20Networks.pdf)
+- [Software Engineering](./Notes/Software%20Engineering.pdf)
+- [System and Network Administration](./Notes/System%20and%20Network%20Administration.pdf)
+- [Theoretical Computer Science](./Notes/Theoretical%20Computer%20Science.pdf)
 
 ## License
 
