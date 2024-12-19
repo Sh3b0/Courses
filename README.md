@@ -84,7 +84,7 @@ Notes folder contains summary documents I write while studying lecture slides or
 - [Database Systems](./Notes/Database%20Systems.pdf)
 - [Data Structures and Algorithms](./Notes/Data%20Structures%20and%20Algorithms)
 - [Differential Equations](./Notes/Differential%20Equations.pdf)
-- [Distributed Systems and Network Programming](./Notes/Distributed%20Systems%20and%20Network Programming.pdf)
+- [Distributed Systems and Network Programming](./Notes/Distributed%20Systems%20and%20Network%20Programming.pdf)
 - [Electrical Engineering](./Notes/Electrical%20Engineering.pdf)
 - [Information Retrieval](./Notes/Information%20Retrieval.pdf)
 - [Information Security](./Notes/Information%20Security.pdf)
