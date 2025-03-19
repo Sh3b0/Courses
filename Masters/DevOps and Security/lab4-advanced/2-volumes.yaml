@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: volumes-ns
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+  namespace: volumes-ns
+spec:
+  containers:
+    - name: app
+      image: sh3b0/app:latest
+      volumeMounts:
+        - name: visits-volume
+          mountPath: /app/volume
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+      ports:
+        - containerPort: 8080
+  volumes:
+    - name: visits-volume
+      persistentVolumeClaim:
+        claimName: app-pvc
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: app-pvc
+  namespace: volumes-ns
+spec:
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

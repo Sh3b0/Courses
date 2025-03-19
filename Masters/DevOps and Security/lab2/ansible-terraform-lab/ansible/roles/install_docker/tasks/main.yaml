@@ -1,0 +1,16 @@
+- name: Install Docker packages
+  ansible.builtin.apt:
+    name:
+      - docker.io
+    update_cache: true
+
+- name: Ensure Docker group exists
+  ansible.builtin.group:
+    name: docker
+    state: present
+
+- name: Add current user to Docker group
+  ansible.builtin.user:
+    name: "{{ ansible_user }}"
+    groups: docker
+    append: true

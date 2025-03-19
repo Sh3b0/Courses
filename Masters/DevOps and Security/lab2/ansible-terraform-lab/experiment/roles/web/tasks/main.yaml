@@ -1,0 +1,21 @@
+---
+- name: Install Apache2
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+    update_cache: true
+
+- name: Ensure Apache2 is enabled and running
+  ansible.builtin.service:
+    name: apache2
+    state: started
+    enabled: true
+
+- name: Deploy Apache configuration template
+  ansible.builtin.template:
+    src: apache.conf.j2
+    dest: /etc/apache2/sites-available/000-default.conf
+    owner: root
+    group: root
+    mode: '0644'
+  notify: Restart apache2

@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: file-cm
+data:
+  config.json: |
+    {
+      "key": "value"
+    }
+
+---
+
+# Deployment using the ConfigMap
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: sh3b0/app
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+          - name: cm-volume
+            mountPath: /mnt
+      volumes:
+        - name: cm-volume
+          configMap:
+            name: file-cm

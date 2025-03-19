@@ -1,0 +1,19 @@
+---
+- name: Deploy App
+  hosts: server
+  remote_user: ubuntu
+  become: true
+  tasks:
+    - name: Pull the latest app image
+      community.docker.docker_image:
+        name: sh3b0/app
+        tag: latest
+        source: pull
+
+    - name: Deploy the app container
+      community.docker.docker_container:
+        name: app
+        image: sh3b0/app
+        state: started
+        ports:
+          - "80:8080"

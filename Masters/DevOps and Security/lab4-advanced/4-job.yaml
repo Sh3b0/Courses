@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: job-ns
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: app-job
+  namespace: job-ns
+spec:
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      containers:
+      - name: app-test
+        image: sh3b0/app
+        command: ["pytest", "-W", "ignore"]
+      restartPolicy: Never

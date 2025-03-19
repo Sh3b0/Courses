@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #66a9c3;
+  --color-secondary: #39494f;
+  --font-color-1: #1f333a;
+  --font-color-2: #a3b8c1;
+  --font-color-3: #E5F1F5;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* * Defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+}
+.color-1 {
+  color: var(--color-primary);
+}
+.color-2 {
+  color: var(--color-secondary);
+}
+.color-3 {
+  color: var(--font-color-1);
+}
+.color-4 {
+  color: var(--font-color-2);
+}
+.back-1 {
+  background-color: var(--font-color-3);
+}
+.load-btn {
+  border: 1px solid var(--color-primary);
+  padding: 14px 85px;
+  border-radius: 20px;
+  color: var(--color-primary);
+}
+.load-btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+.blured{
+  background-color: rgb(255, 255, 255,0.1);
+ 
+}

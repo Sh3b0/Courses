@@ -1,0 +1,29 @@
+stages:
+  - security-scan
+  - upload-reports
+  
+security-scan:
+  stage: security-scan
+  image: python:3-alpine
+  before_script:
+    - pip3 install bandit njsscan flawfinder
+  script:
+    - bandit -r vulpy/ -f sarif --exit-zero -o bandit_report.sarif
+    - njsscan --sarif dvna/ -o njsscan_report.sarif || true
+    - flawfinder --sarif dvca/ > flawfinder_report.sarif
+  artifacts:
+    paths:
+      - bandit_report.sarif
+      - njsscan_report.sarif
+      - flawfinder_report.sarif
+
+upload-reports:
+  stage: upload-reports
+  image: python:3-alpine
+  needs: ["security-scan"]
+  before_script:
+    - pip3 install requests
+  script:
+    - python3 upload-reports.py bandit_report.sarif
+    - python3 upload-reports.py njsscan_report.sarif
+    - python3 upload-reports.py flawfinder_report.sarif

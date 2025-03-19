@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-cm
+data:
+  cm-key: cm-value
+
+---
+
+# Deployment using the ConfigMap
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: sh3b0/app
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        env:
+          - name: APP_SECRET
+            valueFrom:
+              configMapKeyRef:
+                name: app-cm
+                key: cm-key
+        ports:
+        - containerPort: 8080

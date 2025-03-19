@@ -1,0 +1,22 @@
+---
+- name: Deploy App
+  hosts: demo
+  remote_user: ubuntu
+  become: true
+  roles:
+    - install_docker
+
+  tasks:
+    - name: Pull the latest app image
+      community.docker.docker_image:
+        name: sh3b0/nearbirds
+        tag: latest
+        source: pull
+
+    - name: Deploy the app container
+      community.docker.docker_container:
+        name: app
+        image: sh3b0/nearbirds
+        state: started
+        ports:
+          - "80:3000"

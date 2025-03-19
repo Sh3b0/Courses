@@ -1,0 +1,44 @@
+stages:
+  - test
+  - build-and-push
+  - deploy
+
+test:
+  stage: test
+  cache:
+    - paths:
+        - .cache/pip
+  artifacts:
+    paths:
+      - report.xml
+  variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  script:
+    - |
+      python3 -m venv venv \
+      && source venv/bin/activate \
+      && pip install -r requirements.txt \
+      && pytest --junit-xml=report.xml
+  tags:
+    - st14-runner
+
+build-and-push:
+  stage: build-and-push
+  needs: ["test"]
+  script:
+    - |
+      docker build -t sh3b0/app . \
+      && echo "$DOCKER_TOKEN" | docker login -u sh3b0 --password-stdin \
+      && docker push sh3b0/app --all-tags
+  tags:
+    - st14-runner
+  dependencies: []
+
+deploy:
+  stage: deploy
+  needs: ["build-and-push"]
+  script:
+    - ansible-playbook -i hosts site.yaml
+  tags:
+    - st14-runner
+  dependencies: []

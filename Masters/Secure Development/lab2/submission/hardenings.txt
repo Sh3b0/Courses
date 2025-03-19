@@ -1,0 +1,76 @@
+List of practical hardening instructions to avoid potential
+risks caused by the CWEs discovered in hash.c and hash.h
+> Ahmed Nouralla - a.shaaban@innopolis.university
+==========================================================
+
+CWE-125: Out-of-bounds Read
+- Always validate array indices and pointer arithmetic.
+- Use safer functions like memcpy_s or strncpy instead of memcpy or strcpy.
+
+==========================================================
+
+CWE-190: Integer Overflow or Wraparound
+- Validate all arithmetic operations to ensure they don't overflow
+- Use libraries like IntegerLib that do not allow this problem to occur
+
+==========================================================
+
+CWE-252: Unchecked Return Value
+- Always add an if statement to check the return value of used functions
+- This is especially important for system calls and external library functions.
+
+==========================================================
+
+CWE-457: Use of Uninitialized Variable
+- Initialize all variables before use.
+- Enable compiler warnings for uninitialized variables (with the flag -Wuninitialized).
+
+===========================================================
+
+CWE-476: NULL Pointer Dereference
+- Always check pointers for NULL before dereferencing.
+- Example code: `if (ptr != NULL) { *ptr = 123; }`
+
+==========================================================
+
+CWE-676: Use of Potentially Dangerous Functions
+- Replace dangerous functions (e.g., gets, strcpy)
+  with safer alternatives (e.g., fgets, strncpy).
+
+==========================================================
+
+CWE-416: Use After Free
+- Set pointers to NULL after freeing them to prevent accidental reuse.
+- Example code: `free(ptr); ptr = NULL;`
+
+==========================================================
+
+CWE-134: Uncontrolled Format String
+- Always use a format string functions that require it like printf.
+- Example: `printf("%s", user_input); // Not printf(user_input)`
+
+==========================================================
+General hardening instructions
+================================
+
+- Enable recommended compiler flags for memory protection
+  - Ref: https://wiki.debian.org/Hardening#Notes_on_Memory_Corruption_Mitigation_Methods
+
+- Enable runtime sanitizers (memory error detectors that dynamically check 
+  for out-of-bound, use-after-free, and relevant bugs). 
+  - Ref: https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html#index-fsanitize_003daddress
+
+- Use SAST tools like semgrep or static analyzers like clang-tidy.
+  - Guide for Ubuntu:
+    sudo apt update && sudo apt install clang-tidy
+    clang-tidy program.c -- -Wall -Wextra -O2
+
+- Enable Address Space Layout Randomization (ASLR).
+    - Helps preventing overflow-related exploits.
+    - Command: `sudo sysctl -w kernel.randomize_va_space=2`
+
+- Fuzz-test your programs. Guide using AFL tool:
+    sudo apt install afl++
+    afl-gcc -o program program.c
+    afl-fuzz -i <input_dir> -o <output_dir> ./program
+

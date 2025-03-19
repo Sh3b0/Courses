@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ingress-ns
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+  namespace: ingress-ns
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: myapp
+    image: sh3b0/app
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-svc
+  namespace: ingress-ns
+spec:
+  selector:
+    app: myapp
+  ports:
+  - name: svc-port
+    port: 80
+    targetPort: 8080
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+  namespace: ingress-ns
+spec:
+  rules:
+  - host: app.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: app-svc
+            port:
+              name: svc-port

@@ -1,0 +1,10 @@
+venv/
+volume/
+.idea/
+.vscode/
+__pycache__/
+.pytest_cache/
+logs/
+Dockerfile
+README.md
+.gitignore

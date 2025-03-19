@@ -1,0 +1,14 @@
+plugin: amazon.aws.aws_ec2
+
+regions:
+  - us-east-1
+
+filters:
+  instance-state-name: running     # Only include running instances
+  tag:Name: demo                   # Tag created from Terraform
+
+hostnames:
+  - tag:Name                       # Use instance Name tag as the hostname
+
+compose:
+  ansible_host: public_ip_address  # Use the public IP as the Ansible host

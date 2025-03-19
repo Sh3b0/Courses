@@ -1,0 +1,199 @@
+<html>
+<!-- Credits: https://codepen.io/ChristosGeorgiou/pen/WrwxgM -->
+<head>
+    <title>Invoice for {{ name }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #EEE;
+            /* font-size:0.9em !important; */
+            ;
+        }
+
+        .invoice {
+            width: 970px !important;
+            margin: 50px auto;
+        }
+
+        .invoice .invoice-header {
+            padding: 25px 25px 15px;
+        }
+
+        .invoice .invoice-header h1 {
+            margin: 0;
+        }
+
+        .invoice .invoice-header .media .media-body {
+            font-size: .9em;
+            margin: 0;
+        }
+
+        .invoice .invoice-body {
+            border-radius: 10px;
+            padding: 25px;
+            background: #FFF;
+        }
+
+        .invoice .invoice-footer {
+            padding: 15px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #999;
+        }
+
+        .logo {
+            max-height: 70px;
+            border-radius: 10px;
+        }
+
+        .dl-horizontal {
+            margin: 0;
+        }
+
+        .dl-horizontal dt {
+            float: left;
+            width: 80px;
+            overflow: hidden;
+            clear: left;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .dl-horizontal dd {
+            margin-left: 90px;
+        }
+
+        .rowamount {
+            padding-top: 15px !important;
+        }
+
+        .rowtotal {
+            font-size: 1.3em;
+        }
+
+        .colfix {
+            width: 12%;
+        }
+
+        .mono {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container invoice">
+        <div class="invoice-header">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h1>Invoice</h1>
+                    <h4 class="text-muted">NO: # INV-000011 | Date: 15 Mar 2023</h4>
+                </div>
+                <div class="col-xs-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object logo" src="https://dummyimage.com/70x70/000/fff&text=ACME" />
+                        </div>
+                        <ul class="media-body list-unstyled">
+                            <li><strong>Halborn Inc</strong></li>
+                            <li>Florida</li>
+                            <li>U.S.A</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invoice-body">
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Bill To</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="dl-horizontal">
+                                <dt>Name</dt>
+                                <dd><strong>Halborn Inc</strong></dd>
+                                <dt>Address</dt>
+                                <dd>114 Northwest 25th Street, #143</dd>
+                                <dt>City</dt>
+                                <dd>Miami</dt>
+                                <dt>State</dt>
+                                <dd>3127 Florida</dd>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Ship To</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="dl-horizontal">
+                                <dt>Name</dt>
+                                <dd>{{ name }}</dd>
+                                <dt>Address</dt>
+                                <dd>{{ address }}</dd>
+                                <dt>Phone</dt>
+                                <dd>{{ phone }}</dd>
+                                <dt>Email</dt>
+                                <dd>{{ email }}</dd>
+                                <dt>&nbsp;</dt>
+                                <dd>&nbsp;</dd>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Services / Products</h3>
+                </div>
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Item / Details</th>
+                            <th class="text-center colfix">Unit Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Independent Contractors. Alvaro Macias 4*2**5*1*
+                                <br>
+                                <small class="text-muted">{{ role }}</small>
+                            </td>
+                            <td class="text-right">
+                                <span class="mono">$1,337</span>
+                                <br>
+                                <small class="text-muted">Amount</small>
+                            </td>
+                       
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <i>Notes</i>
+                            <hr style="margin:3px 0 5px" />
+                            <p>Try harder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="invoice-footer">
+            Thanks for your business.
+            <br /> Yours sincerely.
+            <br />
+            <strong>//Alvaro</strong>
+        </div>
+    </div>
+</body>
+
+</html>
