@@ -108,7 +108,7 @@ Set the shell script that you have written in Task 2 to run in a crontab. Config
 
 - Result
 
-  ![image-20241110044143902](/home/ahmed/.config/Typora/typora-user-images/image-20241110044143902.png)
+  ![image-20241110044143902](https://i.imgur.com/WSkZz8e.png)
 
 
 

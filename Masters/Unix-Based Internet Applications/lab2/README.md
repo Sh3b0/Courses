@@ -243,7 +243,7 @@ This will automatically generate the required key at `/usr/local/etc/rndc.key` t
   sudo systemctl restart systemd-resolved
   ```
 
-  ![image-20241112212015101](/home/ahmed/.config/Typora/typora-user-images/image-20241112212015101.png)
+  ![image-20241112212015101](https://i.imgur.com/gnrrUhD.png)
 
 - Verify that our DNS server (at 192.168.122.27) is being used to resolve queries. 
 
@@ -292,8 +292,20 @@ zone "st14.sne24.ru" {
 };
 ```
 
+**Trying to verify the zone file with `named-checkzone`, I got the following error**
+
+![](https://i.postimg.cc/CL12p1QP/image.png)
+
+My understanding of the situation (please correct me if I'm wrong).
+
+- The owner of the parent domain `sne24.ru` should have delegated control of the subdomain at `st14.sne24.ru` so that any requests to it are resolved by the nameserver I control at `ns.st14.sne24.ru`
+- The error message states that for `ns.st14.sne24.ru` to be resolved, there should be an A record for it at the parent domain zone file for `sne24.ru`.
+- Once that's there, we can reload the server then query it with `dig` or `nslookup` as before.
+- The task description starts with the sentence **"Create the 2nd VM and prepare zone delegation"**. There was no mentioning of a 1st VM. I assume that should be the one with the zone file for the parent domain `sne24.ru`
+
 The zone file for `sne24.ru.zone` could potentially look like this (with subdomains for other students) and be reachable from the university network (addresses in the 10.0.0.0/8 range for organization networks).
 
-![image-20241112210741716](/home/ahmed/.config/Typora/typora-user-images/image-20241112210741716.png)
+![image-20241112210741716](https://i.imgur.com/Bu8xawU.png)
+
 
 

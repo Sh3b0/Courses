@@ -384,7 +384,7 @@ My personal notes on STP after watching [this](https://www.youtube.com/watch?v=j
 
 - Rechecking. It shows root ID Address to be the same as Bridge ID (Switch) Address.
 
-  ![image-20241112183704847](/home/ahmed/.config/Typora/typora-user-images/image-20241112183704847.png)
+  ![image-20241112183704847](https://i.imgur.com/ks330QA.png)
 
 **g. Would we need STP between routers?**
 

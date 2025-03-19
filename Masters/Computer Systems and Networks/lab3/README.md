@@ -55,23 +55,23 @@ b. What IPC facilities are currently on your system? Show the current activity i
 
 - `lsof` lists open files (pipes)
 
-  ![image-20241110174448520](/home/ahmed/.config/Typora/typora-user-images/image-20241110174448520.png)
+  ![image-20241110174448520](https://i.imgur.com/iubYXj4.png)
 
 - `netstat -tuln` is used to see currently active TCP/UDP listening sockets
 
-  ![image-20241110174141807](/home/ahmed/.config/Typora/typora-user-images/image-20241110174141807.png)
+  ![image-20241110174141807](https://i.imgur.com/AkfJnIC.png)
 
 - `ss -x` shows established UNIX sockets
 
-  ![image-20241110174225247](/home/ahmed/.config/Typora/typora-user-images/image-20241110174225247.png)
+  ![image-20241110174225247](https://i.imgur.com/QO2IlZx.png)
 
 - `ipcs` command is used to show currently utilized message queues, shared memory segments and semaphore arrays
 
-  ![image-20241110174129951](/home/ahmed/.config/Typora/typora-user-images/image-20241110174129951.png)
+  ![image-20241110174129951](https://i.imgur.com/3xzs9Yt.png)
 
 - `ps -eo pid,stat,comm` shows the signal **stat**us of a process (identified by its PID and command)
 
-  ![image-20241110174824762](/home/ahmed/.config/Typora/typora-user-images/image-20241110174824762.png)
+  ![image-20241110174824762](https://i.imgur.com/VSCVMT3.png)
 
 c. Create two separate programs which implements inter process communication (between parent process and child process) using shared memory and pipes, using any programming language of your choice
 
@@ -172,11 +172,13 @@ c. Create two separate programs which implements inter process communication (be
 
 - Program execution. A video is also attached showing the code compilation and execution.
 
-  ![image-20241110181326993](/home/ahmed/.config/Typora/typora-user-images/image-20241110181326993.png)
+  ![image-20241110181326993](https://i.imgur.com/SdppUkm.png)
 
 ## Task 3
 
-### References:
+> Teammate: Mohamad Bahja - m.bahja@innopolis.university
+
+### References
 
 - Article explaining the difference between bind and reverse shell: https://www.geeksforgeeks.org/difference-between-bind-shell-and-reverse-shell/
 - The website https://www.revshells.com/ provides payloads using different tools for opening a bind or a reverse shell. All the payloads used below were obtained from the website.
