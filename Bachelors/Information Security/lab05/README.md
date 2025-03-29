@@ -94,7 +94,7 @@
 ### Function call and argument passing
 
 - Function calls used `call sample_function` assembly instruction in both architectures.
-- `sample_function` didn't require arguments, but if it did, the difference would be to the use of `mov`  with `eax` and `ebx` to pass such arguments in 32-bit architecture and their equivalent `rax` and `rbx` in 64-bit.
+- `sample_function` didn't require arguments, but if it did, the difference would be to the use of `mov` with `eax` and `ebx` to pass such arguments in 32-bit architecture and their equivalent `rax` and `rbx` in 64-bit.
 
 ### ldd command
 

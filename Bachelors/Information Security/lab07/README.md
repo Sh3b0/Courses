@@ -10,7 +10,7 @@
 
 - **Why would you use a forensic distribution and what are the main differences between it and a regular distribution?**
   - Forensic distributions come preloaded with the necessary software and environment for investigation.
-  - It also provides features such as opening all block devices (e.g., USBs) in read-only mode by default, this ensures that no write operations will be done accidently or by the OS, thus preserving the evidence integrity.
+  - It also provides features such as opening all block devices (e.g., USBs) in read-only mode by default, this ensures that no write operations will be done accidentally or by the OS, thus preserving the evidence integrity.
 - **When would you use a live environment and when would you use an installed environment?**
   - Installed environment is useful for mass storage and in cases where you need to preserve content or work for later.
   - Live environment is useful for quick, one-time tasks where you need a fresh minimal environment.
