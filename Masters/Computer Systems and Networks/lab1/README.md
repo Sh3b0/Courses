@@ -8,7 +8,7 @@
 
 - A computer system is the combination of hardware, software, user, and data.
 - One example may can be a database: it has a
-  - **Hardware:** Database Server (e.g., PostgreSQL).
+  - **Hardware:** Database Server.
   - **Software:** Database Management System (DBMS) installed on the server
   - **User:** Database Administrator (DBA) or users querying the database.
   - **Data:** raw values stored in the database
