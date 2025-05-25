@@ -1,0 +1,18 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 text-center">
+        <h2>Login</h2>
+        <hr class="star-primary">
+        <div class="alert alert-danger" ng-if="hasError">
+          <strong>Login Failed!</strong> {{alertMessage}}
+        </div>
+        <form>
+          <input type="text" ng-model="username" class="form-control" placeholder="Username" name="username">
+          <input type="password" ng-model="password" class="form-control" placeholder="Password" name="password">
+          <button type="button" class="btn btn-primary btn-block" ng-click="authenticate()">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

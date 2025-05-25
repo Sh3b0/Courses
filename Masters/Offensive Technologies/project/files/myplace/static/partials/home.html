@@ -1,0 +1,35 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Say "Hey" To Our Newest Members</h2>
+        <hr class="star-primary">
+        <div class="profile" ng-repeat="user in users">
+          <a ng-href="/profiles/{{user.username}}" style="text-decoration: none !important;">
+            <img class="img-circle img-avatar" ng-src="uploads/{{user.username}}.jpg" alt="{{user.username}}">
+          </a>
+          <br>
+          <a ng-href="/profiles/{{user.username}}">{{user.username}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="success">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>What Is MyPlace?</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <p>MyPlace is a new collaboration project by the gurus of social media to bring you the most secure platform ever to meet new people.</p>
+            </div>
+            <div class="col-lg-4">
+                <p>Sign ups are closed whilst we finish up development, but feel free to take a look at the profiles of our existing users.</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+.img-avatar {
+  max-width: 120px;
+}
+
+.profile {
+  display: inline-block;
+  padding: 15px;
+}
+
+.profile a {
+  font-size: 2em;
+}
+
+.form-control {
+  margin-top: 15px;
+}
+
+.btn-block {
+  margin-top: 15px;
+}

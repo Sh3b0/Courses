@@ -1,0 +1,18 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 text-center">
+        <h2>Welcome Back, {{user.username}}</h2>
+        <hr class="star-primary">
+        <div ng-if="!user.is_admin">
+          <p>
+            Only admin users have access to the control panel currently, but check back soon to test the standard user functionality!
+          </p>
+        </div>
+        <div ng-if="user.is_admin">
+          <button class="btn btn-large btn-primary" ng-click="backup()">Download Backup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

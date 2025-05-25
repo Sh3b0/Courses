@@ -1,0 +1,12 @@
+{
+    "name": "myplace",
+    "description": "A secure place to meet new people.",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "express": "4.15.x",
+        "express-session": "1.15.x",
+        "body-parser": "1.17.x",
+        "mongodb": "2.2.x"
+    }
+}

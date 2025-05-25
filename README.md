@@ -13,9 +13,13 @@ This [monorepo](https://en.wikipedia.org/wiki/Monorepo) contains:
 > Currently pursuing Masters in Security and Network Engineering
 
 - [Networks Engineering](./Masters/Networks%20Engineering): practical network configuration tasks in GNS3 with virtual MikroTiK and Cisco equipment. Topics include IP, STP, VLAN, LACP, OSPF, QoS, and MPLS.
-- [Unix-Based Internet Applications](./Masters/Unix-Based%20Internet%20Applications): installing and configuring tools for network boot (dnsmasq), name server (BIND), mail agent (Exim), and web server (Nginx).
-- [Security of Systems and Networks](./Masters/Security%20of%20Systems%20and%20Networks): labs on classical cryptography, UEFI secure boot, OpenSSL, and OpenVPN.
-- [Computer Systems and Networks](./Masters/Computer%20Systems%20and%20Networks): labs on system architecture, IPC, network reconnaissance, systemd/crontab, and SAST tools.
+- [Unix-Based Internet Applications](./Masters/Unix-Based%20Internet%20Applications): installing and configuring tools for network boot (dnsmasq), name server (BIND), mail agent (Exim), and web server (Nginx). Project works on DHCP and KeyCloak.
+- [Security of Systems and Networks](./Masters/Security%20of%20Systems%20and%20Networks): labs on classical cryptography, UEFI secure boot, OpenSSL, and OpenVPN. Project work on GitLab+LDAP.
+- [Computer Systems and Networks](./Masters/Computer%20Systems%20and%20Networks): labs on system architecture, IPC, network reconnaissance, systemd/crontab, and SAST tools. Project works on Kubernetes and Chord DHT.
+- [DevOps and Security](./Masters/DevOps%20and%20Security): labs on Docker, Ansible, Terraform, GitLab CI, and Kubernetes. Project work on Vulnerability Management with DefectDojo.
+- [Offensive Technologies](./Masters/Offensive%20Technologies): labs on binary disassembly/exploitation and software vulnerabilities. Project work on HTB machine writeup.
+- [Digital Forensics and Incident Response](./Masters/Digital%20Forensics%20and%20Incident%20Response): labs on Windows forensics, malware analysis, and incident response. Project work on Network Forensics with Malcolm.
+- [Secure Development](./Masters/Secure%20Development): labs on secure coding, fuzzing, SIEM, AppArmor/SELinux, and Pentesting.
 
 ## Bachelors Coursework
 
@@ -41,7 +45,7 @@ This [monorepo](https://en.wikipedia.org/wiki/Monorepo) contains:
 
 ### Software Development
 
-- [Software Systems Design](./Bachelors/Software%20Systems%20Design): assignments on design patterns.
+- [Software Systems Analysis and Design](https://github.com/ITP-SSAD/SSAD-S25): labs on C++ programming and Design Patterns
 - [Software Quality and Reliability](./Bachelors/Software%20Quality%20and%20Reliability): practical lab tasks on software testing and quality gates with GitLab CI.
 - [Programming Paradigms](./Bachelors/Programming%20Paradigms): functional and logic programming tasks in Haskell, Racket, and Prolog.
 - [Mobile Development with Flutter](./Bachelors/Mobile%20Development%20with%20Flutter): assignments on Flutter and Dart.

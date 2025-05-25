@@ -1,0 +1,42 @@
+Case Information: 
+Acquired using: FTK
+Case Number:  
+Evidence Number:  
+Unique Description: 
+Examiner:  
+Notes:  
+
+--------------------------------------------------------------
+
+Information for evidence1.dd:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Physical
+[Verification Hashes]
+ MD5 verification hash: 50decb45c3d56ffe1a3c538bb7898fd9
+[Drive Geometry]
+ Bytes per Sector: 512
+ Sector Count: 7821312
+[Image]
+ Image Type: E01
+ Case number: Lab-1
+ Evidence number: 0001
+ Examiner: Emil A. Sharifullin
+ Notes: 4C532000060816106053
+ Acquired on OS: Linux deft8 3.5.0-30-generic #51-Ubuntu SMP Tue May 14 18:47:48 UTC 2013 x86_64
+ Acquired using: guymager 0.7.3-1
+ Acquire date: Mon 09 Jan 2017 11:50:17 AM GMT
+ System date: Mon 09 Jan 2017 11:50:17 AM GMT
+ Unique description: Red evidence flash drive
+ Source data size: 3819 MB
+ Sector count:    7821312
+[Computed Hashes]
+ MD5 checksum:    50decb45c3d56ffe1a3c538bb7898fd9
+ SHA1 checksum:   e0839afe9e275b2c39c1a1eb15c74ae019ab9e55
+
+Image Information:
+ Acquisition started:   Fri Mar 21 15:04:33 2025
+ Acquisition finished:  Fri Mar 21 15:04:59 2025
+ Segment list:
+  evidence1.dd.001

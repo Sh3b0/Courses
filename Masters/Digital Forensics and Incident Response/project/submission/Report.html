@@ -1,0 +1,737 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Network Forensics with Malcolm</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1f0055c7-5784-8092-a14e-e51409994fa2" class="page sans"><header><h1 class="page-title"><strong>Network Forensics with Malcolm</strong></h1><p class="page-description"></p></header><div class="page-body"><blockquote id="1f0055c7-5784-80e0-8780-c134e493bbc6" class="">Cybercrime and Forensics Course Project - Ahmed Nouralla (a.shaaban@innopolis.university)</blockquote><nav id="1f0055c7-5784-80eb-9ddc-d7a1253a7d07" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1f0055c7-5784-80ff-b8bf-c330693f6ca9"><strong>1. Introduction: Goals/Tasks</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-80ba-b817-d334c6157b48"><strong>1.1. Network Forensics</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-80f3-8778-c5c310507c87"><strong>1.2. Traffic Analysis</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8033-b355-df1c0201ba02"><strong>1.3. Analysis Stages</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1f0055c7-5784-80f1-ab50-c20b3d5ae15f"><strong>2. Methodology: Execution Plan</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8016-9e79-dabd4680e91c"><strong>2.1. Overview</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-80d3-b253-f7ef66254050"><strong>2.2. Tooling</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-802f-96b7-d04522189a02"><strong>2.3. Data Pipeline</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-809d-8c73-ee7e7abe9fa6"><strong>2.4. Deployment Options</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-806e-acc3-da9dad4f4ffc"><strong>2.5. Malcolm Homepage</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1f0055c7-5784-80ff-95f3-cfa2f1fff166"><strong>3. Results: Proof-of-Concept</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-802d-9c7e-db4911857ec2"><strong>3.1. Scans and Probes</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8004-be7d-d328aa46a3d9"><strong>3.2. Remcos RAT infection</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8051-8fdc-fe6468208704"><strong>3.3. AgentTesla Data Exfiltration over FTP</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8095-ab80-dd3db9d56b5c"><strong>3.4. Alternative services</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1f0055c7-5784-8055-a696-eb791919e268"><strong>4. Discussion: Difficulties Faced</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1f0055c7-5784-8062-b1c2-f77b72077908"><strong>5. Conclusion</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1f0055c7-5784-80f0-98d9-d2f9384bf5ae"><strong>6. Appendix</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-80f7-8fe7-f3c539143afc"><strong>6.1. Malcolm Server Deployment</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8072-ad5f-e4bf59e962ea"><strong>6.2. Running Dockerized Malcolm in an Ubuntu Server VM</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1f0055c7-5784-8071-903c-c5e495c66fe5"><strong>6.3. External Links</strong></a></div></nav><h2 id="1f0055c7-5784-80ff-b8bf-c330693f6ca9" class=""><strong>1. Introduction: Goals/Tasks</strong></h2><p id="1f0055c7-5784-8034-9cc9-c0c8c3cdd000" class="">Main goals of the project:</p><ul id="1f0055c7-5784-800c-80dd-c8de752bce50" class="bulleted-list"><li style="list-style-type:disc">Analyze PCAP cases from real incidents of malware infection.</li></ul><ul id="1f0055c7-5784-8042-9106-d3b0c95fe40a" class="bulleted-list"><li style="list-style-type:disc">Explore the architecture and experiment with the available features in Malcolm tool suite.</li></ul><h3 id="1f0055c7-5784-80ba-b817-d334c6157b48" class=""><strong>1.1. Network Forensics</strong></h3><p id="1f0055c7-5784-80e3-b966-d934a73f3793" class=""><strong>Network forensics</strong> is a sub-branch of digital forensics concerned with the monitoring and analysis of computer network traffic for two main purposes:</p><ul id="1f0055c7-5784-8070-9297-e1f81faac4fa" class="bulleted-list"><li style="list-style-type:disc"><strong>Intrusion Detection:</strong> monitoring and analyzing traffic to identify anomalous behavior (e.g., for analyzing malware traffic, updating firewall rules, training ML models, etc.)</li></ul><ul id="1f0055c7-5784-80f7-b0d9-d08921b4b338" class="bulleted-list"><li style="list-style-type:disc"><strong>Law enforcement</strong>: investigating a Cybercrime to extract legal evidence files for court proceedings. An attacker may be able to delete all logs on a compromised host. In such cases, network traffic might be the only available evidence for forensic analysis.</li></ul><p id="1f0055c7-5784-806b-9852-f03bb2fcb10f" class=""><strong>Advantages:</strong></p><ul id="1f0055c7-5784-8061-bfa1-fc56cbd8585d" class="bulleted-list"><li style="list-style-type:disc">By forwarding and storing network data, we ensure traceability as the data persists even if the compromised system was wiped (in which case it&#x27;s the only available artifact for forensic analyzers)</li></ul><ul id="1f0055c7-5784-8016-b392-f46ae7a84cef" class="bulleted-list"><li style="list-style-type:disc">Collecting network data on the hardware level does not modify the systems, unlike memory or disk dumping that may require additional tools to be installed on the host, potentially corrupting the evidence.</li></ul><p id="1f0055c7-5784-8078-9dcc-c14e7bb73a77" class=""><strong>Disadvantage:</strong></p><ul id="1f0055c7-5784-80ad-9729-e47fec53adb4" class="bulleted-list"><li style="list-style-type:disc">Network forensics requires a proactive approach (the infrastructure for collecting/forwarding network traffic has to be deployed beforehand) as network data is by default transmitted then lost.</li></ul><h3 id="1f0055c7-5784-80f3-8778-c5c310507c87" class=""><strong>1.2. Traffic Analysis</strong></h3><p id="1f0055c7-5784-80de-adc7-f7670155d0eb" class="">Traffic analysis can generally be carried out in one of two approaches:</p><ul id="1f0055c7-5784-8062-936d-ed6000d9b493" class="bulleted-list"><li style="list-style-type:disc"><strong>Live analysis:</strong> analyze packets on the go (e.g., for incident response)<ul id="1f0055c7-5784-8088-b2e4-ee505488b6b8" class="bulleted-list"><li style="list-style-type:circle">One or more dedicated sensor appliance (hardware or software) can be configured to monitor a network interface and mirror its traffic to a specified output interface</li></ul><ul id="1f0055c7-5784-80e4-ad16-cb17ef35c93e" class="bulleted-list"><li style="list-style-type:circle">The traffic is ingested by an analyzer (e.g., a machine-learning model) which may utilize heuristics and Deep-Packet Inspection (DPI) to make sense of the traffic (e.g., extract session information, generate and forward logs in certain formats, detect/analyze transferred files, etc.)</li></ul></li></ul><ul id="1f0055c7-5784-80f2-925f-cd5e8e292684" class="bulleted-list"><li style="list-style-type:disc"><strong>Offline analysis:</strong> dump now, analyze later (e.g., for forensic investigation post-incident)<ul id="1f0055c7-5784-80ab-90be-dfe1b429a4a7" class="bulleted-list"><li style="list-style-type:circle">Traffic is imported from previously collected Packet Capture (PCAP) files or other formats (e.g., Zeek logs).</li></ul></li></ul><h3 id="1f0055c7-5784-8033-b355-df1c0201ba02" class=""><strong>1.3. Analysis Stages</strong></h3><p id="1f0055c7-5784-802b-8fa5-e1bd6b6c4dc5" class="">Traffic data generally goes through three stages:</p><ol type="1" id="1f0055c7-5784-80bd-b234-fcd5e159db75" class="numbered-list" start="1"><li><strong>Forwarding:</strong> data is sent to a dedicated system for ingesting/aggregating.</li></ol><ol type="1" id="1f0055c7-5784-805a-a116-f108a8046662" class="numbered-list" start="2"><li><strong>Processing:</strong> data is further filtered, indexed, compressed, and/or transformed into convenient formats.</li></ol><ol type="1" id="1f0055c7-5784-808a-a87b-e4a412d5f258" class="numbered-list" start="3"><li><strong>Visualization:</strong> data is consumed by analytics tools to build custom dashboards for monitoring (e.g., incident response), summarization (e.g., statistics), or alerting (e.g., notifications).</li></ol><h2 id="1f0055c7-5784-80f1-ab50-c20b3d5ae15f" class=""><strong>2. Methodology: Execution Plan</strong></h2><h3 id="1f0055c7-5784-8016-9e79-dabd4680e91c" class=""><strong>2.1. Overview</strong></h3><p id="1f0055c7-5784-80b3-9b61-e4a7e358d062" class=""><strong>Malcolm</strong> is a comprehensive tool suite developed by the United States &quot;Cybersecurity &amp; Infrastructure Security Agency (CISA)&quot; for network security monitoring. A typical workflow involves the following steps:</p><ol type="1" id="1f0055c7-5784-800c-a910-e88fa50ecdf5" class="numbered-list" start="1"><li>[Live Analysis] Traffic data is collected through a Switch SPAN port or network TAP, then forwarded to a dedicated sensor appliance running hedgehog Linux.</li></ol><ol type="1" id="1f0055c7-5784-8025-8414-db249af38136" class="numbered-list" start="2"><li>[Offline Analysis] Traffic data is imported from local Zeek logs or PCAP files.</li></ol><ol type="1" id="1f0055c7-5784-8091-8453-e39dda483982" class="numbered-list" start="3"><li>Data is forwarded to Malcolm server for storage and analysis (e.g., by SOC teams).</li></ol><ol type="1" id="1f0055c7-5784-809e-9c73-f6427c44a1e9" class="numbered-list" start="4"><li>[Optional] if needed, one may forward to a remote malcolm instance (e.g., for backup or further analysis)</li></ol><figure id="1f0055c7-5784-8011-a357-e8a7e8cc2a15" class="image"><a href="https://cisagov.github.io/Malcolm/docs/images/malcolm_network_diagram.png"><img src="https://cisagov.github.io/Malcolm/docs/images/malcolm_network_diagram.png"/></a></figure><h3 id="1f0055c7-5784-80d3-b253-f7ef66254050" class=""><strong>2.2. Tooling</strong></h3><p id="1f0055c7-5784-8073-b9e6-ca75d80bb298" class="">Malcolm leverages existing open-source tools and technologies to build a complete pipeline for collecting and analyzing network traffic</p><figure id="1f0055c7-5784-805d-917c-fa7b31a13ab3" class="image"><a href="https://cisagov.github.io/Malcolm/docs/images/malcolm_components.png"><img src="https://cisagov.github.io/Malcolm/docs/images/malcolm_components.png"/></a></figure><ul id="1f0055c7-5784-80ea-a126-c6fe22b77e4a" class="bulleted-list"><li style="list-style-type:disc"><strong>Capturing &amp; Analysis</strong><ul id="1f0055c7-5784-8045-ad44-dbb7376bfa4c" class="bulleted-list"><li style="list-style-type:circle"><strong>Zeek:</strong> provides insights into network activities though a custom <a href="https://docs.zeek.org/en/current/script-reference/log-files.html">log format</a></li></ul><ul id="1f0055c7-5784-8073-9b01-ed7307eefd71" class="bulleted-list"><li style="list-style-type:circle"><strong>Arkime:</strong> used for PCAP file processing, browsing, searching, analysis, and carving/exporting</li></ul><ul id="1f0055c7-5784-800e-9fe9-f132b8096319" class="bulleted-list"><li style="list-style-type:circle"><strong>Suricata:</strong> an instruction detection system (IDS)</li></ul><ul id="1f0055c7-5784-8069-b883-f1bd6acca210" class="bulleted-list"><li style="list-style-type:circle"><strong>Linux utilities for network auditing:</strong> <code>netsniff-ng</code> and <code>tcpdump</code></li></ul></li></ul><ul id="1f0055c7-5784-8045-b85f-fbe4a12996fa" class="bulleted-list"><li style="list-style-type:disc"><strong>File Scanning</strong><ul id="1f0055c7-5784-80cf-bc3a-c1766ada6aa0" class="bulleted-list"><li style="list-style-type:circle"><strong>YARA:</strong> pattern matching syntax for identifying and classifying malware samples</li></ul><ul id="1f0055c7-5784-8050-96df-cf1ad826abbe" class="bulleted-list"><li style="list-style-type:circle"><strong>ClamAV:</strong> an antivirus engine for scanning files extracted by Zeek</li></ul><ul id="1f0055c7-5784-800b-880c-fcef6f1bc1c4" class="bulleted-list"><li style="list-style-type:circle"><strong>CAPA:</strong> a tool for detecting capabilities in executable files</li></ul><ul id="1f0055c7-5784-8046-8f93-d32f3c4f02f6" class="bulleted-list"><li style="list-style-type:circle"><strong>VirtusTotal:</strong> online service for analyzing suspecious files, domains, IPs and URLs</li></ul></li></ul><ul id="1f0055c7-5784-8038-b0a7-cfc0b0cc583b" class="bulleted-list"><li style="list-style-type:disc"><strong>Forwarding and Enrichment</strong><ul id="1f0055c7-5784-80c7-82e6-d15ba6b41cc1" class="bulleted-list"><li style="list-style-type:circle"><strong>Logstash and Filebeat:</strong> for ingesting and parsing Zeek Log Files and forwarding them to OpenSearch in a format that Arkime understands in the same way it natively understands PCAP data.</li></ul><ul id="1f0055c7-5784-805f-ba79-f18eb4a97528" class="bulleted-list"><li style="list-style-type:circle"><strong>FluentBit:</strong> used for forwarding metrics to Malcolm from network sensors</li></ul></li></ul><ul id="1f0055c7-5784-8033-b327-f91282c9f64b" class="bulleted-list"><li style="list-style-type:disc"><strong>OpenSearch:</strong><ul id="1f0055c7-5784-8013-99bf-c1060ca497db" class="bulleted-list"><li style="list-style-type:circle">Main service used for visualizing Malcolm dashboards, and setting up alerts.</li></ul></li></ul><ul id="1f0055c7-5784-8070-b0c9-d7c052dc129c" class="bulleted-list"><li style="list-style-type:disc"><strong>CyberChef</strong>:<ul id="1f0055c7-5784-8047-ba14-e9d66bb383f2" class="bulleted-list"><li style="list-style-type:circle">A local instance of the popular payload swiss army knife is deployed with Malcom to facilitate working with extracted data.</li></ul></li></ul><h3 id="1f0055c7-5784-802f-96b7-d04522189a02" class=""><strong>2.3. Data Pipeline</strong></h3><p id="1f0055c7-5784-80af-b8c9-ce26c4162cfa" class="">The following data pipeline is used by Malcolm for offline analysis of PCAP files (focus of this project)</p><ol type="1" id="1f0055c7-5784-807c-9bc0-d686cadd4d01" class="numbered-list" start="1"><li>Imported PCAP files are sent to Zeek, Suricata, and Arkime capture for analysis</li></ol><ol type="1" id="1f0055c7-5784-80b2-8c27-c224f9a52645" class="numbered-list" start="2"><li>Zeek logs and Suricata alerts are sent to Filebeat then Logstash for ingestion, indexing, and reformatting.</li></ol><ol type="1" id="1f0055c7-5784-804d-9737-ec3bc6664c26" class="numbered-list" start="3"><li>An analyst has access to preconfigured OpenSearch dashboards and Arkime viewer interface to visualize and filter through the collected data to perform forensic investigations.</li></ol><figure id="1f0055c7-5784-807d-bff2-f9233869d2be" class="image"><a href="https://cisagov.github.io/Malcolm/docs/images/malcolm_data_pipeline.png"><img src="https://cisagov.github.io/Malcolm/docs/images/malcolm_data_pipeline.png"/></a></figure><h3 id="1f0055c7-5784-809d-8c73-ee7e7abe9fa6" class=""><strong>2.4. Deployment Options</strong></h3><p id="1f0055c7-5784-8053-b18c-c07791973128" class="">Malcolm deployment options:</p><ul id="1f0055c7-5784-805f-b891-e0c6b9014b8c" class="bulleted-list"><li style="list-style-type:disc"><strong>Docker:</strong> subsystems of Malcolm are distributed as Docker containers hosted on GitHub Container Registry. One may pull them to run in a docker compose network. If needed, containers may also be deployed as a part of a larger Kubernetes cluster.</li></ul><ul id="1f0055c7-5784-80a7-a583-de35fc41adfa" class="bulleted-list"><li style="list-style-type:disc"><strong>Installer ISO:</strong> a self-contained installation of Malcolm, built on top of the latest stable Debian (version 12 at the time of writing), including GUI and additional scripts and utilities for working with Malcolm server.</li></ul><p id="1f0055c7-5784-8046-98b1-d6e0a5cf8ab9" class="">I experimented with both options. They turned out to be quite similar as the second option also uses Docker containers running inside the Debian installation, with additional wrapper scripts, desktop shortcuts, and preconfigured OS defaults. <strong>Refer to the Appendix for deployment steps taken.</strong></p><h3 id="1f0055c7-5784-806e-acc3-da9dad4f4ffc" class=""><strong>2.5. Malcolm Homepage</strong></h3><p id="1f0055c7-5784-8035-8b2b-f9cbc663370d" class="">Server homepage contains hyperlinks to eight additional pages.</p><figure id="1f0055c7-5784-8061-86e7-d80503a1e33b" class="image"><a href="https://i.imgur.com/qnvdue4.png"><img src="https://i.imgur.com/qnvdue4.png"/></a></figure><ol type="1" id="1f0055c7-5784-80f4-af7e-da4592aa3715" class="numbered-list" start="1"><li><strong>Dashboards</strong>: OpenSearch UI for visualization and overall analytics, links to packet details typically redirect to Arkime.</li></ol><ol type="1" id="1f0055c7-5784-803b-98d8-f6d9e3aec88e" class="numbered-list" start="2"><li><strong>Arkime</strong>: additional UI for deep inspection of payloads and content (like Wireshark on steroids).</li></ol><ol type="1" id="1f0055c7-5784-80e4-98ec-e9d3aa73fb99" class="numbered-list" start="3"><li><strong>Netbox</strong>: for modeling and documenting network infrastructure, not used in this demo.</li></ol><ol type="1" id="1f0055c7-5784-8097-a67c-ce20be280121" class="numbered-list" start="4"><li><strong>CyberChef</strong>: a local instance is deployed with Malcom for working with extracted payloads.</li></ol><ol type="1" id="1f0055c7-5784-80dc-890d-cc2b968f0be6" class="numbered-list" start="5"><li><strong>Documentation:</strong> hyperlink to Malcolm docs</li></ol><ol type="1" id="1f0055c7-5784-8039-9bc3-e0b188e07d93" class="numbered-list" start="6"><li><strong>Artifact upload:</strong> the page under which we will import our PCAP files for analysis.</li></ol><ol type="1" id="1f0055c7-5784-8034-aea9-d0711715435a" class="numbered-list" start="7"><li><strong>Local account management</strong>: setting up server accounts and roles. Currently using a single <code>analyst</code> account for demonstration.</li></ol><ol type="1" id="1f0055c7-5784-808e-b9ca-f8edc7f56108" class="numbered-list" start="8"><li><strong>Extracted files:</strong> will contain dumps of transferred files carved from sniffed traffic.</li></ol><h2 id="1f0055c7-5784-80ff-95f3-cfa2f1fff166" class=""><strong>3. Results: Proof-of-Concept</strong></h2><p id="1f0055c7-5784-80bd-9a87-e08a9822b8ec" class="">To experiment with the tools, I needed some sample data. I searched online for sample packet captures and stumbled upon <a href="https://www.linkedin.com/in/bradley-duncan-13477868/">Bradley Duncan</a> from &quot;Palo Alto Networks: Unit 42&quot;. He shares information and packet captures on malicious network traffic and malware samples on his blog at <a href="https://malware-traffic-analysis.net/">malware-traffic-analysis.net</a>.</p><h3 id="1f0055c7-5784-802d-9c7e-db4911857ec2" class=""><strong>3.1. Scans and Probes</strong></h3><ul id="1f0055c7-5784-8063-87fe-c6e776393694" class="bulleted-list"><li style="list-style-type:disc">The first case analyzed involves a <code>.pcap</code> file for the traffic hitting a public web server over a period of 12 days (between 2nd and 13th of April, 2025).<figure id="1f0055c7-5784-801d-8a62-f2555d87366a" class="image"><a href="https://i.imgur.com/qVWXX5u.png"><img src="https://i.imgur.com/qVWXX5u.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8082-b541-fe03f920298e" class="bulleted-list"><li style="list-style-type:disc">Uploaded the sample to Malcolm server and committed the results.<figure id="1f0055c7-5784-8036-9d87-ec8b2d2bcc88" class="image"><a href="https://i.imgur.com/tL3WKhZ.png"><img src="https://i.imgur.com/tL3WKhZ.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8049-9515-d1a50f4389e8" class="bulleted-list"><li style="list-style-type:disc">Session tab gives an overview about traffic, we can use it to:<ul id="1f0055c7-5784-80f8-8836-d39e73ea92f3" class="bulleted-list"><li style="list-style-type:circle">Adjust filtration interval to only the period of interest (in which the action happens)</li></ul><ul id="1f0055c7-5784-8032-b956-fb8fb253c1f1" class="bulleted-list"><li style="list-style-type:circle">Write filters similar to Wireshark syntax, but extends to lookup data from Zeek and Suricata as will be shown below.</li></ul><ul id="1f0055c7-5784-8093-a134-f9214ca7ca70" class="bulleted-list"><li style="list-style-type:circle">If needed, we may narrow down the search and inspect individual items. But searching large volumes of traffic this way has proven to be very tedious and inefficient. The rest of the views are designed specifically to make it simpler to pinpoint interesting packets and only use this view to inspect the ones of interest.</li></ul><figure id="1f0055c7-5784-80a5-8b18-d700f2991262" class="image"><a href="https://i.imgur.com/7n7HdhJ.png"><img src="https://i.imgur.com/7n7HdhJ.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80d9-9f70-cbb49572a1f3" class="bulleted-list"><li style="list-style-type:disc">Session Profile Information (SPI) view/graph tabs show statistics about the protocols as detected in the PCAP; protocols are sorted by frequency. In this example, we see mostly raw TCP traffic, followed by ICMP, HTTP, UDP, and others (DNS, STUN, NTP, SNMP, SSL/TLS, SIP, IPSec, LDAP, IP, TFTP, DTLS, and GRE). The dump contained a wide range of protocol for analysis.<figure id="1f0055c7-5784-80f0-a85e-c1843ceaf6f6" class="image"><a href="https://i.imgur.com/lbyOJKQ.png"><img src="https://i.imgur.com/lbyOJKQ.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8039-a09a-db763b45e5d5" class="bulleted-list"><li style="list-style-type:disc">Connections view shows the connectivity graph:<ul id="1f0055c7-5784-80fe-baaa-e8e7adf8e835" class="bulleted-list"><li style="list-style-type:circle">Blue nodes are packet sources (hitting the main server at 203.161.44.208)</li></ul><ul id="1f0055c7-5784-800b-b3f8-deff860bf0e0" class="bulleted-list"><li style="list-style-type:circle">Orange ones are both sources and destinations of packets.</li></ul><ul id="1f0055c7-5784-8054-96ad-c055c7ed9b0f" class="bulleted-list"><li style="list-style-type:circle">Larger node implies a larger number of exchanged data bytes.</li></ul><figure id="1f0055c7-5784-802e-a329-eacec3ce880b" class="image"><a href="https://i.imgur.com/tX9GVVt.png"><img src="https://i.imgur.com/tX9GVVt.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80b3-8c3b-c783037137e8" class="bulleted-list"><li style="list-style-type:disc">OpenSearch Overview dashboard shows general traffic statistics: log count, types, protocols, etc.<figure id="1f0055c7-5784-80c9-8c4e-fdce562c1844" class="image"><a href="https://i.imgur.com/22gICik.png"><img src="https://i.imgur.com/22gICik.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80c4-8c43-cce87bd31c23" class="bulleted-list"><li style="list-style-type:disc">It also shows additional views: connections be country/protocol, DNS queries by count, and a comprehensive log viewer.<figure id="1f0055c7-5784-8003-9e00-f5a0bea72b0d" class="image"><a href="https://i.imgur.com/WDETKhE.png"><img src="https://i.imgur.com/WDETKhE.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8067-9f39-e3143947005f" class="bulleted-list"><li style="list-style-type:disc">Connections dashboard shows more visuals: Top 10 hosts sending/receiving bytes, and top 10 ports contacted. From there we understand the hosts sending the most data to the server, and that port 80 was most commonly contacted.<figure id="1f0055c7-5784-80c7-b6fc-d7fd4ded10a3" class="image"><a href="https://i.imgur.com/fh8rLCQ.png"><img src="https://i.imgur.com/fh8rLCQ.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80d7-997d-e0a6a02aa269" class="bulleted-list"><li style="list-style-type:disc">Connections by total bytes exchanges and connection state.<ul id="1f0055c7-5784-8003-9d85-d2accc2a4dc0" class="bulleted-list"><li style="list-style-type:circle">Left panel shows that the largest volume of data (40081) bytes were exchanged between the shown hosts. Right panel shows that most connections were rejected.</li></ul><figure id="1f0055c7-5784-8020-b4da-fdfd20ec01dc" class="image"><a href="https://i.imgur.com/JlSobBS.png"><img src="https://i.imgur.com/JlSobBS.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80ef-8522-eb6c475a3840" class="bulleted-list"><li style="list-style-type:disc">Connection view by MAC address<figure id="1f0055c7-5784-806f-8569-e61797d0f631" class="image"><a href="https://i.imgur.com/7XpIrKv.png"><img src="https://i.imgur.com/7XpIrKv.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8032-8fa3-f595c144ba76" class="bulleted-list"><li style="list-style-type:disc">Action/Response view shows<ul id="1f0055c7-5784-80e8-85a5-f6997fe44164" class="bulleted-list"><li style="list-style-type:circle">Top actions (e.g., GET requests) to target services (e.g., HTTP)</li></ul><ul id="1f0055c7-5784-80f8-99ee-c9af7ef2f351" class="bulleted-list"><li style="list-style-type:circle">Also shows top results (e.g., <code>NOT FOUND</code>) from target services (e.g., HTTP).</li></ul><figure id="1f0055c7-5784-8034-9db0-c09ac70f34d7" class="image"><a href="https://i.imgur.com/LWwYI6E.png"><img src="https://i.imgur.com/LWwYI6E.png"/></a></figure></li></ul><ul id="1f0055c7-5784-802c-9b91-ec42e8ee92ec" class="bulleted-list"><li style="list-style-type:disc">One may also exclude protocols from the view to get a deeper look into the rest of the traffic.<figure id="1f0055c7-5784-802a-89da-c158dd589a4e" class="image"><a href="https://i.imgur.com/OaMo9Dx.png"><img src="https://i.imgur.com/OaMo9Dx.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8068-916c-e98531746cb4" class="bulleted-list"><li style="list-style-type:disc">Map view of connection sources in which a larger circle indicates more data bytes exchanged.<figure id="1f0055c7-5784-800f-b4b4-f96bc9a61a40" class="image"><a href="https://i.imgur.com/je4CcGV.png"><img src="https://i.imgur.com/je4CcGV.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80f6-999c-c96627fffda6" class="bulleted-list"><li style="list-style-type:disc">Many more specialized dashboards are available, either for querying data about a specific protocols or monitoring sensor nodes.<figure id="1f0055c7-5784-8018-a4a9-c7a973b809b8" class="image"><a href="https://i.imgur.com/FjDRhCF.png"><img src="https://i.imgur.com/FjDRhCF.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80ed-92c5-e5ea0e256a57" class="bulleted-list"><li style="list-style-type:disc">More graphs can be obtained from protocol-specific dashboards (e.g., SIP, DNS, TFTP)<figure id="1f0055c7-5784-801e-a5df-d173388b4de0" class="image"><a href="https://i.imgur.com/pIKZCvG.png"><img src="https://i.imgur.com/pIKZCvG.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8063-bdcc-e60ccf503124" class="bulleted-list"><li style="list-style-type:disc">Another interesting view on file transfers (wordcloud) &amp; DNS queries by randomness<figure id="1f0055c7-5784-8082-a99d-d0f4a56f49f0" class="image"><a href="https://i.imgur.com/n5WVXLN.png"><img src="https://i.imgur.com/n5WVXLN.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80d4-ac95-ddc56d8cf71f" class="bulleted-list"><li style="list-style-type:disc">Extracted files view shows carved file, in this case it&#x27;s only the server&#x27;s HTML homepage. In case additional files were extracted (e.g., malware samples), they may be placed in the quarantine subdirectory (e.g., as password-protected archived) for further inspection/analysis.<figure id="1f0055c7-5784-8089-bbc1-de34fe68f7fd" class="image"><a href="https://i.imgur.com/hjQ46sF.png"><img src="https://i.imgur.com/hjQ46sF.png"/></a></figure><figure id="1f0055c7-5784-80b1-a6b4-f8c2b8475993" class="image"><a href="https://i.imgur.com/yiQJHfr.png"><img src="https://i.imgur.com/yiQJHfr.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8099-8dc6-fc130e4c273a" class="bulleted-list"><li style="list-style-type:disc">An interesting filter to apply is to view non-404 and non-200 HTTP responses (e.g., we could identify payloads resulting in server-side or &quot;Forbidden&quot; errors).<figure id="1f0055c7-5784-809b-a986-f27255dc9cd3" class="image"><a href="https://i.imgur.com/nEccmiR.png"><img src="https://i.imgur.com/nEccmiR.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8044-bc1e-c732158eba73" class="bulleted-list"><li style="list-style-type:disc">Security Overview Dashboard shows top notices and alerts from Zeek and Suricata. In this example<ul id="1f0055c7-5784-8095-bfd2-d7ee9ac33f2a" class="bulleted-list"><li style="list-style-type:circle">Both tools detected multiple port scan attempts, HTTP smuggling payloads, and one attempt using a known Log4j header injection exploit.</li></ul><figure id="1f0055c7-5784-80c5-bfdf-f0764c6b8cc4" class="image"><a href="https://i.imgur.com/exK0dnu.png"><img src="https://i.imgur.com/exK0dnu.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8081-b8e1-d1ecd0e1b1a3" class="bulleted-list"><li style="list-style-type:disc">Zeek log for the log4j exploit attempt, as shown in Arkime.<figure id="1f0055c7-5784-80ff-89a9-f84cd8242385" class="image"><a href="https://i.imgur.com/x4MJ0SW.png"><img src="https://i.imgur.com/x4MJ0SW.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8061-9b4a-f24b207d559f" class="bulleted-list"><li style="list-style-type:disc">Zeek log of a port-scan attempt, shows GeoIP information about packet source.<figure id="1f0055c7-5784-80df-94a4-cd7c17d19690" class="image"><a href="https://i.imgur.com/4g9P7ZK.png"><img src="https://i.imgur.com/4g9P7ZK.png"/></a></figure></li></ul><ul id="1f0055c7-5784-800d-b21a-d5c8d3ca46c6" class="bulleted-list"><li style="list-style-type:disc">Suricata alerts dashboard shows another interesting request.<figure id="1f0055c7-5784-8088-957c-ec0cf78b40ec" class="image"><a href="https://i.imgur.com/wu5cV7f.png"><img src="https://i.imgur.com/wu5cV7f.png"/></a></figure></li></ul><h3 id="1f0055c7-5784-8004-be7d-d328aa46a3d9" class=""><strong>3.2. Remcos RAT infection</strong></h3><ul id="1f0055c7-5784-8057-bd2b-cd48f0d67009" class="bulleted-list"><li style="list-style-type:disc">Followed the same process to analyze another case of Remote Access Trojan malware. This one is typically distributed as an archived email attachment that yields a <code>.bat</code> file when extracted.</li></ul><ul id="1f0055c7-5784-80ef-b647-c8c0cb362686" class="bulleted-list"><li style="list-style-type:disc">When the script is executed, it starts a KeyLogger script and a tool for browser password extraction, updates registry values for persistence, and communicates with a C2 server.</li></ul><ul id="1f0055c7-5784-8096-9ac9-c742239937ab" class="bulleted-list"><li style="list-style-type:disc">Action/Response graph: shows mostly DNS and TLS traffic.<figure id="1f0055c7-5784-809a-8c6c-cbe3100f0871" class="image"><a href="https://i.imgur.com/sPxcucR.png"><img src="https://i.imgur.com/sPxcucR.png"/></a></figure></li></ul><ul id="1f0055c7-5784-808d-90de-d40a37da50ba" class="bulleted-list"><li style="list-style-type:disc">Security overview dashboard: detects C2 communications and Remcos Malware.<figure id="1f0055c7-5784-802f-b317-fbcfa097a095" class="image"><a href="https://i.imgur.com/wRyWGPJ.png"><img src="https://i.imgur.com/wRyWGPJ.png"/></a></figure></li></ul><ul id="1f0055c7-5784-807d-a2b4-f2ba60323af2" class="bulleted-list"><li style="list-style-type:disc">Suricata alert view in Arkime shows IoCs<figure id="1f0055c7-5784-805c-aab7-f5f0e8336f45" class="image"><a href="https://i.imgur.com/HfHqIFA.png"><img src="https://i.imgur.com/HfHqIFA.png"/></a></figure></li></ul><h3 id="1f0055c7-5784-8051-8fdc-fe6468208704" class=""><strong>3.3. AgentTesla Data Exfiltration over FTP</strong></h3><ul id="1f0055c7-5784-8043-b588-f1b6c07e095b" class="bulleted-list"><li style="list-style-type:disc">Analyzed an additional PCAP for a data exfiltration scenario following a similar process.</li></ul><ul id="1f0055c7-5784-80ee-914c-f2bf78122be9" class="bulleted-list"><li style="list-style-type:disc">Check the demo video attached with the report for a live inspection of this case.</li></ul><ul id="1f0055c7-5784-80dc-acac-fb77c1884a48" class="bulleted-list"><li style="list-style-type:disc">Action/Response graph shows mostly DNS, FTP, and TLS traffic.<figure id="1f0055c7-5784-80f1-af15-e44723f59490" class="image"><a href="https://i.imgur.com/RzShF8v.png"><img src="https://i.imgur.com/RzShF8v.png"/></a></figure></li></ul><ul id="1f0055c7-5784-802f-9347-ef95c9ce4e7d" class="bulleted-list"><li style="list-style-type:disc">FTP logs shows more details about exchanged data<figure id="1f0055c7-5784-80d6-a257-c976ee2b14b0" class="image"><a href="https://i.imgur.com/hBgYEjG.png"><img src="https://i.imgur.com/hBgYEjG.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8088-b94a-c3a5f2c0f34c" class="bulleted-list"><li style="list-style-type:disc">Security Overview dashboard shows detected Zeek notices and Suricata alerts<figure id="1f0055c7-5784-8011-bcca-db7a454e46aa" class="image"><a href="https://i.imgur.com/dkpxpGd.png"><img src="https://i.imgur.com/dkpxpGd.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80ce-88ca-f26a10d6e834" class="bulleted-list"><li style="list-style-type:disc">Suricata alert view in Arkime shows IoCs<figure id="1f0055c7-5784-8073-a110-caf33ae33428" class="image"><a href="https://i.imgur.com/b9lq1lb.png"><img src="https://i.imgur.com/b9lq1lb.png"/></a></figure></li></ul><h3 id="1f0055c7-5784-8095-ab80-dd3db9d56b5c" class=""><strong>3.4. Alternative services</strong></h3><ul id="1f0055c7-5784-801a-a1dc-d68f8e7fe9d6" class="bulleted-list"><li style="list-style-type:disc">Decided to compare the results from Malcolm to other online services and see if we obtain the same findings:</li></ul><ul id="1f0055c7-5784-8076-9b66-d36133a32e99" class="bulleted-list"><li style="list-style-type:disc">Analyzed the second case with <a href="https://apackets.com/">Apackets.com</a>.<ul id="1f0055c7-5784-80df-879e-de4ec8a28360" class="bulleted-list"><li style="list-style-type:circle">Protocol overview<figure id="1f0055c7-5784-8046-a452-efdda8dfe454" class="image"><a href="https://i.imgur.com/zhZuiIJ.png"><img src="https://i.imgur.com/zhZuiIJ.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8071-990a-d44f2f54f699" class="bulleted-list"><li style="list-style-type:circle">HTTP statistics and individual request inspection<figure id="1f0055c7-5784-8086-8095-e7e3294ca9d6" class="image"><a href="https://i.imgur.com/o06jNXb.png"><img src="https://i.imgur.com/o06jNXb.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80a9-b79c-d4d4fa586c85" class="bulleted-list"><li style="list-style-type:circle">Connectivity graph (similar to Arkime connection)<figure id="1f0055c7-5784-80db-8ce4-c3aa3b15fa71" class="image"><a href="https://i.imgur.com/IKOBEjH.png"><img src="https://i.imgur.com/IKOBEjH.png"/></a></figure></li></ul></li></ul><ul id="1f0055c7-5784-8015-b975-c6c597afc138" class="bulleted-list"><li style="list-style-type:disc">Analyzed the third case with <a href="https://packetsafari.com/">PacketSafari.com</a>. It gives a side-by-side view of two windows:<ul id="1f0055c7-5784-80ee-97f8-d61e53455d5b" class="bulleted-list"><li style="list-style-type:circle">A Wireshark-like interface: for filtering through the packets.</li></ul><ul id="1f0055c7-5784-80b9-87af-dbd6830b4e50" class="bulleted-list"><li style="list-style-type:circle">An AI agent for getting insights about selected packets</li></ul><figure id="1f0055c7-5784-8040-8201-df49dd492d5e" class="image"><a href="https://i.imgur.com/Lov1RyO.png"><img src="https://i.imgur.com/Lov1RyO.png"/></a></figure></li></ul><ul id="1f0055c7-5784-8069-8071-c91b0665f545" class="bulleted-list"><li style="list-style-type:disc"><strong>Conclusion:</strong> Malcolm provided many advantages that were not available in alternative tools:<ul id="1f0055c7-5784-8068-9bc8-fa78077da476" class="bulleted-list"><li style="list-style-type:circle"><strong>Being free to use an open-source:</strong> other services provided only trial versions with limitations on file size and some features.</li></ul><ul id="1f0055c7-5784-8052-b3be-ebf09aa9aaef" class="bulleted-list"><li style="list-style-type:circle"><strong>Private deployment:</strong> if working with sensitive data, one may need to do all traffic analysis locally to keep the data private and not share it with external vendors.</li></ul><ul id="1f0055c7-5784-8054-8761-e9b9728b937f" class="bulleted-list"><li style="list-style-type:circle"><strong>Ease of use:</strong> one may quickly get insights in Malcolm without having to look through thousands of packets or write complicated filters.</li></ul><ul id="1f0055c7-5784-803a-93e5-c8f4fba67d80" class="bulleted-list"><li style="list-style-type:circle"><strong>Accuracy:</strong> results from Zeek and Suricata rely on signatures and smart heuristics, where AI results can often be inaccurate or include hallucinations.</li></ul><ul id="1f0055c7-5784-80f5-8fc6-f982ebeae114" class="bulleted-list"><li style="list-style-type:circle"><strong>Live analysis:</strong> other tools didn&#x27;t provide this possibility.</li></ul><ul id="1f0055c7-5784-80b8-90c6-c5c404313341" class="bulleted-list"><li style="list-style-type:circle"><strong>Rich and customizable views:</strong> other tools provided very limited visualizations of PCAP data and inability to make custom dashboard or inspect uncommon protocols.</li></ul></li></ul><h2 id="1f0055c7-5784-8055-a696-eb791919e268" class=""><strong>4. Discussion: Difficulties Faced</strong></h2><ul id="1f0055c7-5784-8022-a896-f17c85220046" class="bulleted-list"><li style="list-style-type:disc">Malcolm installation process presents multiple queries (shown in Appendix), I had to research new concepts and technologies (e.g., Index management policies, OUI MAC lookups, NetBox) to make informed decisions during installation.</li></ul><ul id="1f0055c7-5784-8058-8780-dcc9267427b7" class="bulleted-list"><li style="list-style-type:disc">When analyzing a PCAP for the first time, it was difficult to find a starting point (i.e., where to look first), practicing these cases helped with understanding the network forensic investigation process.</li></ul><ul id="1f0055c7-5784-804c-8689-df9d62a8ea67" class="bulleted-list"><li style="list-style-type:disc">Initialization script used in Malcolm ISO was not operating as expected, I had to troubleshoot the issue and start the service manually (process explained in Appendix).</li></ul><ul id="1f0055c7-5784-805f-a979-cec7088d9878" class="bulleted-list"><li style="list-style-type:disc">Filtration syntax in Arkime and OpenSearch was unintuitive at some points, I had to refer to respective documentation pages to write valid queries.</li></ul><ul id="1f0055c7-5784-800c-8251-f9af291328c9" class="bulleted-list"><li style="list-style-type:disc">Malcolm server is quite resource-intensive, setting up and configuring resources on an external machine took DAYS of trial and error.<ul id="1f0055c7-5784-805a-8628-dd9cee7a6097" class="bulleted-list"><li style="list-style-type:circle">I initially planned to analyze a large file from CIC-2017-IDS dataset because this is where it makes sense to use specialized tools as it&#x27;s almost impossible to filter through individual packets of the file using tools like Wireshark.<figure id="1f0055c7-5784-80a7-bb24-fb07a06cc461" class="image"><a href="https://i.imgur.com/NceyLwn.png"><img src="https://i.imgur.com/NceyLwn.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80d6-893c-d7458399156a" class="bulleted-list"><li style="list-style-type:circle">CIC-2017-IDS dataset contains large PCAPs with attacks for analyzing IDS systems. This Initialization script used in Malcolm ISO was not operating as expected, I had to troubleshoot the issue and start the service manually (process explained in Appendix).</li></ul><ul id="1f0055c7-5784-8010-a7fb-f36e6c8c1e6a" class="bulleted-list"><li style="list-style-type:circle"><code>Thursday-WorkingHours.pcap</code> contained the following attacks:<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-80b4-a070-c9e5dc112776" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Morning
+- Web Attack – Brute Force (9:20 – 10 a.m.)
+- Web Attack – XSS (10:15 – 10:35 a.m.)
+- Web Attack – Sql Injection (10:40 – 10:42 a.m.)
+​
+Afternoon
+- Infiltration – Dropbox download
+- Meta exploit Win Vista (14:19 and 14:20-14:21 p.m.) and (14:33 -14:35)
+- Infiltration – Cool disk – MAC (14:53 p.m. – 15:00 p.m.)
+- Infiltration – Dropbox download: Win Vista (15:04 – 15:45 p.m.)</code></pre></li></ul><ul id="1f0055c7-5784-801a-b1e2-fc7c68bc5f8e" class="bulleted-list"><li style="list-style-type:circle">Unfortunately, due to the lack of computational resources, the server could not handle processing the file.<figure id="1f0055c7-5784-8092-9e54-cd738061320b" class="image"><a href="https://i.imgur.com/r5iBrCw.png"><img src="https://i.imgur.com/r5iBrCw.png"/></a></figure></li></ul></li></ul><h2 id="1f0055c7-5784-8062-b1c2-f77b72077908" class=""><strong>5. Conclusion</strong></h2><p id="1f0055c7-5784-805d-94ad-c5480829cafc" class="">This project explored the capabilities of the Malcolm network forensic analysis tool suite through hands-on experimentation with real-world malware traffic samples. By analyzing multiple PCAP files from different attack scenarios (including port scans, Remcos RAT infection, and AgentTesla data exfiltration), we demonstrated how Malcolm efficiently processes, indexes, and visualizes network traffic for forensic investigations.</p><p id="1f0055c7-5784-8069-9e03-f6bb7cf786dc" class="">Malcolm proved to be a powerful, open-source alternative to commercial network forensic tools, offering deep visibility into malicious traffic. While it demands substantial system resources, its flexibility, extensibility, and integration with leading security tools make it a valuable asset for SOC teams, incident responders, and forensic analysts.</p><h2 id="1f0055c7-5784-80f0-98d9-d2f9384bf5ae" class=""><strong>6. Appendix</strong></h2><h3 id="1f0055c7-5784-80f7-8fe7-f3c539143afc" class=""><strong>6.1. Malcolm Server Deployment</strong></h3><blockquote id="1f0055c7-5784-801a-b6e3-d94b270cddb7" class="">Guide: https://cisagov.github.io/Malcolm/docs/malcolm-hedgehog-e2e-iso-install.html</blockquote><ol type="1" id="1f0055c7-5784-80b1-8781-dd2eb4f0ded4" class="numbered-list" start="1"><li>Downloaded split ISOs from <a href="https://github.com/cisagov/Malcolm/releases/tag/v25.03.1">GitHub release page</a></li></ol><ol type="1" id="1f0055c7-5784-80ea-acc6-e70e79c5be8e" class="numbered-list" start="2"><li>Merged the ISOs using the provided <a href="https://github.com/cisagov/Malcolm/blob/ee17331834cc7732ab95a3ed95bb8bc38a8fbd56/scripts/release_cleaver.sh">release_cleaver.sh</a> script<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-800a-b27b-e35f611d4241" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">wget https://github.com/cisagov/Malcolm/blob/ee17331834cc7732ab95a3ed95bb8bc38a8fbd56/scripts/release_cleaver.sh
+chmod +x release_cleaver.sh
+./release_cleaver.sh malcolm-25.03.1.iso.*</code></pre></li></ol><ol type="1" id="1f0055c7-5784-809e-80af-f7b6ff7418f5" class="numbered-list" start="3"><li>Created a VM based on the ISO, provided the following resources: 35G of storage, 10G of RAM, and 10 vCPU.</li></ol><ol type="1" id="1f0055c7-5784-8080-84cd-d5f2d9ed6a55" class="numbered-list" start="4"><li>Launched the VM, selected &quot;Virtual Machine Single Partition Quick install&quot; from the boot menu</li></ol><ol type="1" id="1f0055c7-5784-80de-a5ce-d59fa829f7d8" class="numbered-list" start="5"><li>Followed the installation prompts to set up hostname, user account, passwords and other parameters<ul id="1f0055c7-5784-8065-9061-de461bb16acb" class="bulleted-list"><li style="list-style-type:disc">Format non-OS drive(s) for artifact storage? Y</li></ul><ul id="1f0055c7-5784-80a0-b8b8-c0ba2fdc05e3" class="bulleted-list"><li style="list-style-type:disc">Disable IPv6? Y</li></ul><ul id="1f0055c7-5784-808a-82fb-c15ee16bd1e4" class="bulleted-list"><li style="list-style-type:disc">Automatically login to the GUI session? Y</li></ul><ul id="1f0055c7-5784-80b8-a323-cd7265e8ff7a" class="bulleted-list"><li style="list-style-type:disc">Should the GUI session be locked due to inactivity? N</li></ul><ul id="1f0055c7-5784-80b1-81e1-d5ff938a6e23" class="bulleted-list"><li style="list-style-type:disc">Allow SSH password authentication? Y</li></ul></li></ol><ol type="1" id="1f0055c7-5784-8073-bd5b-dd64726fbb6e" class="numbered-list" start="6"><li>Desktop view launched<figure id="1f0055c7-5784-80a8-a237-c46951ba6921" class="image"><a href="https://i.imgur.com/IzLXUFp.png"><img src="https://i.imgur.com/IzLXUFp.png"/></a></figure></li></ol><ol type="1" id="1f0055c7-5784-80e8-8cea-e00ed06cec21" class="numbered-list" start="7"><li>This script at <code>/usr/local/bin/docker-load-wait.sh</code> is scheduled at startup to extracting and load locally stored images at <code>/malcolm_images.tar.xz</code>. Unfortunately, the script was stuck so I had to manually do the rest of the process.<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-8007-9d5e-e105f48f76c3" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">#!/bin/bash
+​
+# Copyright (c) 2025 Battelle Energy Alliance, LLC.  All rights reserved.
+exit 0
+​
+grep -q boot=live /proc/cmdline &amp;&amp; exit 0
+​
+function finish {
+  pkill -f &quot;zenity.*Preparing Malcolm&quot;
+}
+​
+if [[ -f /malcolm_images.tar.xz ]] || pgrep -f &quot;docker load&quot; &gt;/dev/null 2&gt;&amp;1 || pgrep -f &quot;docker-untar&quot; &gt;/dev/null 2&gt;&amp;1; then
+  trap finish EXIT
+  yes | zenity --progress --pulsate --no-cancel --auto-close --text &quot;Malcolm Docker images are loading, please wait...&quot; --title &quot;Preparing Malcolm&quot; &amp;
+  while [[ -f /malcolm_images.tar.xz ]] || pgrep -f &quot;docker load&quot; &gt;/dev/null 2&gt;&amp;1 || pgrep -f &quot;docker-untar&quot; &gt;/dev/null 2&gt;&amp;1; do
+    sleep 2
+  done
+fi</code></pre></li></ol><ol type="1" id="1f0055c7-5784-8006-8f5b-d2b6b630e3a3" class="numbered-list" start="8"><li>Directory at <code>~/Malcolm</code> contains docker installation sources, so I continued from there<figure id="1f0055c7-5784-8047-8491-e900781ec255" class="image"><a href="https://i.imgur.com/H2HCoef.png"><img src="https://i.imgur.com/H2HCoef.png"/></a></figure></li></ol><ol type="1" id="1f0055c7-5784-80a7-a8a0-edd976e9ed20" class="numbered-list" start="9"><li>Ran <code>./scripts/install.py</code> and followed the prompts, mostly accepting defaults:<ul id="1f0055c7-5784-803b-8d52-c6c65bf8713a" class="bulleted-list"><li style="list-style-type:disc">Select container runtime engine (docker): 1</li></ul><ul id="1f0055c7-5784-80d0-9c7e-e52be92f896a" class="bulleted-list"><li style="list-style-type:disc">Malcolm processes will run as UID 1000 and GID 1000. Is this OK? y</li></ul><ul id="1f0055c7-5784-80a3-a933-fdadeb9ef398" class="bulleted-list"><li style="list-style-type:disc">Run with Malcolm (all containers) or Hedgehog (capture only) profile? 1</li></ul><ul id="1f0055c7-5784-80b9-9b45-d2ea18958a20" class="bulleted-list"><li style="list-style-type:disc">Should Malcolm use and maintain its own OpenSearch instance? y</li></ul><ul id="1f0055c7-5784-80f7-9649-dc6cfc10c4f6" class="bulleted-list"><li style="list-style-type:disc">Compress local OpenSearch index snapshots? n</li></ul><ul id="1f0055c7-5784-80a3-8534-f9598475cc7b" class="bulleted-list"><li style="list-style-type:disc">Forward Logstash logs to a secondary remote document store? n</li></ul><ul id="1f0055c7-5784-8052-ad57-e008fb04dffb" class="bulleted-list"><li style="list-style-type:disc">Setting 16g for OpenSearch and 2500m for Logstash. Is this OK? y</li></ul><ul id="1f0055c7-5784-80d9-9e01-ce7f31af229a" class="bulleted-list"><li style="list-style-type:disc">Setting 3 workers for Logstash pipelines. Is this OK?: y</li></ul><ul id="1f0055c7-5784-803d-adf7-dc7114ccec2e" class="bulleted-list"><li style="list-style-type:disc">Restart Malcolm upon system or container daemon restart?y</li></ul><ul id="1f0055c7-5784-8000-9848-d1424df95846" class="bulleted-list"><li style="list-style-type:disc">Select Malcolm restart behavior (1: no, 2: on-failure, 3: always, 4: unless-stopped): 4</li></ul><ul id="1f0055c7-5784-8097-94c4-fab96fe6100d" class="bulleted-list"><li style="list-style-type:disc">Require encrypted HTTPS connections? y</li></ul><ul id="1f0055c7-5784-8097-8950-ebac47d48fb4" class="bulleted-list"><li style="list-style-type:disc">Which IP version does the network support? (1: IPv4, 2: IPv6, or both): 1</li></ul><ul id="1f0055c7-5784-80f8-84fa-c75fddfe883a" class="bulleted-list"><li style="list-style-type:disc">Will Malcolm be running behind another reverse proxy (Traefik, Caddy, etc.)? n</li></ul><ul id="1f0055c7-5784-8008-af74-fac088f71141" class="bulleted-list"><li style="list-style-type:disc">Specify external container network name (or leave blank for default networking) ():</li></ul><ul id="1f0055c7-5784-80a7-8d39-c7ec72719718" class="bulleted-list"><li style="list-style-type:disc">Store PCAP, log and index files in /home/user/Malcolm?: y</li></ul><ul id="1f0055c7-5784-8087-bfd4-da753902cba3" class="bulleted-list"><li style="list-style-type:disc">Enable index management policies (ILM/ISM) in Arkime?: n</li></ul><ul id="1f0055c7-5784-8010-9aad-c75101420a13" class="bulleted-list"><li style="list-style-type:disc">Should Malcolm delete the oldest database indices and capture artifacts based on available storage? n</li></ul><ul id="1f0055c7-5784-80ae-b41c-e32b4af975c0" class="bulleted-list"><li style="list-style-type:disc">Automatically analyze all PCAP files with Arkime? y</li></ul><ul id="1f0055c7-5784-8056-83ee-ddbc71445673" class="bulleted-list"><li style="list-style-type:disc">Automatically analyze all PCAP files with Suricata? y</li></ul><ul id="1f0055c7-5784-8034-8834-c054758f80da" class="bulleted-list"><li style="list-style-type:disc">Download updated Suricata signatures periodically? n</li></ul><ul id="1f0055c7-5784-8085-92fc-c9a411ee20c7" class="bulleted-list"><li style="list-style-type:disc">Automatically analyze all PCAP files with Zeek? y</li></ul><ul id="1f0055c7-5784-80b9-9a29-ea4bb5a0660f" class="bulleted-list"><li style="list-style-type:disc">Is Malcolm being used to monitor an Operational Technology/Industrial Control Systems (OT/ICS) network? n</li></ul><ul id="1f0055c7-5784-803e-ae38-ce49396402d0" class="bulleted-list"><li style="list-style-type:disc">Perform reverse DNS lookup locally for source and destination IP addresses in logs? n</li></ul><ul id="1f0055c7-5784-8020-9df0-e31e61656ff2" class="bulleted-list"><li style="list-style-type:disc">Perform hardware vendor OUI lookups for MAC addresses? y</li></ul><ul id="1f0055c7-5784-801b-a021-eaf859630da5" class="bulleted-list"><li style="list-style-type:disc">Perform string randomness scoring on some fields? y</li></ul><ul id="1f0055c7-5784-80c2-9901-e5d20965d63b" class="bulleted-list"><li style="list-style-type:disc">Should Malcolm accept logs and metrics from a Hedgehog Linux sensor or other forwarder? (1: no, 2: yes, 3: customize): 2</li></ul><ul id="1f0055c7-5784-8080-8287-e4f8efe45dc1" class="bulleted-list"><li style="list-style-type:disc">Enable file extraction with Zeek? y</li></ul><ul id="1f0055c7-5784-8041-94cd-f20869feaab4" class="bulleted-list"><li style="list-style-type:disc">Select file extraction behavior (4: all): 4</li></ul><ul id="1f0055c7-5784-804c-8a21-f670ed635a36" class="bulleted-list"><li style="list-style-type:disc">Select file preservation behavior (1: quarantined, 2: all, 3: none): 1</li></ul><ul id="1f0055c7-5784-801e-8c9e-e3801822d8bc" class="bulleted-list"><li style="list-style-type:disc">Expose web interface for downloading preserved files? y</li></ul><ul id="1f0055c7-5784-801b-827e-edb9f2aaf0b0" class="bulleted-list"><li style="list-style-type:disc">ZIP downloaded preserved files? y</li></ul><ul id="1f0055c7-5784-802b-8742-f36e2ed81ab6" class="bulleted-list"><li style="list-style-type:disc">Enter ZIP archive password for downloaded preserved files (or leave blank for unprotected): infected</li></ul><ul id="1f0055c7-5784-802c-bcca-e29ff41c1cf7" class="bulleted-list"><li style="list-style-type:disc">Scan extracted files with ClamAV? y</li></ul><ul id="1f0055c7-5784-809b-a14c-f5b78e4eca9d" class="bulleted-list"><li style="list-style-type:disc">Scan extracted files with Yara? y</li></ul><ul id="1f0055c7-5784-801b-9a8e-e6180fa99e4c" class="bulleted-list"><li style="list-style-type:disc">Scan extracted PE files with Capa? y</li></ul><ul id="1f0055c7-5784-80e0-960c-c3fd1c36f924" class="bulleted-list"><li style="list-style-type:disc">Lookup extracted file hashes with VirusTotal? n</li></ul><ul id="1f0055c7-5784-8045-973b-d9bc87d95b1d" class="bulleted-list"><li style="list-style-type:disc">Download updated file scanner signatures periodically? n</li></ul><ul id="1f0055c7-5784-80c8-974e-e566b945e4d3" class="bulleted-list"><li style="list-style-type:disc">Configure pulling from threat intelligence feeds for Zeek intelligence framework? n</li></ul><ul id="1f0055c7-5784-8028-947b-cc2105658d17" class="bulleted-list"><li style="list-style-type:disc">Should Malcolm run and maintain an instance of NetBox, an infrastructure resource modeling tool? n</li></ul><ul id="1f0055c7-5784-806b-86ae-d2cfc100e5bc" class="bulleted-list"><li style="list-style-type:disc">Should Malcolm capture live network traffic? (1: no, 2: yes, 3: customize) 2</li></ul><ul id="1f0055c7-5784-80b9-8a7f-e4f0f6655bdf" class="bulleted-list"><li style="list-style-type:disc">Specify capture interface(s) (comma-separated): eth0</li></ul><ul id="1f0055c7-5784-8010-a0af-eb973485d9b0" class="bulleted-list"><li style="list-style-type:disc">Enable dark mode for OpenSearch Dashboards? y</li></ul><ul id="1f0055c7-5784-80fa-b33d-f716d43f8a7b" class="bulleted-list"><li style="list-style-type:disc">Pull Malcolm images? y</li></ul></li></ol><ol type="1" id="1f0055c7-5784-804b-a90a-c0b0de81a862" class="numbered-list" start="10"><li>Finally, it shown this message<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-80a8-b010-f2f641855654" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Malcolm has been installed to /home/user/Malcolm. See README.md for more information. Scripts for starting and stopping Malcolm and changing authentication-related settings can be found in /home/user/Malcolm/scripts.</code></pre></li></ol><ol type="1" id="1f0055c7-5784-8023-94a5-d0b9bbffc96d" class="numbered-list" start="11"><li>Rebooted the system, then ran <code>./scripts/auth_setup.py</code> script for yet another configuration quistionaire.<ul id="1f0055c7-5784-809c-901d-d90f1b073c58" class="bulleted-list"><li style="list-style-type:disc">Configure Authentication (all): 1</li></ul><ul id="1f0055c7-5784-8048-b92c-e7ce141f2ac4" class="bulleted-list"><li style="list-style-type:disc">Select authentication method (basic): 1</li></ul><ul id="1f0055c7-5784-8031-807c-d10a663a97e6" class="bulleted-list"><li style="list-style-type:disc">Store administrator username/password for basic HTTP authentication? y</li></ul><ul id="1f0055c7-5784-8074-9fdb-e14c0c562811" class="bulleted-list"><li style="list-style-type:disc">Administrator username (between 4 and 32 characters; alphanumeric, _, -, and . allowed) (): analyst</li></ul><ul id="1f0055c7-5784-807b-acb4-f753f0df53c3" class="bulleted-list"><li style="list-style-type:disc">analyst password (between 8 and 128 characters): xxxxxxxx</li></ul><ul id="1f0055c7-5784-802e-b93e-f0400cc56e71" class="bulleted-list"><li style="list-style-type:disc">analyst password (again): xxxxxxxx</li></ul><ul id="1f0055c7-5784-80fe-940b-f8260a5f8e05" class="bulleted-list"><li style="list-style-type:disc">Additional local accounts can be created at <a href="https://localhost/auth/">https://localhost/auth/</a> when Malcolm is running</li></ul><ul id="1f0055c7-5784-80d5-9684-f3138d088038" class="bulleted-list"><li style="list-style-type:disc">(Re)generate self-signed certificates for HTTPS access? y</li></ul><ul id="1f0055c7-5784-8052-8747-eb8e9590a750" class="bulleted-list"><li style="list-style-type:disc">(Re)generate self-signed certificates for a remote log forwarder? y</li></ul><ul id="1f0055c7-5784-80aa-91a0-de01b8b82860" class="bulleted-list"><li style="list-style-type:disc">Configure Keycloak? n</li></ul><ul id="1f0055c7-5784-80af-ad0a-d4cd572699fc" class="bulleted-list"><li style="list-style-type:disc">Configure remote primary or secondary OpenSearch/Elasticsearch instance? n</li></ul><ul id="1f0055c7-5784-8072-892a-e9222397748e" class="bulleted-list"><li style="list-style-type:disc">Store username/password for OpenSearch Alerting email sender account? n</li></ul><ul id="1f0055c7-5784-8040-b2fc-de7f0c084bfa" class="bulleted-list"><li style="list-style-type:disc">(Re)generate internal passwords for NetBox? y</li></ul><ul id="1f0055c7-5784-80af-8397-ec2dba5123c5" class="bulleted-list"><li style="list-style-type:disc">(Re)generate internal passwords for Keycloak&#x27;s PostgreSQL database? y</li></ul><ul id="1f0055c7-5784-8048-a5f9-e4c0d3400cff" class="bulleted-list"><li style="list-style-type:disc">(Re)generate internal superuser passwords for PostgreSQL? y</li></ul><ul id="1f0055c7-5784-8022-bf0a-de1bacf867c3" class="bulleted-list"><li style="list-style-type:disc">(Re)generate internal passwords for Redis? y</li></ul><ul id="1f0055c7-5784-80d7-ac5a-d1b681274ccd" class="bulleted-list"><li style="list-style-type:disc">Store password hash secret for Arkime viewer cluster? n</li></ul><ul id="1f0055c7-5784-805c-80d1-cb3f800ae210" class="bulleted-list"><li style="list-style-type:disc">Transfer self-signed client certificates to a remote log forwarder? n</li></ul></li></ol><ol type="1" id="1f0055c7-5784-8035-8837-fde8cbc7af41" class="numbered-list" start="12"><li>Inspected <code>docker-compose.yaml</code> file: it contains two profiles<ul id="1f0055c7-5784-80c7-8703-e66d6e51bf4a" class="bulleted-list"><li style="list-style-type:disc"><code>malcolm</code>: for setting up the main server</li></ul><ul id="1f0055c7-5784-800e-b256-caf7d0cc5fdf" class="bulleted-list"><li style="list-style-type:disc"><code>hedgehog</code>: for setting up a sensor node (running hedgehog linux)</li></ul></li></ol><ol type="1" id="1f0055c7-5784-8000-8080-df570fbb60d8" class="numbered-list" start="13"><li>Pulled the required images from GitHub container registry for the <code>malcolm</code> profile<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-8002-99c2-dba5d1927e2b" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">docker compose --profile malcolm pull</code></pre></li></ol><figure id="1f0055c7-5784-808a-8244-d28d36c8b9e6" class="image"><a href="https://i.imgur.com/IH42mEt.png"><img src="https://i.imgur.com/IH42mEt.png"/></a></figure><ol type="1" id="1f0055c7-5784-80d6-b11f-cda9eff020e6" class="numbered-list" start="1"><li>Started malcolm server using <code>./scripts/start</code>. Logs from docker compose were shown. This final message was shown.<figure id="1f0055c7-5784-804d-b3c4-f7b31750d95d" class="image"><a href="https://i.imgur.com/UUb0y0d.png"><img src="https://i.imgur.com/UUb0y0d.png"/></a></figure></li></ol><ol type="1" id="1f0055c7-5784-8089-aa9b-ffdb3d544696" class="numbered-list" start="2"><li>Queried server status with <code>./scripts/status</code>. It shows exposed ports and health status of containers.<figure id="1f0055c7-5784-8084-b935-feb03e66b527" class="image"><a href="https://i.imgur.com/Ov6OEmy.png"><img src="https://i.imgur.com/Ov6OEmy.png"/></a></figure></li></ol><ol type="1" id="1f0055c7-5784-8063-b816-d43483c1632c" class="numbered-list" start="3"><li>Accessed the server homepage at the shown URL. For HTTPS access, generated certs should be added to local browser trust store.</li></ol><h3 id="1f0055c7-5784-8072-ad5f-e4bf59e962ea" class=""><strong>6.2. Running Dockerized Malcolm in an Ubuntu Server VM</strong></h3><ul id="1f0055c7-5784-8025-ab91-e8f7883b6d4f" class="bulleted-list"><li style="list-style-type:disc">Created an Ubuntu 24.04 server VM<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-80cc-9e51-db2478a8f7f0" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all"># Obtain an Ubuntu Cloud guest
+wget https://cloud-images.ubuntu.com/releases/noble/release-20241004/ubuntu-24.04-server-cloudimg-amd64.img
+​
+# Download cloud-init file from GNS3 website, preconfigured with
+#  credentials ubuntu:ubuntu and openssh-server installed
+wget https://github.com/GNS3/gns3-registry/raw/master/cloud-init/ubuntu-cloud/ubuntu-cloud-init-data.iso
+​
+# Create 20GB storage disk based on server image
+cp ubuntu-24.04-server-cloudimg-amd64.img /var/lib/libvirt/images/malcolm.img
+qemu-img resize /var/lib/libvirt/images/vuln.img +30G</code></pre></li></ul><ul id="1f0055c7-5784-8033-a640-dace2372fe8c" class="bulleted-list"><li style="list-style-type:disc">Create the VM in <code>virt-manager</code> booting from the cloud-init ISO and using storage file at <code>/var/lib/libvirt/images</code><figure id="1f0055c7-5784-804a-8bf3-fc107c6e0b42" class="image"><a href="https://i.imgur.com/dwUjwLl.png"><img src="https://i.imgur.com/dwUjwLl.png"/></a></figure></li></ul><ul id="1f0055c7-5784-80c4-beac-e063270d8d2b" class="bulleted-list"><li style="list-style-type:disc">SSH into the machine and install <code>docker</code> and compose plugin.<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-8076-be8c-c34bb26164cc" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all"># Install docker, add user to docker group
+sudo apt update &amp;&amp; sudo apt install -y docker.io
+sudo usermod -aG docker $USER
+​
+# Exit and relogin to SSH then verify
+docker run hello-world
+​
+# Download compose plugin
+sudo mkdir -p /usr/local/lib/docker/cli-plugins
+cd /usr/local/lib/docker/cli-plugins
+sudo wget -o docker-compose https://github.com/docker/compose/release/download/v2.35.1/docker-compose-linux-x86_64
+sudo chmod +x ./docker-compose
+​
+# Verify
+docker compose version</code></pre></li></ul><ul id="1f0055c7-5784-80ab-a89c-ea0d9cacc522" class="bulleted-list"><li style="list-style-type:disc">Download and configure installation files from containerized malcolm<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-80e7-a745-e353e7f636c5" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">sudo apt install unzip
+wget https://github.com/idaholab/Malcolm/releases/download/v25.03.1/malcolm-25.03.1-docker_install.zip
+unzip malcolm-25.03.1-docker_install.zip</code></pre></li></ul><ul id="1f0055c7-5784-80ae-a05d-c59cfe353b87" class="bulleted-list"><li style="list-style-type:disc">Run the scripts and follow the same steps explained in the previous section.<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1f0055c7-5784-8055-bbd2-f1ef75c07ede" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">sudo ./install.py</code></pre></li></ul><h3 id="1f0055c7-5784-8071-903c-c5e495c66fe5" class=""><strong>6.3. External Links</strong></h3><ul id="1f0055c7-5784-807f-a7e4-d78abea4bc18" class="bulleted-list"><li style="list-style-type:disc"><a href="https://en.wikipedia.org/wiki/Network_forensics">https://en.wikipedia.org/wiki/Network_forensics</a></li></ul><ul id="1f0055c7-5784-809d-844f-fb8cc9a90672" class="bulleted-list"><li style="list-style-type:disc"><a href="https://cisagov.github.io/Malcolm/docs/">https://cisagov.github.io/Malcolm/docs/</a></li></ul><ul id="1f0055c7-5784-808b-8dbb-eee9c43eea04" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.malware-traffic-analysis.net/">https://www.malware-traffic-analysis.net/</a></li></ul><ul id="1f0055c7-5784-809b-812d-cff2ae5ad1a1" class="bulleted-list"><li style="list-style-type:disc"><a href="https://docs.zeek.org/en/master/logs/index.html">https://docs.zeek.org/en/master/logs/index.html</a></li></ul><ul id="1f0055c7-5784-8096-abfe-fa0a5188645a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://docs.suricata.io/en/latest/rules/index.html">https://docs.suricata.io/en/latest/rules/index.html</a></li></ul><ul id="1f0055c7-5784-80fa-920b-d2d40c68701a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://arkime.com/apiv3">https://arkime.com/apiv3</a></li></ul><ul id="1f0055c7-5784-805b-b58f-fa56eb61c4a9" class="bulleted-list"><li style="list-style-type:disc"><a href="https://docs.opensearch.org/docs/latest/query-dsl/">https://docs.opensearch.org/docs/latest/query-dsl/</a></li></ul><ul id="1f0055c7-5784-8025-aea8-cff512af6c51" class="bulleted-list"><li style="list-style-type:disc"><a href="https://apackets.com/">https://apackets.com/</a></li></ul><ul id="1f0055c7-5784-8095-814d-d94917e14240" class="bulleted-list"><li style="list-style-type:disc"><a href="https://packetsafari.com/">https://packetSafari.com</a></li></ul><ul id="1f0055c7-5784-80ef-8a0b-c1376547ca4a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.unb.ca/cic/datasets/ids-2017.html">https://www.unb.ca/cic/datasets/ids-2017.html</a></li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
